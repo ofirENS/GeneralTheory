@@ -1,0 +1,160 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+\begin{document}
+\title{Theory of Polymer Dynamics}
+\maketitle
+\section{Introduction}
+This document summarizes information related to the construction of theoretical models representing polymers. 
+It is mainly drawn from the book by Doi. 
+ 
+\section{The freely jointed chain}
+We start with a simple model: a chain consisting of $N$ links, each of length $b_0$ and able to point in any direction independently of each other. The conformation of the model is represented by $(N+1)$ position vectors $\{R_n\}=\{R_0,R_1,...,R_{N}\}$, or by the set of bond vectors $\{r_n\}=(r_1,r_2,...,r_N)$, where $r_n=R_{n}-R_{n-1}$. 
+
+Since the bonds are independent, the configuration distribution is defined as 
+\begin{equation*}
+\Psi(\{\vec{r}_n\})=\prod_{n=1}^N\psi(\vec{r}_n)
+\end{equation*}
+for vector of constant length $b_0$
+\begin{equation*}
+\psi(\vec{r})=\frac{1}{4\pi b_0^2}\delta(|\vec{r}|-b_0)
+\end{equation*}
+we then normalize such that 
+\begin{equation*}
+\int \psi(\vec{r})d\vec{r} =1
+\end{equation*}
+
+
+\subsubsection{The end-to-end vector}
+We define the end-to-end vector as $\vec{R}=\vec{R}_N-\vec{R}_0=\sum_{n=1}^N \vec{r}_n$. The quantity $\left<R^2\right>$ characterizes the length of the chain. The standard deviation of the end-to-end vector
+\begin{equation*}
+\bar{R}=\left<R^2\right>^{0.5}=\left<(R_N-R_0)^2\right>^{0.5}=\sqrt{N}b_0
+\end{equation*} 
+since 
+\begin{equation*}
+\left<R^2\right> = \left<\left(\sum_{n=1}^N(r_n)\right)^2\right>=\sum_{n=1}^N\sum_{m=1}^N\left<r_nr_m\right>+\sum_{n=1}^N\left<r_n^2\right>+2\sum_{m>n}^N\left< r_nr_m\right>=\sum_{n=1}^N\left<r_n^2\right>=Nb_0^2
+\end{equation*}
+
+therefore, $\left<R^2\right>^{0.5}=\sqrt{N}b_0$. Here we used  $\left<r_nr_m\right>=\left<r_n\right>\left<r_m\right>=0$ 
+\subsection{distribution of the end-to-end vector}
+We denote $\Phi(R,N)$ as the probability distribution function that the end-to-end vector of a chain of N beads is $R$.
+\begin{equation*}
+\Phi(R,N) =\int\int\int...\int\delta(R-\sum_{n=1}^Nr_n)\Psi(\{r_n\}))dr_1dr_2...dr_N
+\end{equation*}
+in short, we take all chain configurations for which the end- to-end vector is exactly $R$.
+
+
+\subsection{The center of mass}
+
+The center of mass is defined as the mean bead position over time 
+
+\begin{equation*}
+cm(t) = \frac{1}{N+1}\sum_{i=0}^N{R_n(t)}
+\end{equation*}
+
+therefore, the differential equation for the center of mass is 
+
+\begin{equation*}
+\frac{dcm}{dt}=\frac{1}{N+1}\sum_{i=0}^N{\frac{dR_i}{dt}}= \frac{1}{N+1}\sum_{i=0}^Nf_n(t)
+\end{equation*}
+
+
+
+\subsection{Centralizing the chain}
+
+The differential equation describing the dynamics $R_n$ in $3D$ is
+
+\begin{equation*}
+\frac{dR_n}{dt} = -\frac{3D}{b^2}\left(2R_n(t)-R_{n-1}(t)-R_{n+1}(t) \right)+f_n(t)
+\end{equation*}
+
+If we shift the chain so that its new center of mass always lays at the origin, we get 
+
+ \begin{equation*}
+\frac{d(R_n-cm)}{dt} = -\frac{3D}{b^2}\left(2R_n-R_{n-1}-R_{n+1} \right)+f_n-\frac{1}{N+1}\sum_{i=0}^Nf_i
+\end{equation*}
+
+for such a new system, the new center of mass, $cm^*$ should have zero derivative, indeed. 
+\begin{equation*}
+\frac{dcm^*}{dt}=\frac{1}{N+1}\left[ \sum_{i=1}^N\frac{dR_i}{dt} - (N+1)\sum_{i=0}^N\frac{1}{N+1}f_i \right]= \vec{0}
+\end{equation*}
+Of course, this process is only valid post simulation. It seems not plausible to simulate a random process such that its center of mass remains in one point. 
+
+Subtracting the center of mass from the position of each bead should not affect the distribution of bond lengths, and it is indeed obvious to see it by subtracting two consecutive beads equation that the center of mass cancels out. However, the distribution of bead position is affected. 
+
+since each $f_n$ is normally distributed with std $\sqrt{2D}$ and mean 0, the random variable $\frac{1}{N}\sum_{i\neq n}^Nf_n(t)$ 
+
+[UNFINISHED]
+
+\subsection{The distribution of the bond lengths}
+The bond length behaves like the central $\chi ^2$ with $d$ degrees of freedom, where $d$ is the dimension of the problem. 
+In $3D$, since each $\vec{r}_i=[x_i,y_y,z_i]$ has 3 coordinates, each i.i.d normally distributed with $\left<x_i^2\right>=\left<y_i^2\right>=\left<z_i^2\right>=\frac{b^2}{3}$, the length squared $\|\vec{r}_i\|^2=x_i^2+y_i^2+z_i^2\sim\chi^2(3)$ 
+with mean $\mu=b^2/3+b^2/3+b^2/3=b^2$.
+
+\subsection{The dynamic of bond length}
+In simulations we would like to determine $\Delta t$ such that no 'blow-ups' will occur. For this end, we constrain the mean of squared difference between bond length in consecutive steps to lay below some predefined small value. 
+
+The result show that 
+\begin{equation*}
+\gamma=\ll\|r_n(t+\Delta t)-r_n(t) \|^2\gg = \left(\frac{3D\Delta t}{b} \right)^2+6D\Delta t
+\end{equation*}
+
+[UNFINISHED] 
+
+\section{Simulations}
+\subsection{Choosing $\Delta t$}
+The dynamics of beads is governed by the equation
+\begin{equation*}
+\frac{dP}{dt} = -\frac{3D}{b^2}RP+\sqrt{2D}f_n
+\end{equation*}
+
+if we represent the Rouse matrix in its diagonal form 
+\begin{equation*}
+R=Q^{-1}\Lambda Q
+\end{equation*}
+
+where $Q$ is an orthonormal matrix with the eigenvectors of $R$ in its columns,and $\Lambda$ is a diagonal matrix with the Rouse eigenvalues in the diagonal, we get 
+\begin{equation*}
+\frac{dP}{dt} = -\frac{3D}{b^2}Q^{-1}\Lambda Q+\sqrt{2D}f
+\end{equation*}
+multiplying from the left by $Q$ and setting $S=QP$ we get 
+
+\begin{equation*}
+\frac{dS}{dt}=-\frac{3D}{b^2}\Lambda S+\sqrt{2D}Qf
+\end{equation*}
+\subsubsection{The case with no noise}
+if we omit the noise term and solve for $S$ 
+the numerical scheme is 
+\begin{equation*}
+S(t+\Delta t)-S(t)=(-\frac{3D\Delta t}{b^2}\Lambda)S(t)
+\end{equation*}
+taking the norm of both sides and dividing 
+\begin{equation*}
+\frac{\|S(t+\Delta t)-S(t)\|}{\|S(t)\|}=\|(-\frac{3D\Delta t}{b^2}\Lambda)\| = \frac{3D\Delta t}{b^2}\lambda_{max}= \frac{12D\Delta t}{b^2}
+\end{equation*}
+where for the Rouse matrix $\lambda_{max} = 4$.  Demanding that the quotient be smaller than 1 we have 
+\begin{equation*}
+ \frac{12D}{b^2}\leq1 \Longrightarrow \Delta t \leq \frac{b^2}{12D}
+ \end{equation*}
+ \subsubsection{The case with noise}
+ using the same procedure as above, 
+ \begin{equation*}
+\frac{\|S(t+\Delta t)-S(t)\|}{\|S(t)\|}=\|(-\frac{3D}{b^2}\Lambda)S+\sqrt{2D}Qf\|/\|S\|\leq(\frac{3D}{b^2}\|\Lambda)\| +\sqrt{2D}\|Qf\|/\|S\|
+ \end{equation*}
+ \begin{equation*}
+ =\leq \frac{3D}{b^2}\lambda_{max} +\sqrt{2D}\frac{\|Q\|\|f\|}{\|S\|}=\frac{12D}{b^2}\leq\frac{3D}{b^2}\lambda_{max}\Delta t +\sqrt{2D}\Delta t
+ \end{equation*}
+Demanding that the quotient be smaller than 1 we have 
+\begin{equation*}
+ \frac{12D}{b^2}\leq1 \Longrightarrow \Delta t \leq \frac{b^2}{12D+\sqrt{2D}b^2}
+ \end{equation*}
+\subsection{Relaxation time}
+The relaxation time is determined according to the formula
+\begin{equation}
+\tau_p = \frac{b^2\Delta t}{12d^2\sin^2(\frac{p\pi}{2N})}
+\end{equation} 
+\end{document}
+

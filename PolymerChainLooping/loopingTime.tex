@@ -1,0 +1,92 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\section{Definitions}
+\begin{enumerate}
+\item \textbf{mean First Encounter time (MFET)}- the first arrival time for a monomer in a chain into a ball of radius $\epsilon$, centered at another monomer. 
+\item \textbf{Langavin equation}
+\item The \textbf{equation} defining the dynamics of a bead $R_n$ is 
+\begin{equation*}
+\frac{dR_n}{dt}=-D\nabla_{R_n}\phi_{Rouse} +\sqrt{2D}\frac{dw_n}{dt}
+\end{equation*}
+where $D$ is the diffusion constant, and $\phi$ is an harmonic potential of the system. The derivative of the potential gives us the force. The function $w$ is a white noise process. Note that $w$ is non-differentiable at any point. This requires careful definition of the equation above. It makes more sense to write it in the integral form (see Schuss's book). The equation above stems from the Smoluchowski's limit to the Langevins equation.
+
+\item The \textbf{harmonic potential} defining the force driving the dynamics of the chain is 
+\begin{equation*}
+\phi(R_1,R_2,...,R_N)_{Rouse} = \frac{k}{2}\sum_{n=1}^{N}(R_n-R_{n-1})^2
+\end{equation*}
+where $k$ is the spring constant. The harmonic potential energy is the potential of a \textbf{conservative} force, since the force on each bead only depend on the position of the beads, $R_i$.
+in other words 
+\begin{equation}
+\nabla_{Rouse}\phi = \int_{\vec{R_0}}^{\vec{R_t}}FdR +\phi(0)
+\end{equation}  
+the negative derivative of the potential is the force acting on the chain. Since $F$ is a conservative force (depends on position only), we can set the zero potential at any convenient point. More specifically, in the Rouse chain, we set it to be zero at time $t=0$.
+\end{enumerate}
+
+In the context of the Rouse polymer, we calculate the MFET for the two end monomers. All interactions, but nearest neighbor interactions, are neglected. 
+
+The condition for the end monomers to meet dictates that 
+\begin{equation*}
+\|R_N-R_1\|<\epsilon
+\end{equation*}
+where $N$ is the last monomer. The transformation from the bead position to the normal coordinates, $u$, is defined as follows
+
+\begin{equation*}
+u_p = \sum_{n=1}^{N}\alpha_p^nR_n
+\end{equation*}
+where 
+
+In matrix notation we have 
+\begin{equation*}
+[U]=\left[ \begin{matrix}
+u_0|& u_1| &... & |u_{N-1}
+\end{matrix}\right] = 
+\left[\begin{matrix}
+R_1 |&R_2|&...& |R_N 
+\end{matrix}\right]
+\left[\begin{matrix}
+\alpha_0|&\alpha_1|&...&|\alpha_{N-1} 
+\end{matrix}\right] = [R][\alpha]
+\end{equation*}
+where all vectors are column vectors. 
+
+The backward transformation is defined by $[\alpha]^{-1}$. Since $[\alpha]$ is a normal matrix,defined by the orthogonal basis spanned by the eigenvectors of the Rouse matrix, we have $[\alpha]^{-1}=[\alpha]^T$. 
+To obtain the $k^th$ bead coordinates we employ the inverse transformation
+\begin{equation*}
+[R]_k=\sum_{n=0}^{N-1}u_n\alpha_n^k
+\end{equation*}
+
+The condition above then reads 
+\begin{eqnarray*}
+|R_N-R_1|=& |\sum_{n=0}^{N-1}u_n\alpha_n^N -\sum_{n=0}^{N-1}u_n\alpha_n^1|\\
+         =& |\sum_{n=0}^{N-1}u_n(\alpha_n^N -\alpha_n^1)|\\  
+         =& \sum_{n=1}^{N-1}u_n\sin\left(\frac{n\pi}{2}\right)\sin\left(\frac{(N-1)n\pi}{2}\right)|\\
+         =& |2\sqrt{\frac{2}{N}}\sum_{p odd}\cos(p\pi/2N)| \leq \epsilon
+\end{eqnarray*}
+
+We see that the end-to-end encounter does not depend on the coordinate of the center of mass, as described by $u_0$. We can therefore disregard this coordinate. The MFET become now the MFPT of the $(N-1)d$ dimensional stochastic dynamical system
+\begin{equation*}
+u(t) = \left(u_1(t),u_2(t),...,u_{N-1}(t) \right)
+\end{equation*}
+to the boundary of the domain in which bead 1 and N are at a distance at most $\epsilon/\sqrt{2}$.
+The differential equation describing the behavior of the system in normal coordinates is 
+\begin{equation*}
+\frac{du_p}{dt}=-D_p\kappa_pu_p+\sqrt{2D_p}\frac{dw_p}{dt}
+\end{equation*}
+
+with $\kappa_p=4k\sin^2(p\pi/2N)$, $p=1,...,N-1$.
+
+The probability density function $p(u(t)=x,t)$ satisfy the \textbf{Fokker-Planck equation}
+\begin{equation*}
+\frac{\partial}{\partial t}p(x,t) = -\frac{\partial}{\partial x}\left[Dp(x,t)\right] + \frac{\partial^2}{\partial x^2}\left[ D(x,t)p(x,t)\right]
+\end{equation*}
+
+The \textit{Forward Fokker-Plack equation} is satisfied by the solution of the stochastic differential equation of the type 
+\begin{equation*}
+dx(t)= a(x(t),t)dt+B(x(t),t)dw(t), x(s)=s
+\end{equation*}
+which is an \textbf{Ito SDE}, where $a(x(t),t):\mathbb{R}^d\times[0,T]\rightarrow \mathbb{R}^d$ , $B(x(t),t):\mathbb{R}^d\times [0,T]\rightarrow \mathbb{M}_{n,m}$, and $w(t)$ is a d-dimensional white Gaussian noise.
+
+\end{document}
