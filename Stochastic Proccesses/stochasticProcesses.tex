@@ -86,7 +86,7 @@ S_n=\sum_{i=1}^nG(\tau_i)[W(t_i)-W(t_{i-1})]
 Note that the Weiner process in the partial sums is contributing the values at the edges of the interval, whereas the function $G$ contributes the values somewhere in its middle.
 The choice of $\tau_i$ affects the value of the integral. It can be seen that f we choose $\tau_i=\alpha t_{i-1}+(1-\alpha)t_i$, with $0\leq \alpha\leq 1$,  than the mean value of the integral can take any value between 0 and $(t-t_0)$. 
 
-for the It\^{o} integral, we choose $\tau_i=t_{i-1}$, which is the left boundary of the subinterval and thus define the stochastic integral as
+for the \textbf{It\^{o} integral}, we choose $\tau_i=t_{i-1}$, which is the left boundary of the subinterval and thus define the stochastic integral as
 \begin{equation*}
 \int_{t_0}^{t}G(t')\mathrm{d}W(t')=ms-lim_{n\rightarrow\infty}\left\{\sum_{i=1}^nG(t_{i-1})[W(t_{i})-W(t_{i-1})] \right\}
 \end{equation*}
@@ -102,7 +102,41 @@ One major consequence of the choice $\tau_i=t_{i-1}$ is that
 \int_{t_0}^{t}W(t')dW(t')=0
 \end{equation*}
 That is, the stochastic integral of the Weiner process over any interval is zero.
+Because the left point of the subinterval is chosen, the value of the function $G(t'_{i-1})$ is independent of the increments $[W(t_i)-W(t_{i-1})]$, since $G$ is $F_t$ adapted process.
+\subsubsection{Properties of It\^{o} integral}
 
+We define the class $H_2[0,T]$ of $F_t$-adapted stochastic processes such that 
+\begin{equation*}
+\int_0^T \mathbb{E}f^2(s,\omega)ds <\infty
+\end{equation*}
+and list the following properties
+\begin{enumerate}
+\item \textbf{linearity}. For $f(t),g(t)\in H_2[0,T]$, and $\alpha,\beta$ real, then $\alpha f(t)+\beta g(t) \in H_2[0,T]$, and 
+\begin{equation*}
+\int_0^t \alpha f(s)+\beta g(s) d\omega(s) = \alpha \int_0^t f(s)d\omega(s) +\beta \int_0^t g(s)d\omega(s)
+\end{equation*}
+\item \textbf{additivity}. If $f(t)\in H_2[0,T_1]$ and $f(t)\in H_2[T_1,T]$ for $0<T_1<T$, then 
+\begin{equation*}
+\int_0^Tf(s)d\omega(s) = \int_0^{T_1}f(s)d\omega(s) +\int_{T_1}^T f(s)d\omega(s)
+\end{equation*}
+\item for a deterministic and integrable $f(t)$
+\begin{equation*}
+\int_0^t f(s)d\omega(s) \sim N\left(0,\int_0^t f^2(s)ds\right)
+\end{equation*}
+\item for $f(t)\in H_2[0,T]$
+\begin{equation*}
+\mathbb{E}\int_0^t f(s)d\omega(s) = 0
+\end{equation*}
+\item for $0<\tau<t<T$
+\begin{equation*}
+\mathbb{E}\left[\int_0^t f(s)d\omega(s)  | \int_0^\tau f(s)d\omega(s)=x \right] =x
+\end{equation*}
+\item for $f(t),g(t)\in H_2[0,T]$
+\begin{equation*}
+\mathbb{E}\left[\int_0^Tf(s)d\omega(s)\int_0^T g(s)d\omega(s)\right]=\int_0^T\mathbb{E}[f(s)g(s)]ds
+\end{equation*}
+note that the right-hand-side is integrated with respect to $s$
+\end{enumerate}
 \subsubsection{Non-anticipating Functions}{[Unfinished]}
 
 \subsection{Stochastic Differential Equations}
