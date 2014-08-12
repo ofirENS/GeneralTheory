@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass{paper}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -103,6 +103,48 @@ The result show that
 \end{equation*}
 
 [UNFINISHED] 
+
+\subsection{Eigenvalues and eigenvectors of a chain with a single loop}
+We stat by exploring a simple system of 4 beads in which bead 4 is connected to bead 2. The Rouse matrix for the system is 
+\begin{equation*}
+R_{4,2} = \left[ \begin{matrix}
+1 & -1 & 0 & 0 \\
+-1 & 3 & -1 & -1\\
+0  & -1&  2 & -1\\
+0  & -1 & -1 & 2
+\end{matrix}
+\right]
+\end{equation*}
+which can be written as a sum of the linear Rouse chain and a matrix which carries the non-linear connections. 
+\begin{equation*}
+R_{4,2} = \left[ \begin{matrix}
+1 & -1 & 0 & 0 \\
+-1 & 2 & -1 & 0\\
+0  & -1&  2 & -1\\
+0  & 0 & -1 & 1
+\end{matrix}
+\right] + \left[ \begin{matrix}
+0  & 0  & 0 & 0 \\
+0  & 1  & 0 & -1\\
+0  & 0  & 0 & 0\\
+0  & -1 & 0 & 1
+\end{matrix} \right] = R+C_{2,4}
+\end{equation*}
+
+to find the eigenvalues of $R+C_{2,4}$ we start by examining the solution of the characteristic polynomial of
+
+\begin{equation*}
+det(R+C_{2,4}- \lambda I)= det(R+\left[ \begin{matrix}
+-\lambda  & 0          & 0        & 0 \\
+0         & 1-\lambda  & 0        & -1\\
+0         & 0          & -\lambda & 0\\
+0         & -1         & 0        & 1-\lambda
+\end{matrix}\right])
+\end{equation*}
+
+According to the determinant lemma 
+\begin{equation*}
+\end{equation*}
 
 \section{Simulations}
 \subsection{Choosing $\Delta t$}
