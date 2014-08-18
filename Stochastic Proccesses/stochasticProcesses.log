@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  14 AUG 2014 19:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.2)  19 AUG 2014 00:46
 entering extended mode
 **stochasticProcesses.tex
-
-("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
-cesses.tex"
+("D:\Ofir\ENS\GeneralTheory\Stochastic Proccesses\stochasticProcesses.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -101,8 +99,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
-cesses.aux")
+("D:\Ofir\ENS\GeneralTheory\Stochastic Proccesses\stochasticProcesses.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
@@ -116,13 +113,13 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 
-("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
-cesses.toc"
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
- ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("D:\Ofir\ENS\GeneralTheory\Stochastic Proccesses\stochasticProcesses.toc"
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -131,39 +128,51 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Ofir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Chapter 1.
+[2
+
+]
+Chapter 2.
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[3
+
+] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-[3] [4] [5] [6]
-("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
-cesses.aux") ) 
+[5] [6] [7]
+("D:\Ofir\ENS\GeneralTheory\Stochastic Proccesses\stochasticProcesses.bbl"
+[8]) [9
+
+]
+("D:\Ofir\ENS\GeneralTheory\Stochastic Proccesses\stochasticProcesses.aux") ) 
 Here is how much of TeX's memory you used:
- 1145 strings out of 493921
- 13423 string characters out of 3144879
+ 1162 strings out of 493921
+ 13613 string characters out of 3144880
  64998 words of memory out of 3000000
- 4475 multiletter control sequences out of 15000+200000
- 9803 words of font info for 37 fonts, out of 3000000 for 9000
+ 4488 multiletter control sequences out of 15000+200000
+ 12411 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,6n,26p,426b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
-<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mex10.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><d
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on stochasticProcesses.pdf (6 pages, 130908 bytes).
+ 27i,6n,26p,426b,134s stack positions out of 5000i,500n,10000p,200000b,50000s
+<d
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><d:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on stochasticProcesses.pdf (9 pages, 148261 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
