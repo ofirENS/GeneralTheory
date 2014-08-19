@@ -1,10 +1,13 @@
-\documentclass[12pt]{report}
+\documentclass[12pt]{paper}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
 
 \begin{document}
 \tableofcontents
-
+\section{Definitions}
 \subsection{Noise}[Unfinished]
 White noise is a process for which there is no correlation between any values at different times. As an idealization of such a process there exist the Orenstein-Uhlenbeck process (to be defined) for which produces an almost uncorrelated noise. For this model, the second order correlation function can, up to a constant factor, be described as 
 \begin{equation*}
@@ -42,7 +45,7 @@ For a cylinder set $C(t;I)$, where $t>0$ and $I=(a,b)$, the Weiner measure is
 Pr\{C(t;I)\}=\frac{1}{\sqrt{2\pi t}}\int_a^b\exp^{-x^2/2t}dx
 \end{equation*}
 
-\subsection{Martingale}
+\subsection{Martingale}\label{martingale}
 A martingale is a stochastic process $ x(t)$ with $\mathbb{E}|x(t)|<\infty$ ,$\forall t$, and for $t_1<t_2<...<t_n$
 \begin{equation*}
 \mathbb{E}[x(t)|x(t_1)=x1,x(t_2)=x_2,...x(t_n)=x_n]=x_n
@@ -143,10 +146,10 @@ and list the following properties
 \begin{equation*}
 \mathbb{E}\left[\int_0^Tf(s)d\omega(s)\int_0^T g(s)d\omega(s)\right]=\int_0^T\mathbb{E}[f(s)g(s)]ds
 \end{equation*}
-note that the right-hand-side is integrated with respect to $s$
+note that the right-hand-side is integrated with respect to $s$.
 \end{enumerate}
+We can see by property 5 that the It\^{o} integral is a martingale (see subsection \ref{martingale}).
 \subsection{Non-anticipating Functions}{[Unfinished]}
-
 \subsection{Stochastic Differential Equations}
 
 \end{document}
