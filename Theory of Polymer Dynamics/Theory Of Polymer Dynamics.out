@@ -1,14 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{The freely jointed chain}{}% 2
-\BOOKMARK [2][-]{subsubsection.2.0.1}{The end-to-end vector}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.1}{distribution of the end-to-end vector}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{The center of mass}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Centralizing the chain}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.4}{The distribution of the bond lengths}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.5}{The dynamic of bond length}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.6}{Eigenvalues and eigenvectors of a chain with a single loop}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Simulations}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Choosing t}{section.3}% 11
-\BOOKMARK [3][-]{subsubsection.3.1.1}{The case with no noise}{subsection.3.1}% 12
-\BOOKMARK [3][-]{subsubsection.3.1.2}{The case with noise}{subsection.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.2}{Relaxation time}{section.3}% 14
+\BOOKMARK [2][-]{subsection.2.1}{The end-to-end vector}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{distribution of the end-to-end vector}{}% 4
+\BOOKMARK [1][-]{section.4}{the Gaussian Chain}{}% 5
+\BOOKMARK [1][-]{section.5}{The center of mass}{}% 6
+\BOOKMARK [1][-]{section.6}{Centralizing the chain}{}% 7
+\BOOKMARK [2][-]{subsection.6.1}{The distribution of the bond lengths}{section.6}% 8
+\BOOKMARK [2][-]{subsection.6.2}{The dynamic of bond length}{section.6}% 9
+\BOOKMARK [2][-]{subsection.6.3}{Eigenvalues and eigenvectors of a chain with a single loop}{section.6}% 10
+\BOOKMARK [1][-]{section.7}{Simulations}{}% 11
+\BOOKMARK [2][-]{subsection.7.1}{Choosing t}{section.7}% 12
+\BOOKMARK [3][-]{subsubsection.7.1.1}{The case with no noise}{subsection.7.1}% 13
+\BOOKMARK [3][-]{subsubsection.7.1.2}{The case with noise}{subsection.7.1}% 14
+\BOOKMARK [2][-]{subsection.7.2}{Relaxation time}{section.7}% 15

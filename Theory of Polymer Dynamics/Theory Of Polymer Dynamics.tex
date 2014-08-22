@@ -9,10 +9,10 @@
 \maketitle
 \section{Introduction}
 This document summarizes information related to the construction of theoretical models representing polymers. 
-It is mainly drawn from the book by Doi. 
+It is mainly drawn from the book by Doi \cite{doi1986theory}. 
  
 \section{The freely jointed chain}
-We start with a simple model: a chain consisting of $N$ links, each of length $b_0$ and able to point in any direction independently of each other. The conformation of the model is represented by $(N+1)$ position vectors $\{R_n\}=\{R_0,R_1,...,R_{N}\}$, or by the set of bond vectors $\{r_n\}=(r_1,r_2,...,r_N)$, where $r_n=R_{n}-R_{n-1}$. 
+From \cite{doi1986theory}.We start with a simple model: a chain consisting of $N$ links, each of length $b_0$ and able to point in any direction independently of each other. The conformation of the model is represented by $(N+1)$ position vectors $\{R_n\}=\{R_0,R_1,...,R_{N}\}$, or by the set of bond vectors $\{r_n\}=(r_1,r_2,...,r_N)$, where $r_n=R_{n}-R_{n-1}$. 
 
 Since the bonds are independent, the configuration distribution is defined as 
 \begin{equation*}
@@ -28,7 +28,7 @@ we then normalize such that
 \end{equation*}
 
 
-\subsubsection{The end-to-end vector}
+\subsection{The end-to-end vector}
 We define the end-to-end vector as $\vec{R}=\vec{R}_N-\vec{R}_0=\sum_{n=1}^N \vec{r}_n$. The quantity $\left<R^2\right>$ characterizes the length of the chain. The standard deviation of the end-to-end vector
 \begin{equation*}
 \bar{R}=\left<R^2\right>^{0.5}=\left<(R_N-R_0)^2\right>^{0.5}=\sqrt{N}b_0
@@ -38,16 +38,48 @@ since
 \left<R^2\right> = \left<\left(\sum_{n=1}^N(r_n)\right)^2\right>=\sum_{n=1}^N\sum_{m=1}^N\left<r_nr_m\right>+\sum_{n=1}^N\left<r_n^2\right>+2\sum_{m>n}^N\left< r_nr_m\right>=\sum_{n=1}^N\left<r_n^2\right>=Nb_0^2
 \end{equation*}
 
-therefore, $\left<R^2\right>^{0.5}=\sqrt{N}b_0$. Here we used  $\left<r_nr_m\right>=\left<r_n\right>\left<r_m\right>=0$ 
-\subsection{distribution of the end-to-end vector}
+therefore, $\left<R^2\right>^{0.5}=\sqrt{N}b_0$. Here we used  $\left<r_nr_m\right>=\left<r_n\right>\left<r_m\right>=0$. Note that this is just the sum of variances of the bond vectors (each of which has variance of $b_0$)
+
+\section{distribution of the end-to-end vector}
 We denote $\Phi(R,N)$ as the probability distribution function that the end-to-end vector of a chain of N beads is $R$.
 \begin{equation*}
 \Phi(R,N) =\int\int\int...\int\delta(R-\sum_{n=1}^Nr_n)\Psi(\{r_n\}))dr_1dr_2...dr_N
 \end{equation*}
-in short, we take all chain configurations for which the end- to-end vector is exactly $R$.
+in short, we take all chain configurations for which the end-to-end vector is exactly $R$. Using the Fourier transform identity for the delta function
+\begin{equation*}
+\delta(r)= \frac{1}{(2\pi)^3}\int e^{ikr} dk
+\end{equation*}
+see \href{http://en.wikipedia.org/wiki/Dirac_delta_function}{wikipedia}.
+where, after some manipulation and using polar coordinates for solving the integral, we get
+\begin{equation*}
+\Phi(R,N)=\frac{1}{(2\pi)^3}\int e^{ikR} \left(\frac{\sin(kb)}{kb}\right)^N dk
+\end{equation*}
+Continuing with a series of approximations to the integral above, we get
+\begin{equation*}
+\Phi(R,N)=(3/2\pi N b^2)^{1.5} \exp(-\frac{3R^2}{2Nb^2})
+\end{equation*}
 
 
-\subsection{The center of mass}
+\section{the Gaussian Chain}
+From \cite{doi1986theory}. We consider a chain whose bond length has a Gaussian distribution 
+\begin{equation*}
+\psi(r)=\left[\frac{3}{2\pi b^2} \right]^{3/2} \exp \left( -\frac{3r^2}{2b^2} \right)
+\end{equation*}
+in 3D,  with bond-length variance $<r^2> =b^2$. The Gaussian chain represent the model of beads on a strings, with the harmonic potential energy 
+\begin{equation*}
+U_0(\{R_n\})\frac{3k_BT}{2b^2}\sum_{n=1}^N (R_n-R_{n-1})^2
+\end{equation*}
+
+Since the sum of two Gaussian random variables is again a random variable, it turns out that the distribution of the bond between any two beads $m$ and $n$ is Gaussian with 
+\begin{equation*}
+\Phi(R_n-R_m,n-m)=\left[\frac{3}{2\pi b^2 |n-m|}\right]^{3/2}\exp \left[-\frac{3(R_n-R_m)^2}{2|n-m|b^2}\right]
+\end{equation*}
+and for any $m$ and $n$ 
+\begin{equation*}
+<(R_n-R_m)^2> = |n-m|b^2
+\end{equation*}
+
+\section{The center of mass}
 
 The center of mass is defined as the mean bead position over time 
 
@@ -63,7 +95,7 @@ therefore, the differential equation for the center of mass is
 
 
 
-\subsection{Centralizing the chain}
+\section{Centralizing the chain}
 
 The differential equation describing the dynamics $R_n$ in $3D$ is
 
@@ -198,5 +230,11 @@ The relaxation time is determined according to the formula
 \begin{equation}
 \tau_p = \frac{b^2\Delta t}{12d^2\sin^2(\frac{p\pi}{2N})}
 \end{equation} 
+
+% The bibliography
+\bibliographystyle{plain}
+\bibliography{TheoryOfPolymerDynamicsBibliography} % the bibliography.bib file 
 \end{document}
+
+
 
