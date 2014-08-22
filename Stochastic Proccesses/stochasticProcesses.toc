@@ -11,8 +11,9 @@
 \contentsline {section}{\numberline {1.10}Properties of It\^{o} integral}{6}{section.1.10}
 \contentsline {section}{\numberline {1.11}Integration with Respect to a Measure}{7}{section.1.11}
 \contentsline {section}{\numberline {1.12}The It\^{o} Calculus}{7}{section.1.12}
-\contentsline {section}{\numberline {1.13}The Langevin Equation}{8}{section.1.13}
-\contentsline {section}{\numberline {1.14}The It\^{o} Equation}{8}{section.1.14}
-\contentsline {section}{\numberline {1.15}Existence and Uniqueness of It\^{o} SDE solutions}{9}{section.1.15}
-\contentsline {section}{\numberline {1.16}Non-anticipating Functions}{9}{section.1.16}
+\contentsline {subsection}{\numberline {1.12.1}The Wong-Zakai Correction}{9}{subsection.1.12.1}
+\contentsline {section}{\numberline {1.13}The Langevin Equation}{9}{section.1.13}
+\contentsline {section}{\numberline {1.14}The It\^{o} Equation}{9}{section.1.14}
+\contentsline {section}{\numberline {1.15}Existence and Uniqueness of It\^{o} SDE solutions}{10}{section.1.15}
+\contentsline {section}{\numberline {1.16}Non-anticipating Functions}{10}{section.1.16}
 \contentsline {section}{\numberline {1.17}Stochastic Differential Equations}{10}{section.1.17}

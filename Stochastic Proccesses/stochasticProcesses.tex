@@ -57,7 +57,7 @@ White noise is a process for which there is no correlation between any values at
 \end{equation*}
 
 \section{Cylinder Sets}
-A cylinder set of Brownian trajectories is defined by a sequence of times $0\leq t_1<t_2<...<t_n$, and real intervals $I_k=(a_k,b_k)$, $k=1...n$, as 
+From \cite{schuss2009theory}.A cylinder set of Brownian trajectories is defined by a sequence of times $0\leq t_1<t_2<...<t_n$, and real intervals $I_k=(a_k,b_k)$, $k=1...n$, as 
 \begin{equation*}
 C(t_1,t_2,...,t_n;I_1,I_2,...I_n)=\{\omega\in \Omega|x(\omega,t_k)\in I_k\},\forall 1\leq k \leq n
 \end{equation*}
@@ -175,7 +175,7 @@ x(t) = x_0 + \int_0^t a(s)ds + \int_0^t b(s)d\omega(s)
 
 where $x_0$ is a random variable independent on $\omega(t),\forall t>0$, then for $0\leq t_1\leq t_2 \leq T$
 \begin{equation*}
-x(t_2)-x(t_1)=\int_{t_1}^{t_2}x(s)ds +\int_{t_1}^{t_2}b(s)d\omega(s)
+x(t_2)-x(t_1)=\int_{t_1}^{t_2}a(s)ds +\int_{t_1}^{t_2}b(s)d\omega(s)
 \end{equation*}
 We abbreviate the this notation by 
 \begin{equation*}
@@ -202,6 +202,34 @@ dx(t) = f'(t)d\omega(t)dt+f(t)d\omega(t)=\omega(t)df(t)+f(t)d\omega(t)
 \end{equation*}
 as in the classical calculus. 
 
+\textbf{Example 3:} the differential of the product of functions. If $x_1(t)$ and $x_2(t)$ have the Ito differentials
+\begin{equation*}
+dx_1dt = a_1(t)dt +b_1(t)d\omega(t)\\
+\end{equation*}
+\begin{equation*}
+dx_2(t) =a_2(t)dt+b_2(t)d\omega(t) 
+\end{equation*}
+where $a_1,b_1,a_2,b_2\in H_2[0,T]$ (see \ref{propertiesOfTheItoIntegral}), then
+\begin{equation*}
+d[x_1(t)x_2(t)]= x_1(t)dx_2(t)+x_2(t)dx_1(t)+b_1(t)b_2(t)dt
+\end{equation*}
+
+\subsection{The Wong-Zakai Correction}
+From \cite{schuss2009theory}. To see the relationship between the Ito integral and the Stratonovich integral we have the Wong-Zakai correction.  If $f(x,t)$ has a second continuous derivative such that $|f_{xx}(x,t)|<A(t)e^{\alpha(t)|x|} $ for some positive continuous function $\alpha(t)$ and $A(t)$ for all $a\leq t \leq b$ then
+\begin{equation}
+\int_{a}^b f(\omega(t),t)d_S\omega(t) = \int_a^b f(\omega(t),t)d\omega(t)+\frac{1}{2}\int_a^b\frac{\partial}{\partial x}f(\omega(t),t)dt
+\end{equation}
+where $\omega_S(t)$ represents the Stratonovich integral.
+
+\textbf{Example 1:} We now use the Wong-Zakai correction to show that the Stratnovich differential satisfies the classical rule
+\begin{equation*}
+d_Sx_1(t)x_2(t)= x_1(t)dx_2(t) +x_2(t)dx_1(t)
+\end{equation*}
+
+The Statonovich differential is defined as 
+\begin{equation*}
+d_Sx(t) = a(t)dt+b(t)d_S\omega(t)
+\end{equation*}
 
 
 
