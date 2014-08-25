@@ -93,6 +93,16 @@ A martingale is a stochastic process $ x(t)$ with $\mathbb{E}|x(t)|<\infty$ ,$\f
 \mathbb{E}[x(t)|x(t_1)=x1,x(t_2)=x_2,...x(t_n)=x_n]=x_n
 \end{equation*}
 
+\section{Approximation to the stochastic path as $L^2[0,T]$ expansion}
+From \cite{iacus2009simulation}. It $X(t)$ is a random trajectory of the process $X(\omega, t)$ for a given $\omega$, the Weiner process $W(t)$ has trajectories belonging to $L^2[0,T]$ for almost all $\omega$'s, and the \textbf{\href{http://en.wikipedia.org/wiki/Karhunen-Loeve_theorem}{Karhunen-Loeve}} expansion for it takes the form 
+
+\begin{equation*}
+W(t)=W(\omega,t)= \sum_{i=1}^\infty Z_i(\omega)\phi_i(t), 
+\end{equation*}
+with $0\leq t \leq T$, and 
+\begin{equation*}
+\phi_i(t) = \frac{2\sqrt{2T}}{(2i+1)\pi} \sin \left(\frac{(2i+1)\pi t}{2T} \right)
+\end{equation*}
 
 \section{Stochastic Integration}
 For an arbitrary function of time $G(t')$ and a Weiner process $W(t)$, the stochastic integral 

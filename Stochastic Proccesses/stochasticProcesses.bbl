@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{iacus2009simulation}
+S.M. Iacus.
+\newblock {\em Simulation and Inference for Stochastic Differential Equations:
+  With R Examples}.
+\newblock Springer Series in Statistics. Springer, 2009.
+
 \bibitem{Oksendal14}
 Bernt {\O}ksendal.
 \newblock {\em Stochastic Differential Equations: An Introduction with
