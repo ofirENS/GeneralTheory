@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  25 AUG 2014 18:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  5 SEP 2014 15:47
 entering extended mode
 **stochasticProcesses.tex
 
@@ -15,10 +15,10 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk12.clo"
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -248,6 +248,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 6.
+
+
+Package hyperref Warning: Option `backref' has already been used,
+(hyperref)                setting the option has no effect on input line 6.
+
 ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
@@ -266,20 +272,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 ("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
 cesses.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
  ("d:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
@@ -295,7 +301,7 @@ LaTeX Font Info:    ... okay on input line 9.
 \everyMPtoPDFconversion=\toks23
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring ON on input line 10.
  ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -304,9 +310,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 ("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
 cesses.out")
@@ -329,81 +335,87 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Chapter 1.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 12.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 12.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 12.
-
-[2
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-Overfull \hbox (6.16672pt too wide) in paragraph at lines 29--31
+Chapter 1.
+
+Overfull \hbox (12.94983pt too wide) in paragraph at lines 13--13
+[]\OT1/cmr/bx/n/17.28 sigma-algebra, Prob-a-bil-ity space, and Ran-
+ []
+
+[3]
+Overfull \hbox (6.16672pt too wide) in paragraph at lines 30--32
 \OT1/cmr/m/n/12 tin-u-ous tra-jec-tory in the space of con-tin-u-ous func-tions
  (but non-differentiable). 
  []
 
-[3]
+[4]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [4]
+ [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 96.
+(hyperref)                removing `math shift' on input line 97.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
+(hyperref)                removing `superscript' on input line 97.
 
-[5] [6] [7] [8]
-Overfull \hbox (2.49408pt too wide) in paragraph at lines 228--229
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 97.
+
+[6] [7]
+
+LaTeX Warning: Reference `martingale' on page 8 undefined on input line 171.
+
+[8]
+
+LaTeX Warning: Reference `propertiesOfTheItoIntegral' on page 9 undefined on in
+put line 223.
+
+[9]
+Overfull \hbox (2.49408pt too wide) in paragraph at lines 229--230
 \OT1/cmr/m/n/12 From [[]]. To see the re-la-tion-ship be-tween the Ito in-te-gr
 al and the Stratonovich
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-[10]
+[11] [12]
 ("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
-cesses.bbl" [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
- [12
+cesses.bbl" [13] [14
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
 
 ("D:\Ofir\Work\ENS\Documents\General Theory\Stochastic Proccesses\stochasticPro
 cesses.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `stochasticProcesses.out' has not changed.
-(rerunfilecheck)             Checksum: B358031351AE8F8A733C4A34D7FD47F0;1470.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
+(rerunfilecheck)             Checksum: D4911B0650796C3AFD47F0911AFD203A;1546.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 6012 strings out of 493921
- 86847 string characters out of 3144879
- 167622 words of memory out of 3000000
- 9205 multiletter control sequences out of 15000+200000
- 12411 words of font info for 47 fonts, out of 3000000 for 9000
+ 6033 strings out of 493921
+ 87237 string characters out of 3144879
+ 168093 words of memory out of 3000000
+ 9221 multiletter control sequences out of 15000+200000
+ 12763 words of font info for 48 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,31p,624b,416s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,31p,624b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/
@@ -412,13 +424,14 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><d:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on stochasticProcesses.pdf (12 pages, 192244 bytes).
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><d:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><d:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on stochasticProcesses.pdf (15 pages, 218545 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

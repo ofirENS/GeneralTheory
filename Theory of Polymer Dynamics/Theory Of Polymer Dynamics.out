@@ -2,14 +2,15 @@
 \BOOKMARK [1][-]{section.2}{The freely jointed chain}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{The end-to-end vector}{section.2}% 3
 \BOOKMARK [1][-]{section.3}{distribution of the end-to-end vector}{}% 4
-\BOOKMARK [1][-]{section.4}{the Gaussian Chain}{}% 5
+\BOOKMARK [1][-]{section.4}{The Gaussian Chain}{}% 5
 \BOOKMARK [1][-]{section.5}{The center of mass}{}% 6
 \BOOKMARK [1][-]{section.6}{Centralizing the chain}{}% 7
-\BOOKMARK [2][-]{subsection.6.1}{The distribution of the bond lengths}{section.6}% 8
-\BOOKMARK [2][-]{subsection.6.2}{The dynamic of bond length}{section.6}% 9
-\BOOKMARK [2][-]{subsection.6.3}{Eigenvalues and eigenvectors of a chain with a single loop}{section.6}% 10
-\BOOKMARK [1][-]{section.7}{Simulations}{}% 11
-\BOOKMARK [2][-]{subsection.7.1}{Choosing t}{section.7}% 12
-\BOOKMARK [3][-]{subsubsection.7.1.1}{The case with no noise}{subsection.7.1}% 13
-\BOOKMARK [3][-]{subsubsection.7.1.2}{The case with noise}{subsection.7.1}% 14
-\BOOKMARK [2][-]{subsection.7.2}{Relaxation time}{section.7}% 15
+\BOOKMARK [1][-]{section.7}{The distribution of the bond lengths}{}% 8
+\BOOKMARK [1][-]{section.8}{The dynamics of bond length}{}% 9
+\BOOKMARK [1][-]{section.9}{Eigenvalues of the Rouse Ring}{}% 10
+\BOOKMARK [1][-]{section.10}{Center of mass diffusion of the rouse ring}{}% 11
+\BOOKMARK [1][-]{section.11}{Simulations}{}% 12
+\BOOKMARK [2][-]{subsection.11.1}{Choosing t}{section.11}% 13
+\BOOKMARK [3][-]{subsubsection.11.1.1}{The case with no noise}{subsection.11.1}% 14
+\BOOKMARK [3][-]{subsubsection.11.1.2}{The case with noise}{subsection.11.1}% 15
+\BOOKMARK [2][-]{subsection.11.2}{Relaxation time}{section.11}% 16
