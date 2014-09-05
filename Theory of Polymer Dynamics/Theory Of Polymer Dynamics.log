@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  4 SEP 2014 16:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  5 SEP 2014 11:09
 entering extended mode
 **Theory*Of*Polymer*Dynamics.tex
 
@@ -331,17 +331,13 @@ Overfull \hbox (26.81882pt too wide) detected at line 39
 [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
 
-LaTeX Warning: Reference `eigenvaluesOfTheRouseMatrix' on page 4 undefined on i
-nput line 160.
-
-
-LaTeX Warning: Citation `lin2011polymer' on page 4 undefined on input line 160.
+LaTeX Warning: Reference `eigenvaluesOfTheRouseMatrix' on page 5 undefined on i
+nput line 172.
 
 
-
-Overfull \hbox (45.21445pt too wide) detected at line 168
+Overfull \hbox (45.21445pt too wide) detected at line 180
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OMS/
 cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/c
 msy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m
@@ -352,13 +348,13 @@ n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/
  []
 
 
-Overfull \hbox (83.74496pt too wide) detected at line 190
+Overfull \hbox (83.74496pt too wide) detected at line 202
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/1
 0 = [][]
  []
 
-[4]
-Overfull \hbox (17.65344pt too wide) detected at line 198
+
+Overfull \hbox (17.65344pt too wide) detected at line 210
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\O
 MS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[](\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[] + (
 \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML
@@ -367,37 +363,37 @@ OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 
-Overfull \hbox (8.91283pt too wide) in alignment at lines 200--205
+Overfull \hbox (8.91283pt too wide) in alignment at lines 212--217
  [][][] []
  []
 
 
-Overfull \hbox (27.80553pt too wide) in alignment at lines 212--217
+Overfull \hbox (27.80553pt too wide) in alignment at lines 224--229
  [][][] []
  []
 
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 235.
+(hyperref)                removing `math shift' on input line 251.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 235.
+(hyperref)                removing `\Delta' on input line 251.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 235.
+(hyperref)                removing `math shift' on input line 251.
 
 
-Overfull \hbox (7.8818pt too wide) in paragraph at lines 246--247
+Overfull \hbox (7.8818pt too wide) in paragraph at lines 262--263
 []\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 Q$ \OT1/cmr/m/n/10 is an or-thonor-ma
 l ma-trix with the eigen-vec-tors of $\OML/cmm/m/it/10 R$ \OT1/cmr/m/n/10 in it
 s columns,and
  []
 
-
-Overfull \hbox (3.00285pt too wide) detected at line 273
+[6]
+Overfull \hbox (3.00285pt too wide) detected at line 289
 [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10  []\OT
 1/cmr/m/n/10 )\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\OMS/c
 msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
@@ -406,17 +402,17 @@ msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
 OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 k
  []
 
-[6]
+
 ("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
 f Polymer Dynamics.bbl")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
 
 ("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
 f Polymer Dynamics.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `Theory*Of*Polymer*Dynamics.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: <no file>.
@@ -424,16 +420,16 @@ ged.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 6081 strings out of 493921
- 87504 string characters out of 3144879
- 174768 words of memory out of 3000000
- 9292 multiletter control sequences out of 15000+200000
+ 6087 strings out of 493921
+ 87672 string characters out of 3144879
+ 174995 words of memory out of 3000000
+ 9296 multiletter control sequences out of 15000+200000
  15553 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,9n,31p,417b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,31p,530b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/
@@ -449,9 +445,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Theory Of Polymer Dynamics.pdf" (7 pages, 200723 bytes).
+Output written on "Theory Of Polymer Dynamics.pdf" (7 pages, 208602 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

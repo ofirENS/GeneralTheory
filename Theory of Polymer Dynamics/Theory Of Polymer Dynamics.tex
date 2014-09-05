@@ -60,7 +60,7 @@ Continuing with a series of approximations to the integral above, we get
 \end{equation*}
 
 
-\section{the Gaussian Chain}
+\section{The Gaussian Chain}\label{section_theGaussianChain}
 From \cite{doi1986theory}. We consider a chain whose bond length has a Gaussian distribution 
 \begin{equation*}
 \psi(r)=\left[\frac{3}{2\pi b^2} \right]^{3/2} \exp \left( -\frac{3r^2}{2b^2} \right)
@@ -121,12 +121,27 @@ since each $f_n$ is normally distributed with std $\sqrt{2D}$ and mean 0, the ra
 
 [UNFINISHED]
 
-\section{The distribution of the bond lengths}
+\section{The distribution of the bond lengths}\label{section_distributionOfTheBondLength}
 The bond length behaves like the central $\chi ^2$ with $d$ degrees of freedom, where $d$ is the dimension of the problem. 
-In $3D$, since each $\vec{r}_i=[x_i,y_y,z_i]$ has 3 coordinates, each i.i.d normally distributed with $\left<x_i^2\right>=\left<y_i^2\right>=\left<z_i^2\right>=\frac{b^2}{3}$, the length squared $\|\vec{r}_i\|^2=x_i^2+y_i^2+z_i^2\sim\chi^2(3)$ 
-with mean $\mu=b^2/3+b^2/3+b^2/3=b^2$.
+In $3D$, since each $\vec{r}_i=[x_i,y_i,z_i]$ has 3 coordinates, each i.i.d normally distributed with $\left<x_i^2\right>=\left<y_i^2\right>=\left<z_i^2\right>=\frac{b^2}{3}$, the length squared $\|\vec{r}_i\|^2=x_i^2+y_i^2+z_i^2\sim\chi^2(3)$ 
+with variance $\mu=b^2/3+b^2/3+b^2/3=b^2$ which is the sum of variances.
 
-\section{The dynamic of bond length}
+To calculate the cumulative distribution function (CDF) of the bond length, we use result from the analysis of quadratic forms \cite{mathai1992quadratic} (chapter 3). From the CDF we will obtain the \textit{survival probability}, which its first moment is the \textit{mean first passage time} for the two ends of the polymer. We start with a definition of a quadratic form in random variables. Let $X=(X_1,X_2,...,X_n)'$ denote a random vector with mean $\mu=(\mu_1,\mu_2,...,\mu_n)'$ and covariance matrix $\Sigma$. The quadratic form in the random variables $X$ associated with an $n\times n$ symmetric matrix $A = (a_{ij})$ is defined as 
+\begin{equation*}
+Q(X)=Q(X_1,X_2,...,X_n)=X'AX = \sum_{i=1}^n\sum_{j=1}^n a_{ij}X_iX_j
+\end{equation*}
+$E$ will denote the expected value, $\mu=E(X)$ and $\Sigma = E[(X-\mu)(X-\mu)']=Cov(X)$. 
+
+The density of the quadratic form $Y=X'AX$, $A=A'\geq 0$, $X\sim N_p(\mu,\Sigma)$ is given by 
+\begin{equation*}
+f_p(\lambda;b;y)
+\end{equation*}
+
+
+
+
+
+\section{The dynamics of bond length}\label{section_theDynamicsOfBondLength}
 In simulations we would like to determine $\Delta t$ such that no 'blow-ups' will occur. For this end, we constrain the mean of squared difference between bond length in consecutive steps to lay below some predefined small value. 
 
 The result show that 
@@ -136,7 +151,7 @@ The result show that
 
 [UNFINISHED] 
 
-\section{Eigenvalues of the Rouse Ring}\label{eigenvaluesRouseRing}
+\section{Eigenvalues of the Rouse Ring}\label{section_eigenvaluesRouseRing}
 Connecting bead 1 and $N$ to form a ring, we now search for the eigenvalues of the new \textit{Rouse ring} matrix, $R$, harboring such a connection. For this end, we have to calculate the determinant of the matrix
 \begin{equation*}
 D_N=|R-\lambda I|=\left|
@@ -232,6 +247,7 @@ By summing the rows of the Rouse ring matrix, we see that the differential equat
 \begin{equation*}
 \frac{dcm}{dt} = \frac{1}{N}\sum_{n=1}^N g_n
 \end{equation*}
+we follow calculation by 
 
 
 \section{Simulations}
