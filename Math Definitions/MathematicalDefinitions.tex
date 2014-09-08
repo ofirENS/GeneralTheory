@@ -7,7 +7,41 @@
 \usepackage{float}
 \begin{document}
 \title{Mathematical Definitions}
+\author{Ofir Shukron}
 \maketitle
-\section{$\sigma$-algebra}
+\section{Quadratic Forms}\label{section_quadraticForms}
+From Mathai \cite{mathai1992quadratic}(Chapters 1 and 4). For a $p\times 1$ random vector $X$ with mean value $E(X)=\mu$ and $Cov(X)=E[(X-E(X))(X-E(X))']=\Sigma>0$, we set 
 
+$ Y=\Sigma^{-0.5}X\Rightarrow E(Y)=\Sigma^{-0.5}\mu$ and $Cov(Y)=\Sigma^{-0.5}Cov(X)\Sigma^{-0.5}=I$
+$Z=(Y-\Sigma^{-0.5}\mu)\Rightarrow E(Z)=0$ and $Cov(Z)=I$ 
+We can express the quadratic form $Q(X) =X'AX$ with the centralize variable $Z$ and a symmetric positive definite matrix $A$ as
+\begin{equation}
+Q(X)=X'AX=Y'\Sigma^{0.5}A\Sigma^{0.5}Y = (Z+\Sigma^{-0.5}\mu)'\Sigma^{0.5}A\Sigma^{0.5}(Z+\Sigma^{-0.5}\mu)	
+\end{equation}
+
+As an example, if we set $\mu = 0$, $A=I$, $Cov(X)=\Sigma=\sigma I$ and get 
+$Q(X)=X'X$, $Y = \frac{X}{\sqrt{\sigma}}$, $Z=(\frac{X}{\sqrt{\sigma}}-0)$, then 
+\begin{equation}
+Q(X)=X'X= (\frac{X}{\sqrt{\sigma}})'(\sigma I)(\frac{X}{\sqrt{\sigma}})=XX'	
+\end{equation}
+which is the normal form.
+
+If $P$ is a $p \times p$ orthogonal matrix which diagonalize $\Sigma^{0.5}A\Sigma^{0.5}$, that is 
+
+\begin{equation*}
+P'\Sigma^{0.5}A\Sigma^{0.5}P = diag(\lambda_1,\lambda_2,...,\lambda_p)
+\end{equation*}
+with $P'P=I$, and $\lambda_i$ are the eigenvalues of $\Sigma^{0.5} A \Sigma^{0.5}$.  Then if $U=P'Z$, we have 
+\begin{equation*}
+Z=PU, \qquad E(U)=0 \qquad Cov(U) = I
+\end{equation*}
+Then we can express the quadratic form of $X$ by 
+\begin{equation}
+Q(X) = (U+b)'diag(\lambda_1,\lambda_2,...,\lambda_p)(U+b)
+\end{equation}
+with $b = (P'\Sigma^{-0.5}\mu)'$ 
+
+% The bibliography
+\bibliographystyle{plain}
+\bibliography{MathematicalDefinitionsBibliography} % the bibliography.bib file 
 \end{document}

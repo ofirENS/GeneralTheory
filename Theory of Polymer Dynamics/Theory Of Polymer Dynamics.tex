@@ -126,16 +126,9 @@ The bond length behaves like the central $\chi ^2$ with $d$ degrees of freedom, 
 In $3D$, since each $\vec{r}_i=[x_i,y_i,z_i]$ has 3 coordinates, each i.i.d normally distributed with $\left<x_i^2\right>=\left<y_i^2\right>=\left<z_i^2\right>=\frac{b^2}{3}$, the length squared $\|\vec{r}_i\|^2=x_i^2+y_i^2+z_i^2\sim\chi^2(3)$ 
 with variance $\mu=b^2/3+b^2/3+b^2/3=b^2$ which is the sum of variances.
 
-To calculate the cumulative distribution function (CDF) of the bond length, we use result from the analysis of quadratic forms \cite{mathai1992quadratic} (chapter 3). From the CDF we will obtain the \textit{survival probability}, which its first moment is the \textit{mean first passage time} for the two ends of the polymer. We start with a definition of a quadratic form in random variables. Let $X=(X_1,X_2,...,X_n)'$ denote a random vector with mean $\mu=(\mu_1,\mu_2,...,\mu_n)'$ and covariance matrix $\Sigma$. The quadratic form in the random variables $X$ associated with an $n\times n$ symmetric matrix $A = (a_{ij})$ is defined as 
-\begin{equation*}
-Q(X)=Q(X_1,X_2,...,X_n)=X'AX = \sum_{i=1}^n\sum_{j=1}^n a_{ij}X_iX_j
-\end{equation*}
-$E$ will denote the expected value, $\mu=E(X)$ and $\Sigma = E[(X-\mu)(X-\mu)']=Cov(X)$. 
+To calculate the cumulative distribution function (CDF) of the bond length, we use result from the analysis of quadratic forms \cite{mathai1992quadratic} (chapter 3). From the CDF we will obtain the \textit{survival probability}, which its first moment is the \textit{mean first passage time} for the two ends of the polymer.
 
-The density of the quadratic form $Y=X'AX$, $A=A'\geq 0$, $X\sim N_p(\mu,\Sigma)$ is given by 
-\begin{equation*}
-f_p(\lambda;b;y)
-\end{equation*}
+For the polymer chain, the bond length is a random variable, $b\sim \mathcal{N}(0,\sigma_b)$
 
 
 

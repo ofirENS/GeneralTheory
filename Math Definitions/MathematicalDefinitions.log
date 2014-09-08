@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.2)  19 AUG 2014 00:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  8 SEP 2014 17:21
 entering extended mode
 **MathematicalDefinitions.tex
-("D:\Ofir\ENS\GeneralTheory\Math Definitions\MathematicalDefinitions.tex"
+
+("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
+tions.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +15,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\paper\paper.cls
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\paper\paper.cls"
 Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
 \hours=\count79
 \minutes=\count80
@@ -212,7 +214,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count105
 
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -265,7 +267,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box29
 )
-("D:\Ofir\ENS\GeneralTheory\Math Definitions\MathematicalDefinitions.aux")
+("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
+tions.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
@@ -280,8 +283,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ ("d:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
 \scratchdimen=\dimen118
@@ -309,73 +311,60 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-("D:\Ofir\ENS\GeneralTheory\Math Definitions\MathematicalDefinitions.out")
-("D:\Ofir\ENS\GeneralTheory\Math Definitions\MathematicalDefinitions.out")
+("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
+tions.out")
+("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
+tions.out")
 \@outlinefile=\write3
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
-
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+ ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: No \author given.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
+("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
+tions.bbl" [1
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 11.
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13.
-[1
-
-
-{C:/Users/Ofir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 13.
-
-("D:\Ofir\ENS\GeneralTheory\Math Definitions\MathematicalDefinitions.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 13.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13.
-
-
-Package rerunfilecheck Warning: File `MathematicalDefinitions.out' has changed.
-
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MathematicalDefinitions.out':
-(rerunfilecheck)             Before: 922B3498642CC2639B354AA7A29092D7;49
-(rerunfilecheck)             After:  9CC2878EF3F83C77B9B9D88159A32435;44.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13.
+("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
+tions.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package rerunfilecheck Info: File `MathematicalDefinitions.out' has not changed
+.
+(rerunfilecheck)             Checksum: 39DDB62367360B6205A1FD15DBC5265E;51.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 6064 strings out of 493921
- 87038 string characters out of 3144880
- 164057 words of memory out of 3000000
- 9311 multiletter control sequences out of 15000+200000
- 11494 words of font info for 44 fonts, out of 3000000 for 9000
+ 6090 strings out of 493921
+ 87563 string characters out of 3144879
+ 169136 words of memory out of 3000000
+ 9320 multiletter control sequences out of 15000+200000
+ 13653 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,31p,256b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.0.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on MathematicalDefinitions.pdf (1 page, 27988 bytes).
+ 29i,8n,28p,256b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
+<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi17.pfb><d:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on MathematicalDefinitions.pdf (2 pages, 121936 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
