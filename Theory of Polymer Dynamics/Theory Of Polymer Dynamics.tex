@@ -132,8 +132,6 @@ For the polymer chain, the bond length is a random variable, $b\sim \mathcal{N}(
 
 
 
-
-
 \section{The dynamics of bond length}\label{section_theDynamicsOfBondLength}
 In simulations we would like to determine $\Delta t$ such that no 'blow-ups' will occur. For this end, we constrain the mean of squared difference between bond length in consecutive steps to lay below some predefined small value. 
 
@@ -235,13 +233,22 @@ Therefore, the eigenvalues of the Rouse ring are
 \lambda_p=2(1-cos(\theta_p))= 2(1-cos(2\pi p/N))
 \end{equation*}
 Since $\cos(\frac{2\pi \phi}{N})=\cos(\frac{2\pi(N-\phi)}{N})$, we have eigenvalues multiplicities. In our case, setting $\phi=p$ we have $\cos(\frac{2\pi p}{N})=\cos(\frac{2\pi(N-p)}{N})$ for $p=1,2,3,..,(N-2)$. For the end-values, $p=0$ and $p=N-1$ the eigenvalues are unique. 
-\section{Center of mass diffusion of the rouse ring}
-By summing the rows of the Rouse ring matrix, we see that the differential equation describing the diffusion of the center of mass does not change in relation to the chain's organization. inner loops in the ring do not change the center of mass diffusion. Therefore 
+
+\section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
+First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{section_eigenvaluesRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
+\begin{equation*}
+p(x,t)=\sum_{i=1}^\infty a_iw_{\lambda_i^\epsilon}(x)e^{-\lambda_i^\epsilon tD}e^{-\phi(x)}
+\end{equation*}
+where $w_{\lambda_i^\epsilon}(x)$ and $\lambda_i^\epsilon$ are the eigenvectors and eigenvalues of the forward Fokker Planck operator outside of the domain, and $a_i$ are coefficients. Integrate the probability density according to $x$, over the whole domain, to get a function of time. 
+
+
+\section{Center of mass diffusion of the rouse ring}\label{section_centerOfMassDiffusionOfTheRouseRing}
+By summing the rows of the Rouse ring matrix, we see that the differential equation describing the diffusion of the center of mass does not change in relation to the chain's organization. Inner loops in the ring do not change the center of mass diffusion. Therefore 
 \begin{equation*}
 \frac{dcm}{dt} = \frac{1}{N}\sum_{n=1}^N g_n
 \end{equation*}
 we follow calculation by 
-
+[Unfinished]
 
 \section{Simulations}
 \subsection{Choosing $\Delta t$}

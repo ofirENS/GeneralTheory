@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.2)  30 AUG 2014 12:06
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  5 SEP 2014 11:09
->>>>>>> 28a96ba31a2795c56dc9b842117ce64311b6f485
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  11 SEP 2014 14:45
 entering extended mode
 **Theory*Of*Polymer*Dynamics.tex
 
-("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
-cs.tex"
+("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
+f Polymer Dynamics.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -19,7 +15,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\paper\paper.cls
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\paper\paper.cls"
 Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
 \hours=\count79
 \minutes=\count80
@@ -218,7 +214,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count105
 
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -263,8 +259,8 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
-cs.aux")
+("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
+f Polymer Dynamics.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -280,7 +276,7 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("d:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen118
@@ -308,13 +304,14 @@ LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
 
-("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
-cs.out")
-("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
-cs.out")
+("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
+f Polymer Dynamics.out")
+("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
+f Polymer Dynamics.out")
 \@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for U+msa on input line 10.
- ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 10.
@@ -334,53 +331,48 @@ Overfull \hbox (26.81882pt too wide) detected at line 39
 [1
 
 
-<<<<<<< HEAD
-{C:/Users/Ofir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-[3]
-=======
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
 
-LaTeX Warning: Reference `eigenvaluesOfTheRouseMatrix' on page 5 undefined on i
-nput line 175.
+LaTeX Warning: Reference `eigenvaluesOfTheRouseMatrix' on page 4 undefined on i
+nput line 166.
 
 
-Overfull \hbox (45.21445pt too wide) detected at line 183
+Overfull \hbox (45.21445pt too wide) detected at line 174
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OMS/
-cmsy/m/n/10 
-msy/m/n/10 
-/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10 
-n/10 
+cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/c
+msy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m
+/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/
+n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/
 10 xD[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n
-/10 
+/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 
-Overfull \hbox (83.74496pt too wide) detected at line 205
+Overfull \hbox (83.74496pt too wide) detected at line 196
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/1
 0 = [][]
  []
 
-
-Overfull \hbox (17.65344pt too wide) detected at line 213
-\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 
-MS/cmsy/m/n/10 
-\OMS/cmsy/m/n/10 
-/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 
-OMS/cmsy/m/n/10 
+[4]
+Overfull \hbox (17.65344pt too wide) detected at line 204
+\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\O
+MS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[](\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[] + (
+\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML
+/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[] + (\
+OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 
-Overfull \hbox (8.91283pt too wide) in alignment at lines 215--220
+Overfull \hbox (8.91283pt too wide) in alignment at lines 206--211
  [][][] []
  []
 
 
-Overfull \hbox (27.80553pt too wide) in alignment at lines 227--232
+Overfull \hbox (27.80553pt too wide) in alignment at lines 218--223
  [][][] []
  []
 
 [5]
->>>>>>> 28a96ba31a2795c56dc9b842117ce64311b6f485
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 254.
@@ -402,7 +394,7 @@ s columns,and
 
 [6]
 Overfull \hbox (3.00285pt too wide) detected at line 292
-[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 
+[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10  []\OT
 1/cmr/m/n/10 )\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\OMS/c
 msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
 /10 k  \OT1/cmr/m/n/10 ([]\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10
@@ -410,19 +402,6 @@ msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
 OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 k
  []
 
-<<<<<<< HEAD
-[5]
-("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
-cs.bbl")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
-
-("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
-cs.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
-=======
 
 ("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
 f Polymer Dynamics.bbl" [7])
@@ -434,7 +413,6 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 f Polymer Dynamics.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
->>>>>>> 28a96ba31a2795c56dc9b842117ce64311b6f485
 Package rerunfilecheck Info: File `Theory*Of*Polymer*Dynamics.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: <no file>.
@@ -445,39 +423,32 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 6073 strings out of 493921
- 87262 string characters out of 3144880
- 170716 words of memory out of 3000000
- 9287 multiletter control sequences out of 15000+200000
- 15245 words of font info for 58 fonts, out of 3000000 for 9000
-=======
- 6087 strings out of 493921
- 87672 string characters out of 3144879
- 174995 words of memory out of 3000000
- 9296 multiletter control sequences out of 15000+200000
+ 6092 strings out of 493921
+ 87789 string characters out of 3144879
+ 176126 words of memory out of 3000000
+ 9299 multiletter control sequences out of 15000+200000
  15553 words of font info for 59 fonts, out of 3000000 for 9000
->>>>>>> 28a96ba31a2795c56dc9b842117ce64311b6f485
  841 hyphenation exceptions out of 8191
- 29i,9n,31p,695b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,31p,696b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Theory Of Polymer Dynamics.pdf" (8 pages, 210334 bytes).
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "Theory Of Polymer Dynamics.pdf" (8 pages, 219006 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
