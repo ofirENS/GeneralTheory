@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.2)  19 AUG 2014 00:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  15 SEP 2014 11:46
 entering extended mode
 **Definitions_Biology.tex
-("D:\Ofir\ENS\GeneralTheory\Biological definitions\Definitions_Biology.tex"
+
+("D:\Ofir\Work\ENS\Documents\General Theory\Biological definitions\Definitions_
+Biology.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +15,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\paper\paper.cls
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\paper\paper.cls"
 Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
 \hours=\count79
 \minutes=\count80
@@ -212,7 +214,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count105
 
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -257,7 +259,8 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("D:\Ofir\ENS\GeneralTheory\Biological definitions\Definitions_Biology.aux")
+("D:\Ofir\Work\ENS\Documents\General Theory\Biological definitions\Definitions_
+Biology.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -272,8 +275,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
-
-(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ ("d:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen118
@@ -301,12 +303,13 @@ LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
 
-("D:\Ofir\ENS\GeneralTheory\Biological definitions\Definitions_Biology.out")
-("D:\Ofir\ENS\GeneralTheory\Biological definitions\Definitions_Biology.out")
+("D:\Ofir\Work\ENS\Documents\General Theory\Biological definitions\Definitions_
+Biology.out")
+("D:\Ofir\Work\ENS\Documents\General Theory\Biological definitions\Definitions_
+Biology.out")
 \@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for U+msa on input line 10.
-
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 10.
@@ -320,8 +323,8 @@ LaTeX Warning: No \author given.
 [1
 
 
-{C:/Users/Ofir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<mechanismOfGeneTransciption.jpg, id=48, 963.6pt x 542.025pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<mechanismOfGeneTransciption.jpg, id=52, 963.6pt x 542.025pt>
 File: mechanismOfGeneTransciption.jpg Graphic file (type jpg)
 
 <use mechanismOfGeneTransciption.jpg>
@@ -333,28 +336,30 @@ Overfull \hbox (91.79883pt too wide) in paragraph at lines 44--45
 [][] 
  []
 
-("D:\Ofir\ENS\GeneralTheory\Biological definitions\Definitions_Biology.bbl"
-[2])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
- [3] [4 <D:/Ofir/ENS/GeneralTheory/Biological definitions/mechanismOfGeneTransc
-iption.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
 
-("D:\Ofir\ENS\GeneralTheory\Biological definitions\Definitions_Biology.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
+("D:\Ofir\Work\ENS\Documents\General Theory\Biological definitions\Definitions_
+Biology.bbl" [2])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+ [3] [4 <D:/Ofir/Work/ENS/Documents/General Theory/Biological definitions/mecha
+nismOfGeneTransciption.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+
+("D:\Ofir\Work\ENS\Documents\General Theory\Biological definitions\Definitions_
+Biology.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `Definitions_Biology.out' has not changed.
-(rerunfilecheck)             Checksum: 4BC86767D0363B1DC791A46A69308CFF;290.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
+(rerunfilecheck)             Checksum: 90F1A926E477F6373E3AB103288753D0;333.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 6057 strings out of 493921
- 87014 string characters out of 3144880
- 168222 words of memory out of 3000000
- 9282 multiletter control sequences out of 15000+200000
+ 6060 strings out of 493921
+ 87196 string characters out of 3144879
+ 168252 words of memory out of 3000000
+ 9284 multiletter control sequences out of 15000+200000
  13960 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,8n,28p,704b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,28p,704b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Pr
@@ -362,9 +367,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><d:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Definitions_Biology.pdf (4 pages, 155584 bytes).
+Output written on Definitions_Biology.pdf (4 pages, 156812 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
