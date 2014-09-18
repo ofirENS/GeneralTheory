@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{amitai2012computation}
+Assaf Amitai, Ivan Kupka, and David Holcman.
+\newblock Computation of the mean first-encounter time between the ends of a
+  polymer chain.
+\newblock {\em Physical review letters}, 109(10):108302, 2012.
+
 \bibitem{doi1986theory}
 M.~Doi and S.F. Edwards.
 \newblock {\em The theory of polymer dynamics}.

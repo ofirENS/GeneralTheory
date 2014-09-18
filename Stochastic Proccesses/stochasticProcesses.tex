@@ -249,7 +249,7 @@ An equation of the type
 \frac{dx}{dt}=a(x,t)+b(x,t)\xi(t)
 \end{equation*}
 
-\section{The It\^{o} Equation}
+\section{The It\^{o} Equation}\label{section_theItoEquation}
 Equation of the form 
 \begin{equation*}
  \mathrm{d} X_t = \mu(X_t,t)\, \mathrm{d} t +  \sigma(X_t,t)\, \mathrm{d} B_t
@@ -315,7 +315,7 @@ For the continuous representation we now define $P(y_j,t|x_j,0)$ as the probabil
 \begin{equation*}
 \frac{\partial P(y_j,t|x_j,0)}{\partial t}=\sum_{k=1}^N\nabla_k\cdot(V_kP)+\sum_{k=1}^N\nabla_k^2(D(y_k)P)=\mathcal{L}P(y_j,t|x_j,0)
 \end{equation*}
-were $\nabla_k$ is the gradient with respect to the $k^{th}$ particle, $N$ is the total number of particles.
+were $\nabla_k$ is the gradient with respect to the $k^{th}$ particle, $N$ is the total number of particles, and $\mathcal{L}$ is the Fokker Planck operator.
 The density $P(y_j,t|x_j,0)$ obeys the backward Kolmogorov equation 
 \begin{equation*}
 \partial_tP(y_j,t|x_j,0)=\mathcal{L^\dagger}P(y_j,t|x_j,0)
@@ -331,6 +331,29 @@ with the boundary conditions $S(x_j;t)=0,\forall x_j\in\partial\Omega_\mathcal{A
 \mathcal{L^\dagger}\left<T^n(x_j)\right> = -n\left<T^{n-1}(x_j)\right>
 \end{equation*}
 
+\section{The Fokker-Planck equation}\label{section_theFokkerPlanckEquation}
+For an \^{I}to process given by the stochastic equation, 
+\begin{equation*}
+dX_t=\mu(X_t,t)dt+\sqrt{2D(X_t,t)}dW_t
+\end{equation*}
+with drift $\mu(X_t,t)$ and diffusion $D(X_t,t)$, and a Weiner process $W_t$, the Fokker Planck-equation for the probability density $f(x,t)$ of $X_t$ is 
+\begin{equation*}
+\frac{\partial}{\partial t}f(x,t)=-\frac{\partial}{\partial x}[\mu(x,t)f(x,t)]+\frac{\partial^2}{\partial x^2}[D(x,t)f(x,t)]=\mathcal{L}f(x,t)
+\end{equation*}
+\subsection{Eigenvalues of the Fokker-Planck operator }\label{subsection_eigenvaluesOfTheFokkerPlanckOperator}
+To find the eigenvalues of the Fokker Planck operator, we solve $\mathcal{L}f = \lambda f$.
+rearranging the terms in this equation we arrive at 
+\begin{equation*}
+\frac{\partial^2}{\partial x^2}f(x,t) +p(x,t)\frac{\partial}{\partial x}f(x,t) +q(x,t)f(x,t) = 0
+\end{equation*}
+where 
+\begin{equation*}
+p(x,t) = \frac{2\frac{\partial}{\partial x}D(x,t)-\mu(x,t)}{D(x,t)}
+\end{equation*}
+\begin{equation*}
+q(x,t)=\frac{\frac{\partial^2}{\partial x^2}D(x,t)-\lambda-\frac{\partial}{\partial x}\mu(x,t)}{D(x,t)}
+\end{equation*}
+which is a second order, homogeneous, ordinary differential equation with variable coefficients. 
 
 % The bibliography
 \bibliographystyle{plain}

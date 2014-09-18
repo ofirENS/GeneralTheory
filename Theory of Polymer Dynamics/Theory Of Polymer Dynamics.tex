@@ -11,7 +11,7 @@
 This document summarizes information related to the construction of theoretical models representing polymers. 
 It is mainly drawn from the book by Doi \cite{doi1986theory}. 
  
-\section{The freely jointed chain}
+\section{The freely jointed chain}\label{section_theFreelyJointedChain}
 From \cite{doi1986theory}.We start with a simple model: a chain consisting of $N$ links, each of length $b_0$ and able to point in any direction independently of each other. The conformation of the model is represented by $(N+1)$ position vectors $\{R_n\}=\{R_0,R_1,...,R_{N}\}$, or by the set of bond vectors $\{r_n\}=(r_1,r_2,...,r_N)$, where $r_n=R_{n}-R_{n-1}$. 
 
 Since the bonds are independent, the configuration distribution is defined as 
@@ -28,7 +28,7 @@ we then normalize such that
 \end{equation*}
 
 
-\subsection{The end-to-end vector}
+\subsection{The end-to-end vector}\label{subsection_theEndToEndVector}
 We define the end-to-end vector as $\vec{R}=\vec{R}_N-\vec{R}_0=\sum_{n=1}^N \vec{r}_n$. The quantity $\left<R^2\right>$ characterizes the length of the chain. The standard deviation of the end-to-end vector
 \begin{equation*}
 \bar{R}=\left<R^2\right>^{0.5}=\left<(R_N-R_0)^2\right>^{0.5}=\sqrt{N}b_0
@@ -40,7 +40,7 @@ since
 
 therefore, $\left<R^2\right>^{0.5}=\sqrt{N}b_0$. Here we used  $\left<r_nr_m\right>=\left<r_n\right>\left<r_m\right>=0$. Note that this is just the sum of variances of the bond vectors (each of which has variance of $b_0$)
 
-\section{distribution of the end-to-end vector}
+\section{Distribution of the end-to-end vector}\label{section_distributionOfTheEndToEndVector}
 We denote $\Phi(R,N)$ as the probability distribution function that the end-to-end vector of a chain of N beads is $R$.
 \begin{equation*}
 \Phi(R,N) =\int\int\int...\int\delta(R-\sum_{n=1}^Nr_n)\Psi(\{r_n\}))dr_1dr_2...dr_N
@@ -79,7 +79,7 @@ and for any $m$ and $n$
 <(R_n-R_m)^2> = |n-m|b^2
 \end{equation*}
 
-\section{The center of mass}
+\section{The center of mass}\label{section_theCenterOfMass}
 
 The center of mass is defined as the mean bead position over time 
 
@@ -93,9 +93,7 @@ therefore, the differential equation for the center of mass is
 \frac{dcm}{dt}=\frac{1}{N+1}\sum_{i=0}^N{\frac{dR_i}{dt}}= \frac{1}{N+1}\sum_{i=0}^Nf_n(t)
 \end{equation*}
 
-
-
-\section{Centralizing the chain}
+\section{Centralizing the chain}\label{section_centralizingTheChain}
 
 The differential equation describing the dynamics $R_n$ in $3D$ is
 
@@ -131,7 +129,6 @@ To calculate the cumulative distribution function (CDF) of the bond length, we u
 For the polymer chain, the bond length is a random variable, $b\sim \mathcal{N}(0,\sigma_b)$
 
 
-
 \section{The dynamics of bond length}\label{section_theDynamicsOfBondLength}
 In simulations we would like to determine $\Delta t$ such that no 'blow-ups' will occur. For this end, we constrain the mean of squared difference between bond length in consecutive steps to lay below some predefined small value. 
 
@@ -141,8 +138,17 @@ The result show that
 \end{equation*}
 
 [UNFINISHED] 
+\section{The Rouse Chain}\label{section_theRouseChain}
+From \cite{doi1986theory} Chap. 4. The Rouse model was suggested as the basis for polymer dynamics in dilute solution. Let $\{R\}=\{R_1,R_2,...,R_N\}$ be the coordinates of the beads of the chain. The motion of the beads is described using the Smoluchowski equation
+\begin{equation*}
+\frac{\partial \Psi}{\partial t }=\sum_n \frac{\partial}{\partial R_n}H_{nm}\left[k_BT\frac{\partial \Psi}{\partial R_m}+\frac{\partial U}{\partial R_m}\Psi\}\right]
+\end{equation*}
 
-\section{Eigenvalues of the Rouse Ring}\label{section_eigenvaluesRouseRing}
+
+\section{Mean First End To end Encounter Time Of the Rouse Chain}\label{sectioni_meanEndToEndEncounterTimeOfTheRouseChain}
+From \cite{amitai2012computation}. 
+
+\section{Eigenvalues of the Rouse Ring}\label{section_eigenvaluesOfTheRouseRing}
 Connecting bead 1 and $N$ to form a ring, we now search for the eigenvalues of the new \textit{Rouse ring} matrix, $R$, harboring such a connection. For this end, we have to calculate the determinant of the matrix
 \begin{equation*}
 D_N=|R-\lambda I|=\left|
@@ -163,7 +169,7 @@ with $x=2-\lambda$. We can apply to the matrix of size $(N-1)\times (N-1)$ the s
 \begin{equation*}
 D_1 = x; D_2 = x^2-1
 \end{equation*}
-According to the solution in section \ref{eigenvaluesOfTheRouseMatrix} and in \cite{lin2011polymer}, we have 
+According to the solution in section \ref{section_eigenvaluesOfTheRouseMatrix} and in \cite{lin2011polymer}, we have 
 \begin{equation*}
 D_{N-1}= \frac{\sin(N\theta)}{\sin(\theta)}
 \end{equation*}
@@ -235,12 +241,12 @@ Therefore, the eigenvalues of the Rouse ring are
 Since $\cos(\frac{2\pi \phi}{N})=\cos(\frac{2\pi(N-\phi)}{N})$, we have eigenvalues multiplicities. In our case, setting $\phi=p$ we have $\cos(\frac{2\pi p}{N})=\cos(\frac{2\pi(N-p)}{N})$ for $p=1,2,3,..,(N-2)$. For the end-values, $p=0$ and $p=N-1$ the eigenvalues are unique. 
 
 \section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
-First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{section_eigenvaluesRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
+
+First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{section_eigenvaluesOfTheRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
 \begin{equation*}
 p(x,t)=\sum_{i=1}^\infty a_iw_{\lambda_i^\epsilon}(x)e^{-\lambda_i^\epsilon tD}e^{-\phi(x)}
 \end{equation*}
-where $w_{\lambda_i^\epsilon}(x)$ and $\lambda_i^\epsilon$ are the eigenvectors and eigenvalues of the forward Fokker Planck operator outside of the domain, and $a_i$ are coefficients. Integrate the probability density according to $x$, over the whole domain, to get a function of time. 
-
+where $w_{\lambda_i^\epsilon}(x)$ and $\lambda_i^\epsilon$ are the eigenvectors and eigenvalues of the forward Fokker Planck operator outside of the domain, and $a_i$ are coefficients. Integrate the probability density according to $x$, over the domain without the absorbing boundary (the encounter sphere), to get a function of time. An integration of the resulting function from time $t=0$ to $\infty$ is the first moment of the survival function, which is the mean first encounter time (i.e the first time the polymer's ends are at the absorbing sphere). 
 
 \section{Center of mass diffusion of the rouse ring}\label{section_centerOfMassDiffusionOfTheRouseRing}
 By summing the rows of the Rouse ring matrix, we see that the differential equation describing the diffusion of the center of mass does not change in relation to the chain's organization. Inner loops in the ring do not change the center of mass diffusion. Therefore 
@@ -261,7 +267,6 @@ if we represent the Rouse matrix in its diagonal form
 \begin{equation*}
 R=Q^{-1}\Lambda Q
 \end{equation*}
-
 where $Q$ is an orthonormal matrix with the eigenvectors of $R$ in its columns,and $\Lambda$ is a diagonal matrix with the Rouse eigenvalues in the diagonal, we get 
 \begin{equation*}
 \frac{dP}{dt} = -\frac{3D}{b^2}Q^{-1}\Lambda Q+\sqrt{2D}f
