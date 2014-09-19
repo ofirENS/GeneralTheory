@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  18 SEP 2014 20:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  19 SEP 2014 20:05
 entering extended mode
 **Theory*Of*Polymer*Dynamics.tex
 
@@ -385,7 +385,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 260.
 
-
+[7]
 Overfull \hbox (3.00285pt too wide) detected at line 297
 [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10  []\OT
 1/cmr/m/n/10 )\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\OMS/c
@@ -395,7 +395,7 @@ msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
 OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 k
  []
 
-[7]
+
 ("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
 f Polymer Dynamics.bbl")
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
@@ -422,7 +422,7 @@ Here is how much of TeX's memory you used:
  9309 multiletter control sequences out of 15000+200000
  15553 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,9n,31p,706b,341s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,31p,760b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/
@@ -439,9 +439,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/Program Files (x86)/MiKTeX
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Theory Of Polymer Dynamics.pdf" (8 pages, 224760 bytes).
+Output written on "Theory Of Polymer Dynamics.pdf" (8 pages, 224964 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
+ 204 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
