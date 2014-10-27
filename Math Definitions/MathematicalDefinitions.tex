@@ -9,6 +9,13 @@
 \title{Mathematical Definitions}
 \author{Ofir Shukron}
 \maketitle
+\section{P-values}
+Given a rejection region $\Gamma$ in the form of $[c,\infty)]$, for the null hypothesis $H_0$,  the p-value of an observed statistics $T=t$ is defined as 
+\begin{equation*}
+p-value(t)=min_{\{\Gamma;t\in \Gamma\} } \{Pr(T\in\Gamma | H_0\quad true)\}
+\end{equation*}
+See definition in \cite{storey2002direct}.
+
 \section{Quadratic Forms}\label{section_quadraticForms}
 From Mathai \cite{mathai1992quadratic}(Chapters 1 and 4). For a $p\times 1$ random vector $X$ with mean value $E(X)=\mu$ and $Cov(X)=E[(X-E(X))(X-E(X))']=\Sigma>0$, we set 
 

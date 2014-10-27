@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  8 SEP 2014 17:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  27 OCT 2014 17:03
 entering extended mode
 **MathematicalDefinitions.tex
 
@@ -324,33 +324,33 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
-tions.bbl" [1
-
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+tions.bbl")
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
 
 ("D:\Ofir\Work\ENS\Documents\General Theory\Math Definitions\MathematicalDefini
 tions.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `MathematicalDefinitions.out' has not changed
 .
-(rerunfilecheck)             Checksum: 39DDB62367360B6205A1FD15DBC5265E;51.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+(rerunfilecheck)             Checksum: 29BA2C2A6F145900EDCD43C0449739EA;95.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 6090 strings out of 493921
- 87563 string characters out of 3144879
- 169136 words of memory out of 3000000
- 9320 multiletter control sequences out of 15000+200000
+ 6094 strings out of 493921
+ 87622 string characters out of 3144879
+ 168174 words of memory out of 3000000
+ 9322 multiletter control sequences out of 15000+200000
  13653 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,8n,28p,256b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,28p,256b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Pr
@@ -362,9 +362,9 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi17.pfb><d:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on MathematicalDefinitions.pdf (2 pages, 121936 bytes).
+Output written on MathematicalDefinitions.pdf (2 pages, 132057 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
