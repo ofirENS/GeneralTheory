@@ -240,6 +240,26 @@ Therefore, the eigenvalues of the Rouse ring are
 \end{equation*}
 Since $\cos(\frac{2\pi \phi}{N})=\cos(\frac{2\pi(N-\phi)}{N})$, we have eigenvalues multiplicities. In our case, setting $\phi=p$ we have $\cos(\frac{2\pi p}{N})=\cos(\frac{2\pi(N-p)}{N})$ for $p=1,2,3,..,(N-2)$. For the end-values, $p=0$ and $p=N-1$ the eigenvalues are unique. 
 
+\section{The Pair Correlation function}\label{thePairCorrelationFunction}
+According to \cite{doi1996introduction}. To investigate the spatial distribution of segments in the Rouse polymer we introduce the segment pair correlation function, $g(r)$, defined as follows. If we focus on the $n^{th}$ segment, we define $g_n(r)$ to be the average segment density at position $r$ from segment $n$. If we write $R_n(n=1,2,3,..,N)$ for the position vectors of the segments , then we can express $g_n(r)$ as 
+\begin{equation*}
+g_n(r)=\sum_{m=1}^N \left<\delta(r-(R_m-R_n)) \right>
+\end{equation*} 
+
+the average is a spatial average, so in 3D we have to divide by the volume $r+\delta r$ to get the concentration. The time correlation function, $g(r)$  is then defined as the average of the segment pair correlation function, $g_n(r)$. 
+\begin{equation*}
+g(r) = \frac{1}{N}\sum_{n=1}^{N}g_n(r)
+\end{equation*}
+In addition, we define $g(q)$, the Fourier transform of $g(r)$
+\begin{equation*}
+g(q) = \int e^{iqr}g(r)dr = \frac{1}{N}\sum\limits_{n=1}^{N}\sum\limits_{m=1}^{N}\left<exp([iq(R_m-R_n]) \right>
+\end{equation*}
+The pair correlation function is thus also called the radial distribution function. In the simplest terms it is a measure of probability of finding a particle at a distance $r$ away from a given reference particle. 
+
+
+\section{Radius of Gyration}\label{radiusOfGyration}
+From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
+
 \section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
 Following the method in \cite{amitai2012computation}. First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{section_eigenvaluesOfTheRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
 \begin{equation*}

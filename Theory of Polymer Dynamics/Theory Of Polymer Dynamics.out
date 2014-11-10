@@ -10,10 +10,12 @@
 \BOOKMARK [1][-]{section.9}{The Rouse Chain}{}% 10
 \BOOKMARK [1][-]{section.10}{Mean First End To end Encounter Time Of the Rouse Chain}{}% 11
 \BOOKMARK [1][-]{section.11}{Eigenvalues of the Rouse Ring}{}% 12
-\BOOKMARK [1][-]{section.12}{Encounter probability in the Rouse ring}{}% 13
-\BOOKMARK [1][-]{section.13}{Center of mass diffusion of the rouse ring}{}% 14
-\BOOKMARK [1][-]{section.14}{Simulations}{}% 15
-\BOOKMARK [2][-]{subsection.14.1}{Choosing t}{section.14}% 16
-\BOOKMARK [3][-]{subsubsection.14.1.1}{The case with no noise}{subsection.14.1}% 17
-\BOOKMARK [3][-]{subsubsection.14.1.2}{The case with noise}{subsection.14.1}% 18
-\BOOKMARK [2][-]{subsection.14.2}{Relaxation time}{section.14}% 19
+\BOOKMARK [1][-]{section.12}{The Pair Correlation function}{}% 13
+\BOOKMARK [1][-]{section.13}{Radius of Gyration}{}% 14
+\BOOKMARK [1][-]{section.14}{Encounter probability in the Rouse ring}{}% 15
+\BOOKMARK [1][-]{section.15}{Center of mass diffusion of the rouse ring}{}% 16
+\BOOKMARK [1][-]{section.16}{Simulations}{}% 17
+\BOOKMARK [2][-]{subsection.16.1}{Choosing t}{section.16}% 18
+\BOOKMARK [3][-]{subsubsection.16.1.1}{The case with no noise}{subsection.16.1}% 19
+\BOOKMARK [3][-]{subsubsection.16.1.2}{The case with noise}{subsection.16.1}% 20
+\BOOKMARK [2][-]{subsection.16.2}{Relaxation time}{section.16}% 21
