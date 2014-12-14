@@ -4,18 +4,19 @@
 \BOOKMARK [1][-]{section.3}{Distribution of the end-to-end vector}{}% 4
 \BOOKMARK [1][-]{section.4}{The Gaussian Chain}{}% 5
 \BOOKMARK [1][-]{section.5}{The center of mass}{}% 6
-\BOOKMARK [1][-]{section.6}{Centralizing the chain}{}% 7
-\BOOKMARK [1][-]{section.7}{The distribution of the bond lengths}{}% 8
-\BOOKMARK [1][-]{section.8}{The dynamics of bond length}{}% 9
-\BOOKMARK [1][-]{section.9}{The Rouse Chain}{}% 10
-\BOOKMARK [1][-]{section.10}{Mean First End To end Encounter Time Of the Rouse Chain}{}% 11
-\BOOKMARK [1][-]{section.11}{Eigenvalues of the Rouse Ring}{}% 12
-\BOOKMARK [1][-]{section.12}{The Pair Correlation function}{}% 13
-\BOOKMARK [1][-]{section.13}{Radius of Gyration}{}% 14
-\BOOKMARK [1][-]{section.14}{Encounter probability in the Rouse ring}{}% 15
-\BOOKMARK [1][-]{section.15}{Center of mass diffusion of the rouse ring}{}% 16
-\BOOKMARK [1][-]{section.16}{Simulations}{}% 17
-\BOOKMARK [2][-]{subsection.16.1}{Choosing t}{section.16}% 18
-\BOOKMARK [3][-]{subsubsection.16.1.1}{The case with no noise}{subsection.16.1}% 19
-\BOOKMARK [3][-]{subsubsection.16.1.2}{The case with noise}{subsection.16.1}% 20
-\BOOKMARK [2][-]{subsection.16.2}{Relaxation time}{section.16}% 21
+\BOOKMARK [1][-]{section.6}{The source of the Hookian behavior}{}% 7
+\BOOKMARK [1][-]{section.7}{Centralizing the chain}{}% 8
+\BOOKMARK [1][-]{section.8}{The distribution of the bond lengths}{}% 9
+\BOOKMARK [1][-]{section.9}{The dynamics of bond length}{}% 10
+\BOOKMARK [1][-]{section.10}{The Rouse Chain}{}% 11
+\BOOKMARK [1][-]{section.11}{Mean First End To end Encounter Time Of the Rouse Chain}{}% 12
+\BOOKMARK [1][-]{section.12}{Eigenvalues of the Rouse Ring}{}% 13
+\BOOKMARK [1][-]{section.13}{The Pair Correlation function}{}% 14
+\BOOKMARK [1][-]{section.14}{Radius of Gyration}{}% 15
+\BOOKMARK [1][-]{section.15}{Encounter probability in the Rouse ring}{}% 16
+\BOOKMARK [1][-]{section.16}{Center of mass diffusion of the rouse ring}{}% 17
+\BOOKMARK [1][-]{section.17}{Simulations}{}% 18
+\BOOKMARK [2][-]{subsection.17.1}{Choosing t}{section.17}% 19
+\BOOKMARK [3][-]{subsubsection.17.1.1}{The case with no noise}{subsection.17.1}% 20
+\BOOKMARK [3][-]{subsubsection.17.1.2}{The case with noise}{subsection.17.1}% 21
+\BOOKMARK [2][-]{subsection.17.2}{Relaxation time}{section.17}% 22
