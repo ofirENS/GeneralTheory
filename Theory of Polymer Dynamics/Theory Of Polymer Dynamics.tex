@@ -26,7 +26,27 @@ we then normalize such that
 \begin{equation*}
 \int \psi(\vec{r})d\vec{r} =1
 \end{equation*}
-
+If the bond vectors are presented using spherical coordinates with angles $\theta$ and $\phi$, then the configuration distribution of the chain is given by 
+\begin{equation*}
+\psi(\theta^{N},\phi^{N})=\left(\frac{1}{4\pi}\right)^{N} \prod_{i=1}^{N}\sin(\theta_i)
+\end{equation*}
+This is due to the fact that the surface element of the sphere is given by the determinant of the Jacobi matrix, $J$, of spherical transformation for each $R_i=(x,y,z)$, namely
+\begin{eqnarray*}
+x &=& b_0\sin(\theta)\cos(\phi)\\
+y &=& b_0\sin(\theta)\sin(\phi)\\
+z &=& b_0\cos(\theta) 
+\end{eqnarray*} 
+which is $|J|=b_0^2\sin(\theta)$, to get the probability that a bond vector is in the range $d\theta d\phi$, we divide $|J|$ by the surface area of the sphere which is $4\pi b_0^2$ to get $\sin(\theta)/4\pi$ for each bond vector. Since the bond vectors are independent, we get the multiplicative expression for $\psi$.
+ 
+Any average quantity $B(\theta,\phi)$ that depends on the configuration of the chain in equilibrium will be written as  
+\begin{equation*}
+\left< B\right>=\int\int B \psi d\theta^{N}d\phi^{N}
+\end{equation*}
+The above property of expected value of a quantity $g(x)$ given that we know only the distribution function $f(x)$ is the called the Law of the unconscious statistician.
+\begin{equation*}
+E[g(x)]=\int_{-\infty}^{\infty}g(x)f(x)dx = \int_{-\infty}^{\infty}g(x)dF(x)dx
+\end{equation*} 
+were $F(x)$ is the cdf (if known).
 
 \subsection{The end-to-end vector}\label{subsection_theEndToEndVector}
 We define the end-to-end vector as $\vec{R}=\vec{R}_N-\vec{R}_0=\sum_{n=1}^N \vec{r}_n$. The quantity $\left<R^2\right>$ characterizes the length of the chain. The standard deviation of the end-to-end vector
@@ -100,6 +120,37 @@ therefore, the differential equation for the center of mass is
 \begin{equation*}
 \frac{dcm}{dt}=\frac{1}{N+1}\sum_{i=0}^N{\frac{dR_i}{dt}}= \frac{1}{N+1}\sum_{i=0}^Nf_n(t)
 \end{equation*}
+
+\section{The source of the Hookian behavior}
+From \cite{bird1987dynamics}. Let us look at the probability density function of the end-to-end vector being length $r$ at equilibrium
+\begin{equation*}
+P_{eq}(r)= \left(\frac{3}{2\pi (N-1)b^2}\right)\exp(-3r^2/2(N-1)b^2)
+\end{equation*}
+
+ The Helmholtz free energy $A=U-TS$, with $U$ the internal energy and $S$ the entropy, of the system in equilibrium at temperature $T$ is given by 
+\begin{equation*}
+A=-KT\ln(Z)
+\end{equation*}
+with $Z$ the partition function, which is defined as 
+\begin{equation*}
+Z=c\int e^{(\mathbb{K+\phi})/(KT)}
+\end{equation*}
+with $c$ some constant,$\mathbb{K}$ is the kinetic energy of the system, $\mathbb{\phi}$ is the potential energy of the system, over the phase space of the system. 
+
+When the length of the chain is changed by a small amount, the change in the Helmholtz free energy is 
+\begin{equation*}
+dA=-KTd\ln{P_{eq}}=\frac{3KT}{(N-1)b^2}(r\cdot dr)
+\end{equation*}
+
+We also know that the change in the Helmholtz free energy is related to the tension $F^c$ of the chain by 
+\begin{equation*}
+dA=(F^c\cdot dr)
+\end{equation*}
+equating these two quantities we get 
+\begin{equation*}
+F^c(r) = -\frac{3KT}{(N-1)b^2}r	 \qquad N-large
+\end{equation*}
+therefore, we see that the tension behaves as a Hookian spring. If we set $N=2$ we get the spring constant between any two beads.
 
 \section{Centralizing the chain}\label{section_centralizingTheChain}
 
