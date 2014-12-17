@@ -13,10 +13,12 @@
 \BOOKMARK [1][-]{section.12}{Eigenvalues of the Rouse Ring}{}% 13
 \BOOKMARK [1][-]{section.13}{The Pair Correlation function}{}% 14
 \BOOKMARK [1][-]{section.14}{Radius of Gyration}{}% 15
-\BOOKMARK [1][-]{section.15}{Encounter probability in the Rouse ring}{}% 16
-\BOOKMARK [1][-]{section.16}{Center of mass diffusion of the rouse ring}{}% 17
-\BOOKMARK [1][-]{section.17}{Simulations}{}% 18
-\BOOKMARK [2][-]{subsection.17.1}{Choosing t}{section.17}% 19
-\BOOKMARK [3][-]{subsubsection.17.1.1}{The case with no noise}{subsection.17.1}% 20
-\BOOKMARK [3][-]{subsubsection.17.1.2}{The case with noise}{subsection.17.1}% 21
-\BOOKMARK [2][-]{subsection.17.2}{Relaxation time}{section.17}% 22
+\BOOKMARK [1][-]{section.15}{The Rouse ring}{}% 16
+\BOOKMARK [1][-]{section.16}{Encounter probability in the Rouse ring}{}% 17
+\BOOKMARK [1][-]{section.17}{Center of mass diffusion of the rouse ring}{}% 18
+\BOOKMARK [1][-]{section.18}{Generalized Rouse Chain}{}% 19
+\BOOKMARK [1][-]{section.19}{Simulations}{}% 20
+\BOOKMARK [2][-]{subsection.19.1}{Choosing t}{section.19}% 21
+\BOOKMARK [3][-]{subsubsection.19.1.1}{The case with no noise}{subsection.19.1}% 22
+\BOOKMARK [3][-]{subsubsection.19.1.2}{The case with noise}{subsection.19.1}% 23
+\BOOKMARK [2][-]{subsection.19.2}{Relaxation time}{section.19}% 24

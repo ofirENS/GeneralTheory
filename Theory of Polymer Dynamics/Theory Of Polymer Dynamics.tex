@@ -42,7 +42,7 @@ Any average quantity $B(\theta,\phi)$ that depends on the configuration of the c
 \begin{equation*}
 \left< B\right>=\int\int B \psi d\theta^{N}d\phi^{N}
 \end{equation*}
-The above property of expected value of a quantity $g(x)$ given that we know only the distribution function $f(x)$ is the called the Law of the unconscious statistician.
+The above property of expected value of a quantity $g(x)$ given that we know only the distribution function $f(x)$ is the called the \textbf{Law of the unconscious statistician}.
 \begin{equation*}
 E[g(x)]=\int_{-\infty}^{\infty}g(x)f(x)dx = \int_{-\infty}^{\infty}g(x)dF(x)dx
 \end{equation*} 
@@ -135,7 +135,7 @@ with $Z$ the partition function, which is defined as
 \begin{equation*}
 Z=c\int e^{(\mathbb{K+\phi})/(KT)}
 \end{equation*}
-with $c$ some constant,$\mathbb{K}$ is the kinetic energy of the system, $\mathbb{\phi}$ is the potential energy of the system, over the phase space of the system. 
+with $c$ some constant,$\mathbb{K}$ is the kinetic energy of the system, $\mathbb{\phi}$ is the potential energy, over the phase space of the system. 
 
 When the length of the chain is changed by a small amount, the change in the Helmholtz free energy is 
 \begin{equation*}
@@ -323,6 +323,42 @@ The pair correlation function is thus also called the radial distribution functi
 \section{Radius of Gyration}\label{radiusOfGyration}
 From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
 
+\section{The Rouse ring}\label{section_theRouseRing}
+Construction of the Rouse ring is done by setting the first bead at random position $x_0$, adding a phantom bead $N+1$ and setting its position to $x_0$. Then, we connect bead 1 and the phantom bead by a random walk,$ w(t)$, of $N$ steps using the Brownian bridge. 
+
+The \textbf{Brownian bridge} which starts at $x$ at time 0 and ends in point $y$ at time $t_0$ is given by the general form 
+\begin{equation*}
+x(t)= \sqrt{2D}w(t)-(t/t_0)[\sqrt{2D}w(t_0)-y+x]+x \qquad 0<t\leq t_0
+\end{equation*} 
+For the Rouse ring we set $x=y$ and calculate the probability function 
+\begin{equation*}
+Pr(x(t)<X)=Pr(w(t)<(X-x)/\sqrt{2D}+(t/t_0)w(t_0))
+\end{equation*}
+so, the probability is given by the probability that the random walk,$w(t)$, is lower than the line $(X-x)/\sqrt{2D}+(t/t_0)w(t_0)$. This can be calculated using the cylindrical sets $C(t,[a,b])$, which has a Weiner measure 
+\begin{equation*}
+Pr(C(t,[a,b]))=\frac{1}{\sqrt{2\pi t}}\int_{a}^{b}e^{-x^2/2t}dx
+\end{equation*}
+setting $a=0, b=(X-x)/\sqrt{2D}+(t/t_0)w(t_0)=\alpha+\beta t$, results in 
+\begin{equation*}
+F=Pr(C(t,[0,\alpha+\beta t]))=\frac{1}{\sqrt{2\pi t}}\int_{0}^{\alpha+\beta t}e^{-x^2/2t}dx
+\end{equation*}
+The probability distribution is then 
+\begin{equation*}
+\frac{\partial F}{\partial x}=f=\frac{1}{\sqrt{2\pi t}}[e^{-(\alpha +\beta t)^2/2t}]
+\end{equation*}
+in three-dimensional space we have
+\begin{equation*}
+f(t)=\left(\frac{1}{\sqrt{2\pi t}}\right)^3[e^{-3(\alpha +\beta t)^2/2t}]
+\end{equation*}
+
+Now that we have the probability density in equilibrium of the Brownian bridge we can calculate average quantities related to the positions of the beads. 
+
+The mean square distance between bead 1 and $1<j\leq N$ is given by the relation 
+\begin{equation*}
+\left<r\right>^2 = \int r^2f(r)dx
+\end{equation*}
+[UNFINISHED]
+
 \section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
 Following the method in \cite{amitai2012computation}. First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{section_eigenvaluesOfTheRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
 \begin{equation*}
@@ -338,6 +374,13 @@ By summing the rows of the Rouse ring matrix, we see that the differential equat
 \end{equation*}
 we follow calculation by 
 [Unfinished]
+
+\section{Generalized Rouse Chain}\label{section_generalizedRouseChain}
+Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. the configuration distribution of the chain is given by 
+\begin{equation*}
+\psi = \prod_{i=1}^{N-1}\prod_{j=1}^{N_i}\left(\frac{k_{ij}}{2\pi KT}\right)^{1.5}\exp\left(-\frac{k_{ij}r^2}{2KT}\right)
+\end{equation*}
+with $N_i$ the number of connections of bead $i$, with multiplication over unique pairs. 
 
 \section{Simulations}
 \subsection{Choosing $\Delta t$}
