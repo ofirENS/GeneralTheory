@@ -409,20 +409,15 @@ therefore, the determinant is
 |C_\Delta| = \prod_{j=0}^{N-1}\lambda_j
 \end{equation*}
 
-In our case $c_0=\sigma^2_\Delta$, $c_{N-1}=...=c_1=k(N)$, therefore 
+In our case $c_0=\sigma^2_\Delta=1+k(N)$, and  $c_{N-1}=...=c_1=k(N)$, therefore 
 \begin{eqnarray*}
-\lambda_j & = & \sigma^2_\Delta+k(n)\sum_{n=1}^{N-1}\omega_j^n
-           =  \sigma^2_{\Delta} +k(n)\sum_{n=1}^{N-1}\exp(\frac{2\pi nij}{N})\\
-          & = & \sigma^2_{\Delta} +k(n)\sum_{n=1}^{N-1}\exp(\frac{2\pi nij}{N})\\
-          & = & \sigma^2_{\Delta} +k(n)\frac{\exp(\frac{2\pi ij}{N-1})-\exp(\frac{2\pi Nij}{N-1})}{1-\exp(\frac{2\pi ij}{N-1})}\\
-          & = & k(N)\frac{1-\exp(\frac{2\pi Nij}{N-1})}{1-\exp(\frac{2\pi ij}{N-1})}+1
+\lambda_j & = & \sigma^2_\Delta + k(n)\sum_{n=1}^{N-1}\omega_j^n
+            =  1+k(N)\left( 1+\sum_{n=1}^{N-1}\exp(\frac{2\pi nij}{N}\right)\\ 
+          & = & 1+k(N)\sum_{n=0}^{N-1}\exp(\frac{2\pi nij}{N})\\ 
+          & = & 1+k(N)\left( \frac{1-\exp(2\pi i j)}{1-\exp(2\pi i j/N)}  \right)\\          
 \end{eqnarray*}
 
-We give now the list of eigenvalues 
-\begin{eqnarray*}
-\lambda_0 & = & \sigma^2_\Delta-(1/N^2)(2N-1)(N-1)\\
-\lambda_1 & = & \sigma^2_\Delta-(1/N^2)(2N-1)
-\end{eqnarray*}
+
 \section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
 [UNFINISHED]
 
