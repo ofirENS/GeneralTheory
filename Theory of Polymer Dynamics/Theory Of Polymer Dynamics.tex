@@ -321,45 +321,111 @@ The pair correlation function is thus also called the radial distribution functi
 
 
 \section{Radius of Gyration}\label{radiusOfGyration}
+[UNFINISHED]
+
 From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
 
 \section{The Rouse ring}\label{section_theRouseRing}
-Construction of the Rouse ring is done by setting the first bead at random position $x_0$, adding a phantom bead $N+1$ and setting its position to $x_0$. Then, we connect bead 1 and the phantom bead by a random walk,$ w(t)$, of $N$ steps using the Brownian bridge. 
-
-The \textbf{Brownian bridge} which starts at $x$ at time 0 and ends in point $y$ at time $t_0$ is given by the general form 
+Construction of the Rouse ring is done by setting the first and last beads at position $x_0=0$. This forms a discrete \textbf{Brownian bridge}, which is defined using the random walk, $w(t)$, of $N$ steps (between $N+1$ beads). 
 \begin{equation*}
-x(t)= \sqrt{2D}w(t)-(t/t_0)[\sqrt{2D}w(t_0)-y+x]+x \qquad 0<t\leq t_0
+B(t)= w(t)-\frac{t}{N}w(N) \qquad t=1,..,N
 \end{equation*} 
-For the Rouse ring we set $x=y$ and calculate the probability function 
+
+In the context of polymer dynamics we will refer to the bridge as a \textit{Rouse ring}. The expectation $E[B(t)]$ can be shown to be 0 due to the properties of the Brownian paths
 \begin{equation*}
-Pr(x(t)<X)=Pr(w(t)<(X-x)/\sqrt{2D}+(t/t_0)w(t_0))
-\end{equation*}
-so, the probability is given by the probability that the random walk,$w(t)$, is lower than the line $(X-x)/\sqrt{2D}+(t/t_0)w(t_0)$. This can be calculated using the cylindrical sets $C(t,[a,b])$, which has a Weiner measure 
-\begin{equation*}
-Pr(C(t,[a,b]))=\frac{1}{\sqrt{2\pi t}}\int_{a}^{b}e^{-x^2/2t}dx
-\end{equation*}
-setting $a=0, b=(X-x)/\sqrt{2D}+(t/t_0)w(t_0)=\alpha+\beta t$, results in 
-\begin{equation*}
-F=Pr(C(t,[0,\alpha+\beta t]))=\frac{1}{\sqrt{2\pi t}}\int_{0}^{\alpha+\beta t}e^{-x^2/2t}dx
-\end{equation*}
-The probability distribution is then 
-\begin{equation*}
-\frac{\partial F}{\partial x}=f=\frac{1}{\sqrt{2\pi t}}[e^{-(\alpha +\beta t)^2/2t}]
-\end{equation*}
-in three-dimensional space we have
-\begin{equation*}
-f(t)=\left(\frac{1}{\sqrt{2\pi t}}\right)^3[e^{-3(\alpha +\beta t)^2/2t}]
+E[B(t)]=E[w(t)-\frac{t}{N}w(N)]=E[w(t)] -(t/N)E[w(N)]=0
 \end{equation*}
 
-Now that we have the probability density in equilibrium of the Brownian bridge we can calculate average quantities related to the positions of the beads. 
+The covariance, $C$, of $B(t)$ is 
+\begin{eqnarray*}
+C_{B}  & = & E((B(t)-E[B(t)])(B(s)-E[B(s)])\\
+   & = & E[B(t)B(s)]=E[(w(t)-(t/N)w(N))(w(s)-(s/N)w(N))]\\
+   & = & E[w(s)w(t)-w(N)(sw(t)+tw(s))/N +(st/N^2)w(N)^2 ]\\
+   & = & min(s,t)-(s/N)min(N,t)-(t/N)min(N,s)+st/N^2\\
+   & = & min(s,t)-2st/N+st/N^2=min(s,t)-(st/N^2)(2N-1)
+\end{eqnarray*}
 
-The mean square distance between bead 1 and $1<j\leq N$ is given by the relation 
+We therefore see that the position of the Rouse ring are dependent. The variance is given by setting $s=t$ to be $\sigma^2_{B_t}=t-(t/N)^2(2N-1)$.
+
+The Rouse ring is a Gaussian process with a joint pdf given by  
 \begin{equation*}
-\left<r\right>^2 = \int r^2f(r)dx
+f_B(x)=\frac{1}{\sqrt{((2\pi)^N|C|)}}\exp(-0.5x^TC^{-1}x)
 \end{equation*}
 [UNFINISHED]
 
+
+The increments of the Rouse ring are
+\begin{equation*}
+\Delta B_t= B(t+1)-B(t)=w(t+1)-w(t)-(1/N)w(N)
+\end{equation*}
+which is a Gaussian process as the subtraction of two Gaussian processes, with the following properties
+\begin{equation*}
+E[\Delta B_t]=E[w(t+1)-w(t)-(1/N)w(T)]=0
+\end{equation*}
+and covariance
+ \begin{eqnarray*}
+ C_{\Delta} & = & E[\Delta B_t \Delta B_s]\\
+  & = & min(s+1,t+1)-min(t+1,s)-min(t,s+1)\\
+  &+ & min(s,t)-(1/N^2)(2N-1)
+ \end{eqnarray*}
+Setting $s=t $ we get the variance 
+\begin{equation*}
+\sigma^2_{\Delta}=1-(1/N^2)(2N-1)
+\end{equation*}
+
+The joint pdf of the increments
+\begin{equation*}
+f_\Delta(x) = \left(\frac{1}{\sqrt{((2\pi)^N |C_\Delta)|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
+\end{equation*}
+
+To find the pdf we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\Delta$ is 
+\begin{equation*}
+C_\Delta = \left[
+\begin{matrix}
+\sigma^2_{\Delta} & k(N)                & k(N)                 & ... & k(N) \\
+k(N)                  &\sigma^2_{\Delta}& k(N)                 & ... & k(N) \\
+k(N)                  & k(N)                &\sigma^2_{\Delta} & ... & k(N) \\
+.                     &    .                &                  &     &      \\
+.                     &                     &  .               &     &      \\
+.                     &                     & k(N)             &\sigma^2_{\Delta} & k(N)  \\
+k(N)                  & ...                 &...               & k(N)&\sigma^2_{\Delta}
+\end{matrix}
+\right]
+\end{equation*}
+with $k(N)=-(1/N^2)(2N-1) $. The inverse of $C_\Delta$ will be computed using the eigenvalues and eigenvectors of a circulant matrix. 
+
+The normalized eigenvectors of a circulant matrix are given by 
+\begin{equation*}
+v_j = \frac{1}{\sqrt{N}}(1,\omega_j,\omega^2_j,...,\omega^{N-1}_j) \quad , j=0,1,..,N-1
+\end{equation*}
+with $\omega_j = \exp(\frac{2\pi ij}{N})\quad j=0,..,N-1$,  $i=\sqrt{-1}$. The corresponding eigenvalues are
+\begin{equation*}
+\lambda_j = c_0+c_{N-1}\omega_j+c_{N-2}\omega^2_j+...+c_1\omega^{N-1}_j \quad j=0,..,N-1
+\end{equation*}
+
+with $c_0, c_{N-1}, c_{N-2},...,c_1$, the first row of $C_\Delta$
+therefore, the determinant is 
+\begin{equation*}
+|C_\Delta| = \prod_{j=0}^{N-1}\lambda_j
+\end{equation*}
+
+In our case $c_0=\sigma^2_\Delta$, $c_{N-1}=...=c_1=k(N)$, therefore 
+\begin{eqnarray*}
+\lambda_j & = & \sigma^2_\Delta+k(n)\sum_{n=1}^{N-1}\omega_j^n
+           =  \sigma^2_{\Delta} +k(n)\sum_{n=1}^{N-1}\exp(\frac{2\pi nij}{N})\\
+          & = & \sigma^2_{\Delta} +k(n)\sum_{n=1}^{N-1}\exp(\frac{2\pi nij}{N})\\
+          & = & \sigma^2_{\Delta} +k(n)\frac{\exp(\frac{2\pi ij}{N-1})-\exp(\frac{2\pi Nij}{N-1})}{1-\exp(\frac{2\pi ij}{N-1})}\\
+          & = & k(N)\frac{1-\exp(\frac{2\pi Nij}{N-1})}{1-\exp(\frac{2\pi ij}{N-1})}+1
+\end{eqnarray*}
+
+We give now the list of eigenvalues 
+\begin{eqnarray*}
+\lambda_0 & = & \sigma^2_\Delta-(1/N^2)(2N-1)(N-1)\\
+\lambda_1 & = & \sigma^2_\Delta-(1/N^2)(2N-1)
+\end{eqnarray*}
 \section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
+[UNFINISHED]
+
 Following the method in \cite{amitai2012computation}. First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{section_eigenvaluesOfTheRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
 \begin{equation*}
 p(x,t)=\sum_{i=1}^\infty a_iw_{\lambda_i^\epsilon}(x)e^{-\lambda_i^\epsilon tD}e^{-\phi(x)}
