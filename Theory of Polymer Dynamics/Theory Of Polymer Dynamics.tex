@@ -211,6 +211,145 @@ From \cite{doi1986theory} Chap. 4. The Rouse model was suggested as the basis fo
 \section{Mean First End To end Encounter Time Of the Rouse Chain}\label{sectioni_meanEndToEndEncounterTimeOfTheRouseChain}
 From \cite{amitai2012computation}. 
 
+\section{The Pair Correlation function}\label{thePairCorrelationFunction}
+According to \cite{doi1996introduction}. To investigate the spatial distribution of segments in the Rouse polymer we introduce the segment pair correlation function, $g(r)$, defined as follows. If we focus on the $n^{th}$ segment, we define $g_n(r)$ to be the average segment density at position $r$ from segment $n$. If we write $R_n(n=1,2,3,..,N)$ for the position vectors of the segments , then we can express $g_n(r)$ as 
+\begin{equation*}
+g_n(r)=\sum_{m=1}^N \left<\delta(r-(R_m-R_n)) \right>
+\end{equation*} 
+
+the average is a spatial average, so in 3D we have to divide by the volume $r+\delta r$ to get the concentration. The time correlation function, $g(r)$  is then defined as the average of the segment pair correlation function, $g_n(r)$. 
+\begin{equation*}
+g(r) = \frac{1}{N}\sum_{n=1}^{N}g_n(r)
+\end{equation*}
+In addition, we define $g(q)$, the Fourier transform of $g(r)$
+\begin{equation*}
+g(q) = \int e^{iqr}g(r)dr = \frac{1}{N}\sum\limits_{n=1}^{N}\sum\limits_{m=1}^{N}\left<exp([iq(R_m-R_n]) \right>
+\end{equation*}
+The pair correlation function is thus also called the radial distribution function. In the simplest terms it is a measure of probability of finding a particle at a distance $r$ away from a given reference particle. 
+
+
+\section{Radius of Gyration}\label{radiusOfGyration}
+[UNFINISHED]
+
+From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
+
+\section{The Rouse ring}\label{section_theRouseRing}
+Construction of the Rouse ring is done by setting the first and last beads at position $x_0=0$. This forms a discrete \textbf{Brownian bridge}, which is defined using the random walk, $w(t)$, of $N$ steps (between $N+1$ beads). 
+\begin{equation*}
+B(t)= w(t)-\frac{t}{N}w(N) \qquad t=1,..,N
+\end{equation*} 
+
+In the context of polymer dynamics we will refer to the bridge as a \textit{Rouse ring}. The expectation $E[B(t)]$ can be shown to be 0 due to the properties of the Brownian paths
+\begin{equation*}
+E[B(t)]=E[w(t)-\frac{t}{N}w(N)]=E[w(t)] -(t/N)E[w(N)]=0
+\end{equation*}
+
+The covariance, $C$, of $B(t)$ is 
+\begin{eqnarray*}
+C_{B}  & = & E((B(t)-E[B(t)])(B(s)-E[B(s)])\\
+   & = & E[B(t)B(s)]=E[(w(t)-(t/N)w(N))(w(s)-(s/N)w(N))]\\
+   & = & E[w(s)w(t)-w(N)(sw(t)+tw(s))/N +(st/N^2)w(N)^2 ]\\
+   & = & min(s,t)-(s/N)min(N,t)-(t/N)min(N,s)+st/N^2\\
+   & = & min(s,t)-2st/N+st/N^2=min(s,t)-(st/N^2)(2N-1)
+\end{eqnarray*}
+
+We therefore see that the position of the Rouse ring are dependent. The variance is given by setting $s=t$ to be $\sigma^2_{B_t}=t-(t/N)^2(2N-1)$.
+
+\subsection{Configuration distribution of the Rouse ring}\label{subsection_configurationDistributionRouseRing}
+
+The Rouse ring is a Gaussian process with a joint probability density function  given by  
+\begin{equation*}
+f_B(x)=\frac{1}{\sqrt{((2\pi)^N|C_B|)}}\exp(-0.5x^TC_B^{-1}x)
+\end{equation*}
+[UNFINISHED]
+
+The increments of the Rouse ring are
+\begin{equation*}
+\Delta B_t= B(t+1)-B(t)=w(t+1)-w(t)-(1/N)w(N)
+\end{equation*}
+which is a Gaussian process as the subtraction of two Gaussian processes, with the following properties
+\begin{equation*}
+E[\Delta B_t]=E[w(t+1)-w(t)-(1/N)w(T)]=0
+\end{equation*}
+and covariance
+ \begin{eqnarray*}
+ C_{\Delta} & = & E[\Delta B_t \Delta B_s]\\
+  & = & min(s+1,t+1)-min(t+1,s)-min(t,s+1)\\
+  &+ & min(s,t)-(1/N^2)(2N-1)
+ \end{eqnarray*}
+Setting $s=t $ we get the variance 
+\begin{equation*}
+\sigma^2_{\Delta}=1-(1/N^2)(2N-1)
+\end{equation*}
+
+The joint pdf of the increments
+\begin{equation*}
+f_\Delta(x) = \left(\frac{1}{\sqrt{((2\pi)^N |C_\Delta)|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
+\end{equation*}
+
+To find the pdf we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\Delta$ is 
+\begin{equation*}
+C_\Delta = \left[
+\begin{matrix}
+\sigma^2_{\Delta}     & \sigma^2_{\Delta}+1 & \sigma^2_{\Delta}+1 & ...                 & \sigma^2_{\Delta}+1 \\
+\sigma^2_{\Delta}-1   &\sigma^2_{\Delta}    & \sigma^2_{\Delta}+1 & ...                 & \sigma^2_{\Delta}+1 \\
+\sigma^2_{\Delta}-1   & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}   & ...                 & \sigma^2_{\Delta}+1 \\
+.                     &    .                &                     &                     &      \\
+.                     &                     &  .                  &                     &      \\
+.                     &                     & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}   & \sigma^2_{\Delta}+1  \\
+\sigma^2_{\Delta}-1   & ...                 &...                  & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}
+\end{matrix}
+\right]
+\end{equation*}
+in short
+\begin{equation*}
+C_\Delta(s,t)=
+\begin{cases}
+\sigma^2_\Delta & s=t\\
+\sigma^2_\Delta+1 & s>t\\
+\sigma^2_\Delta-1 & s<t
+\end{cases}
+\end{equation*}
+It can be shown, by a series of elementary operations on $C_\Delta$ that the diagonalized form of $C_\Delta$ is 
+\begin{equation*}
+C_\Delta(s,t) =
+\begin{cases}
+-1 & s = t, s=t-1, s\geq 2\\
+1  & s=t=1
+\end{cases}
+\end{equation*}
+for $N$ odd, and 
+\begin{equation*}
+C_\Delta(s,t)=
+\begin{cases}
+\sigma_\Delta^2 & s=t=1\\
+-1              & s=t,s=t-1,s\geq 2
+\end{cases}
+\end{equation*}
+for $N$ even. 
+The eigenvalues $\lambda_j=-1\quad j=1..N$ for $N$ odd, and $\lambda_1=\sigma_\Delta^2, \lambda_j=-1 \quad j=2,..N$ for $N$ even. 
+Therefore 
+\begin{equation*}
+|C_\Delta| =\begin{cases}
+1 & $N$\quad odd\\
+\sigma_\Delta^2 & $N$ \quad even
+\end{cases}
+\end{equation*}
+
+The inverse of $C_\Delta$ can be computed to be 
+\begin{equation*}
+C^{-1}_\Delta=
+\begin{cases}
+(-1)^{s+t-1} & s\leq t\\
+0 & s>t
+\end{cases}
+\end{equation*} 
+
+Therefore, the configuration distribution (the joint pdf) of the Rouse ring is given by 
+\begin{equation*}
+f_\Delta(\vec{x})=\frac{1}{\sqrt{(2\pi)^N}}\exp(-0.5x^T C_\Delta^{-1}x)
+\end{equation*}
+
 \section{Eigenvalues of the Rouse Ring}\label{section_eigenvaluesOfTheRouseRing}
 Connecting bead 1 and $N$ to form a ring, we now search for the eigenvalues of the new \textit{Rouse ring} matrix, $R$, harboring such a connection. For this end, we have to calculate the determinant of the matrix
 \begin{equation*}
@@ -302,121 +441,6 @@ Therefore, the eigenvalues of the Rouse ring are
 \lambda_p=2(1-cos(\theta_p))= 2(1-cos(2\pi p/N))
 \end{equation*}
 Since $\cos(\frac{2\pi \phi}{N})=\cos(\frac{2\pi(N-\phi)}{N})$, we have eigenvalues multiplicities. In our case, setting $\phi=p$ we have $\cos(\frac{2\pi p}{N})=\cos(\frac{2\pi(N-p)}{N})$ for $p=1,2,3,..,(N-2)$. For the end-values, $p=0$ and $p=N-1$ the eigenvalues are unique. 
-
-\section{The Pair Correlation function}\label{thePairCorrelationFunction}
-According to \cite{doi1996introduction}. To investigate the spatial distribution of segments in the Rouse polymer we introduce the segment pair correlation function, $g(r)$, defined as follows. If we focus on the $n^{th}$ segment, we define $g_n(r)$ to be the average segment density at position $r$ from segment $n$. If we write $R_n(n=1,2,3,..,N)$ for the position vectors of the segments , then we can express $g_n(r)$ as 
-\begin{equation*}
-g_n(r)=\sum_{m=1}^N \left<\delta(r-(R_m-R_n)) \right>
-\end{equation*} 
-
-the average is a spatial average, so in 3D we have to divide by the volume $r+\delta r$ to get the concentration. The time correlation function, $g(r)$  is then defined as the average of the segment pair correlation function, $g_n(r)$. 
-\begin{equation*}
-g(r) = \frac{1}{N}\sum_{n=1}^{N}g_n(r)
-\end{equation*}
-In addition, we define $g(q)$, the Fourier transform of $g(r)$
-\begin{equation*}
-g(q) = \int e^{iqr}g(r)dr = \frac{1}{N}\sum\limits_{n=1}^{N}\sum\limits_{m=1}^{N}\left<exp([iq(R_m-R_n]) \right>
-\end{equation*}
-The pair correlation function is thus also called the radial distribution function. In the simplest terms it is a measure of probability of finding a particle at a distance $r$ away from a given reference particle. 
-
-
-\section{Radius of Gyration}\label{radiusOfGyration}
-[UNFINISHED]
-
-From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
-
-\section{The Rouse ring}\label{section_theRouseRing}
-Construction of the Rouse ring is done by setting the first and last beads at position $x_0=0$. This forms a discrete \textbf{Brownian bridge}, which is defined using the random walk, $w(t)$, of $N$ steps (between $N+1$ beads). 
-\begin{equation*}
-B(t)= w(t)-\frac{t}{N}w(N) \qquad t=1,..,N
-\end{equation*} 
-
-In the context of polymer dynamics we will refer to the bridge as a \textit{Rouse ring}. The expectation $E[B(t)]$ can be shown to be 0 due to the properties of the Brownian paths
-\begin{equation*}
-E[B(t)]=E[w(t)-\frac{t}{N}w(N)]=E[w(t)] -(t/N)E[w(N)]=0
-\end{equation*}
-
-The covariance, $C$, of $B(t)$ is 
-\begin{eqnarray*}
-C_{B}  & = & E((B(t)-E[B(t)])(B(s)-E[B(s)])\\
-   & = & E[B(t)B(s)]=E[(w(t)-(t/N)w(N))(w(s)-(s/N)w(N))]\\
-   & = & E[w(s)w(t)-w(N)(sw(t)+tw(s))/N +(st/N^2)w(N)^2 ]\\
-   & = & min(s,t)-(s/N)min(N,t)-(t/N)min(N,s)+st/N^2\\
-   & = & min(s,t)-2st/N+st/N^2=min(s,t)-(st/N^2)(2N-1)
-\end{eqnarray*}
-
-We therefore see that the position of the Rouse ring are dependent. The variance is given by setting $s=t$ to be $\sigma^2_{B_t}=t-(t/N)^2(2N-1)$.
-
-The Rouse ring is a Gaussian process with a joint pdf given by  
-\begin{equation*}
-f_B(x)=\frac{1}{\sqrt{((2\pi)^N|C|)}}\exp(-0.5x^TC^{-1}x)
-\end{equation*}
-[UNFINISHED]
-
-
-The increments of the Rouse ring are
-\begin{equation*}
-\Delta B_t= B(t+1)-B(t)=w(t+1)-w(t)-(1/N)w(N)
-\end{equation*}
-which is a Gaussian process as the subtraction of two Gaussian processes, with the following properties
-\begin{equation*}
-E[\Delta B_t]=E[w(t+1)-w(t)-(1/N)w(T)]=0
-\end{equation*}
-and covariance
- \begin{eqnarray*}
- C_{\Delta} & = & E[\Delta B_t \Delta B_s]\\
-  & = & min(s+1,t+1)-min(t+1,s)-min(t,s+1)\\
-  &+ & min(s,t)-(1/N^2)(2N-1)
- \end{eqnarray*}
-Setting $s=t $ we get the variance 
-\begin{equation*}
-\sigma^2_{\Delta}=1-(1/N^2)(2N-1)
-\end{equation*}
-
-The joint pdf of the increments
-\begin{equation*}
-f_\Delta(x) = \left(\frac{1}{\sqrt{((2\pi)^N |C_\Delta)|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
-\end{equation*}
-
-To find the pdf we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\Delta$ is 
-\begin{equation*}
-C_\Delta = \left[
-\begin{matrix}
-\sigma^2_{\Delta} & k(N)                & k(N)                 & ... & k(N) \\
-k(N)                  &\sigma^2_{\Delta}& k(N)                 & ... & k(N) \\
-k(N)                  & k(N)                &\sigma^2_{\Delta} & ... & k(N) \\
-.                     &    .                &                  &     &      \\
-.                     &                     &  .               &     &      \\
-.                     &                     & k(N)             &\sigma^2_{\Delta} & k(N)  \\
-k(N)                  & ...                 &...               & k(N)&\sigma^2_{\Delta}
-\end{matrix}
-\right]
-\end{equation*}
-with $k(N)=-(1/N^2)(2N-1) $. The inverse of $C_\Delta$ will be computed using the eigenvalues and eigenvectors of a circulant matrix. 
-
-The normalized eigenvectors of a circulant matrix are given by 
-\begin{equation*}
-v_j = \frac{1}{\sqrt{N}}(1,\omega_j,\omega^2_j,...,\omega^{N-1}_j) \quad , j=0,1,..,N-1
-\end{equation*}
-with $\omega_j = \exp(\frac{2\pi ij}{N})\quad j=0,..,N-1$,  $i=\sqrt{-1}$. The corresponding eigenvalues are
-\begin{equation*}
-\lambda_j = c_0+c_{N-1}\omega_j+c_{N-2}\omega^2_j+...+c_1\omega^{N-1}_j \quad j=0,..,N-1
-\end{equation*}
-
-with $c_0, c_{N-1}, c_{N-2},...,c_1$, the first row of $C_\Delta$
-therefore, the determinant is 
-\begin{equation*}
-|C_\Delta| = \prod_{j=0}^{N-1}\lambda_j
-\end{equation*}
-
-In our case $c_0=\sigma^2_\Delta=1+k(N)$, and  $c_{N-1}=...=c_1=k(N)$, therefore 
-\begin{eqnarray*}
-\lambda_j & = & \sigma^2_\Delta + k(n)\sum_{n=1}^{N-1}\omega_j^n
-            =  1+k(N)\left( 1+\sum_{n=1}^{N-1}\exp(\frac{2\pi nij}{N}\right)\\ 
-          & = & 1+k(N)\sum_{n=0}^{N-1}\exp(\frac{2\pi nij}{N})\\ 
-          & = & 1+k(N)\left( \frac{1-\exp(2\pi i j)}{1-\exp(2\pi i j/N)}  \right)\\          
-\end{eqnarray*}
-
 
 \section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
 [UNFINISHED]
