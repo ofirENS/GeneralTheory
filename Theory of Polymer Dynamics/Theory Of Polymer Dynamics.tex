@@ -9,7 +9,7 @@
 \maketitle
 \section{Introduction}
 This document summarizes information related to the construction of theoretical models representing polymers. 
-It is mainly drawn from the book by Doi \cite{doi1986theory}. 
+It is mainly drawn from the books by Doi \cite{doi1986theory}\cite{doi1996introduction}, and Bird \cite{bird1987dynamics}. 
  
 \section{The freely jointed chain}\label{section_theFreelyJointedChain}
 From \cite{doi1986theory}.We start with a simple model: a chain consisting of $N$ links, each of length $b_0$ and able to point in any direction independently of each other. The conformation of the model is represented by $(N+1)$ position vectors $\{R_n\}=\{R_0,R_1,...,R_{N}\}$, or by the set of bond vectors $\{r_n\}=(r_1,r_2,...,r_N)$, where $r_n=R_{n}-R_{n-1}$. 
@@ -60,7 +60,7 @@ since
 
 therefore, $\left<R^2\right>^{0.5}=\sqrt{N}b_0$. Here we used  $\left<r_nr_m\right>=\left<r_n\right>\left<r_m\right>=0$. Note that this is just the sum of variances of the bond vectors (each of which has variance of $b_0$)
 
-\section{Distribution of the end-to-end vector}\label{section_distributionOfTheEndToEndVector}
+\subsection{Distribution of the end-to-end vector}\label{subsection_distributionOfTheEndToEndVector}
 We denote $\Phi(R,N)$ as the probability distribution function that the end-to-end vector of a chain of N beads is $R$.
 \begin{equation*}
 \Phi(R,N) =\int\int\int...\int\delta(R-\sum_{n=1}^Nr_n)\Psi(\{r_n\}))dr_1dr_2...dr_N
@@ -107,21 +107,17 @@ We can thus immediately see that when setting $R_n=R_m$ we get
 \end{equation*}
 which is the steady state probability of encounter, which drops with the distance
 
-\section{The center of mass}\label{section_theCenterOfMass}
 
-The center of mass is defined as the mean bead position over time 
 
+
+
+\section{The Rouse Chain}\label{section_theRouseChain}
+From \cite{doi1986theory} Chap. 4. The Rouse model was suggested as the basis for polymer dynamics in dilute solution. Let $\{R\}=\{R_1,R_2,...,R_N\}$ be the coordinates of the beads of the chain. The motion of the beads is described using the Smoluchowski equation
 \begin{equation*}
-cm(t) = \frac{1}{N+1}\sum_{i=0}^N{R_n(t)}
+\frac{\partial \Psi}{\partial t }=\sum_n \frac{\partial}{\partial R_n}H_{nm}\left[k_BT\frac{\partial \Psi}{\partial R_m}+\frac{\partial U}{\partial R_m}\Psi\}\right]
 \end{equation*}
 
-therefore, the differential equation for the center of mass is 
-
-\begin{equation*}
-\frac{dcm}{dt}=\frac{1}{N+1}\sum_{i=0}^N{\frac{dR_i}{dt}}= \frac{1}{N+1}\sum_{i=0}^Nf_n(t)
-\end{equation*}
-
-\section{The source of the Hookian behavior}
+\subsection{The source of the Hookian behavior}\label{subsection_sourceOfTheHookianBehavior}
 From \cite{bird1987dynamics}. Let us look at the probability density function of the end-to-end vector being length $r$ at equilibrium
 \begin{equation*}
 P_{eq}(r)= \left(\frac{3}{2\pi (N-1)b^2}\right)\exp(-3r^2/2(N-1)b^2)
@@ -156,7 +152,34 @@ We can therefore write the probability density function for the end to end vecto
 \begin{equation*}
 P(r)= \left(\frac{k}{2\pi KT}\right)^{1.5}\exp\left(-\frac{k r^2}{2KT}\right)
 \end{equation*}
-\section{Centralizing the chain}\label{section_centralizingTheChain}
+
+\subsection{The center of mass}\label{subsection_theCenterOfMass}
+
+The center of mass is defined as the mean bead position over time 
+
+\begin{equation*}
+cm(t) = \frac{1}{N+1}\sum_{i=0}^N{R_n(t)}
+\end{equation*}
+
+therefore, the differential equation for the center of mass is 
+
+\begin{equation*}
+\frac{dcm}{dt}=\frac{1}{N+1}\sum_{i=0}^N{\frac{dR_i}{dt}}= \frac{1}{N+1}\sum_{i=0}^Nf_n(t)
+\end{equation*}
+
+\subsection{The distribution of the bond lengths}\label{subsection_distributionOfTheBondLength}
+[UNFINISHED] 
+
+The bond length behaves like the central $\chi ^2$ with $d$ degrees of freedom, where $d$ is the dimension of the problem. 
+In $3D$, since each $\vec{r}_i=[x_i,y_i,z_i]$ has 3 coordinates, each i.i.d normally distributed with $\left<x_i^2\right>=\left<y_i^2\right>=\left<z_i^2\right>=\frac{b^2}{3}$, the length squared $\|\vec{r}_i\|^2=x_i^2+y_i^2+z_i^2\sim\chi^2(3)$ 
+with variance $\mu=b^2/3+b^2/3+b^2/3=b^2$ which is the sum of variances.
+
+To calculate the cumulative distribution function (CDF) of the bond length, we use result from the analysis of quadratic forms \cite{mathai1992quadratic} (chapter 3). From the CDF we will obtain the \textit{survival probability}, which its first moment is the \textit{mean first passage time} for the two ends of the polymer.
+
+For the polymer chain, the bond length is a random variable, $b\sim \mathcal{N}(0,\sigma_b)$
+
+\subsection{Centralizing the chain}\label{subsection_centralizingTheChain}
+[UNFINISHED]
 
 The differential equation describing the dynamics $R_n$ in $3D$ is
 
@@ -180,44 +203,17 @@ Subtracting the center of mass from the position of each bead should not affect 
 
 since each $f_n$ is normally distributed with std $\sqrt{2D}$ and mean 0, the random variable $\frac{1}{N}\sum_{i\neq n}^Nf_n(t)$ 
 
-[UNFINISHED]
 
-\section{The distribution of the bond lengths}\label{section_distributionOfTheBondLength}
-The bond length behaves like the central $\chi ^2$ with $d$ degrees of freedom, where $d$ is the dimension of the problem. 
-In $3D$, since each $\vec{r}_i=[x_i,y_i,z_i]$ has 3 coordinates, each i.i.d normally distributed with $\left<x_i^2\right>=\left<y_i^2\right>=\left<z_i^2\right>=\frac{b^2}{3}$, the length squared $\|\vec{r}_i\|^2=x_i^2+y_i^2+z_i^2\sim\chi^2(3)$ 
-with variance $\mu=b^2/3+b^2/3+b^2/3=b^2$ which is the sum of variances.
+\subsection{Mean First End To end Encounter Time Of the Rouse Chain}\label{subsection_meanEndToEndEncounterTimeOfTheRouseChain}
+From \cite{amitai2012computation}. [UNFINISHED]
 
-To calculate the cumulative distribution function (CDF) of the bond length, we use result from the analysis of quadratic forms \cite{mathai1992quadratic} (chapter 3). From the CDF we will obtain the \textit{survival probability}, which its first moment is the \textit{mean first passage time} for the two ends of the polymer.
-
-For the polymer chain, the bond length is a random variable, $b\sim \mathcal{N}(0,\sigma_b)$
-
-
-\section{The dynamics of bond length}\label{section_theDynamicsOfBondLength}
-In simulations we would like to determine $\Delta t$ such that no 'blow-ups' will occur. For this end, we constrain the mean of squared difference between bond length in consecutive steps to lay below some predefined small value. 
-
-The result show that 
-\begin{equation*}
-\gamma=\ll\|r_n(t+\Delta t)-r_n(t) \|^2\gg = \left(\frac{3D\Delta t}{b} \right)^2+6D\Delta t
-\end{equation*}
-
-[UNFINISHED] 
-\section{The Rouse Chain}\label{section_theRouseChain}
-From \cite{doi1986theory} Chap. 4. The Rouse model was suggested as the basis for polymer dynamics in dilute solution. Let $\{R\}=\{R_1,R_2,...,R_N\}$ be the coordinates of the beads of the chain. The motion of the beads is described using the Smoluchowski equation
-\begin{equation*}
-\frac{\partial \Psi}{\partial t }=\sum_n \frac{\partial}{\partial R_n}H_{nm}\left[k_BT\frac{\partial \Psi}{\partial R_m}+\frac{\partial U}{\partial R_m}\Psi\}\right]
-\end{equation*}
-
-
-\section{Mean First End To end Encounter Time Of the Rouse Chain}\label{sectioni_meanEndToEndEncounterTimeOfTheRouseChain}
-From \cite{amitai2012computation}. 
-
-\section{The Pair Correlation function}\label{thePairCorrelationFunction}
+\subsection{The Pair Correlation function}\label{subsection_thePairCorrelationFunction}
 According to \cite{doi1996introduction}. To investigate the spatial distribution of segments in the Rouse polymer we introduce the segment pair correlation function, $g(r)$, defined as follows. If we focus on the $n^{th}$ segment, we define $g_n(r)$ to be the average segment density at position $r$ from segment $n$. If we write $R_n(n=1,2,3,..,N)$ for the position vectors of the segments , then we can express $g_n(r)$ as 
 \begin{equation*}
 g_n(r)=\sum_{m=1}^N \left<\delta(r-(R_m-R_n)) \right>
 \end{equation*} 
 
-the average is a spatial average, so in 3D we have to divide by the volume $r+\delta r$ to get the concentration. The time correlation function, $g(r)$  is then defined as the average of the segment pair correlation function, $g_n(r)$. 
+The average is a spatial average, so in 3D we have to divide by the volume $r+\delta r$ to get the concentration. The time correlation function, $g(r)$, is then defined as the average of the segment pair correlation function, $g_n(r)$. 
 \begin{equation*}
 g(r) = \frac{1}{N}\sum_{n=1}^{N}g_n(r)
 \end{equation*}
@@ -228,7 +224,7 @@ g(q) = \int e^{iqr}g(r)dr = \frac{1}{N}\sum\limits_{n=1}^{N}\sum\limits_{m=1}^{N
 The pair correlation function is thus also called the radial distribution function. In the simplest terms it is a measure of probability of finding a particle at a distance $r$ away from a given reference particle. 
 
 
-\section{Radius of Gyration}\label{radiusOfGyration}
+\subsection{Radius of Gyration}\label{subsection_radiusOfGyration}
 [UNFINISHED]
 
 From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
@@ -291,12 +287,12 @@ To find the pdf we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\D
 \begin{equation*}
 C_\Delta = \left[
 \begin{matrix}
-\sigma^2_{\Delta}     & \sigma^2_{\Delta}+1 & \sigma^2_{\Delta}+1 & ...                 & \sigma^2_{\Delta}+1 \\
-\sigma^2_{\Delta}-1   &\sigma^2_{\Delta}    & \sigma^2_{\Delta}+1 & ...                 & \sigma^2_{\Delta}+1 \\
-\sigma^2_{\Delta}-1   & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}   & ...                 & \sigma^2_{\Delta}+1 \\
+\sigma^2_{\Delta}     & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}-1 & ...                 & \sigma^2_{\Delta}-1 \\
+\sigma^2_{\Delta}-1   &\sigma^2_{\Delta}    & \sigma^2_{\Delta}-1 & ...                 & \sigma^2_{\Delta}-1 \\
+\sigma^2_{\Delta}-1   & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}   & ...                 & \sigma^2_{\Delta}-1 \\
 .                     &    .                &                     &                     &      \\
 .                     &                     &  .                  &                     &      \\
-.                     &                     & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}   & \sigma^2_{\Delta}+1  \\
+.                     &                     & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}   & \sigma^2_{\Delta}-1  \\
 \sigma^2_{\Delta}-1   & ...                 &...                  & \sigma^2_{\Delta}-1 & \sigma^2_{\Delta}
 \end{matrix}
 \right]
@@ -306,19 +302,73 @@ in short
 C_\Delta(s,t)=
 \begin{cases}
 \sigma^2_\Delta & s=t\\
-\sigma^2_\Delta+1 & s>t\\
-\sigma^2_\Delta-1 & s<t
+\sigma^2_\Delta-1 & s\neq t\\
 \end{cases}
 \end{equation*}
+The resulting $C_\Delta$ is a circulant matrix with normalized eigenvectors
+\begin{equation*}
+\omega_j = (1/\sqrt{N})(1,\omega_j,\omega_j^2,...,\omega_j^{N-1})
+\end{equation*}
+with $\omega_j = \exp(\frac{2\pi ij}{N}) \quad i=\sqrt{-1}$, $j=0,..,N-1$. And eigenvalues
+\begin{equation*}
+\lambda_j = c_0 +c_1\omega_j +c_2\omega_j^2 +..c_{N-1}\omega_j^{N-1} \quad j=0,..,N-1
+\end{equation*}
+where, $c_j$ is the first row of $C_\Delta$, i.e $c_0=\sigma^2_{\Delta} , c_{N-1}=..c_1=\sigma^2_{\Delta} -1$. Therefore, the eigenvalues can be written as 
+\begin{equation*}
+\lambda_0 =  \sigma^2_{\Delta}+(N-1)( \sigma^2_{\Delta}-1)=\frac{1-N}{N}
+\end{equation*}
+
+\begin{eqnarray*}
+\lambda_j & = & \sigma^2_{\Delta} +(\sigma^2_{\Delta}-1)\sum_{n=1}^{N-1}\exp(\frac{2\pi nij}{N})\\
+& = & \sigma^2_{\Delta} +(\sigma^2_{\Delta}-1)\left(\sum_{n=0}^{N-1}\exp(\frac{2\pi nij}{N})-1 \right)\\
+ & = &  \sigma^2_{\Delta} +(\sigma^2_{\Delta}-1)\left(\frac{1-\exp(2\pi ij)}{1-\exp(\frac{2\pi ij}{N})}-1 \right)\\
+  & =&  \sigma^2_{\Delta} -(\sigma^2_{\Delta}-1) = 1 \\
+  && \quad j=1,..,N-1
+\end{eqnarray*}
+
+Therefore the determinant 
+\begin{equation*}
+|C_\Delta|=\lambda_0=\frac{1-N}{N}
+\end{equation*}
+
+Te inverse, $C_\Delta ^{-1}$ is of the form [Show!]
+\begin{equation*}
+C_\Delta^{-1}(s,t)=
+\begin{cases}
+\alpha & s=t\\
+\alpha-1 & s\neq t
+\end{cases}
+\end{equation*}
+with
+\begin{equation*}
+C_\Delta^{-1}(s,t)=(1/N)(
+\left(\frac{N}{1-N}\right)\omega_1^{s+t-2}+\sum_{n=2}^N\omega_n^{s+t-2}) 
+\end{equation*}
+$s=1,..,N, t=1,..,N$
+Therefore, the configuration distribution in 3D can be written as 
+\begin{equation*}
+f_\Delta(\vec{x})=\left(\frac{N}{(2\pi)^N (N-1)} \right)^{1.5}\exp(-0.5\vec{x}\cdot\vec{\delta S(\alpha)})
+\end{equation*}
+where
+\begin{equation*}
+\vec{\delta S(\alpha)}=\left[
+\begin{matrix}
+\alpha\sum_{n=1}^N x_n -\sum_{n\neq 1}x_n\\
+\alpha\sum_{n=1}^N x_n -\sum_{n\neq 2}x_n\\
+\colon\\
+\alpha\sum_{n=1}^N x_n -\sum_{n\neq N}x_n\\
+\end{matrix}
+\right]
+\end{equation*}
+Note that when $\alpha=1$ the system becomes decoupled. 
+
+
 It can be shown, by a series of elementary operations on $C_\Delta$ that the diagonalized form of $C_\Delta$ is 
 \begin{equation*}
 C_\Delta(s,t) =
-\begin{cases}
--1 & s = t, s=t-1, s\geq 2\\
-1  & s=t=1
-\end{cases}
+-1, \quad s = t, s=t-1, s=1..N\\
 \end{equation*}
-for $N$ odd, and 
+for an even $N$, and 
 \begin{equation*}
 C_\Delta(s,t)=
 \begin{cases}
@@ -326,8 +376,8 @@ C_\Delta(s,t)=
 -1              & s=t,s=t-1,s\geq 2
 \end{cases}
 \end{equation*}
-for $N$ even. 
-The eigenvalues $\lambda_j=-1\quad j=1..N$ for $N$ odd, and $\lambda_1=\sigma_\Delta^2, \lambda_j=-1 \quad j=2,..N$ for $N$ even. 
+for $N$ odd. 
+The eigenvalues $\lambda_j=-1\quad j=1..N$ for $N$ even, and $\lambda_1=\sigma_\Delta^2, \lambda_j=-1 \quad j=2,..N$ for $N$ odd. 
 Therefore 
 \begin{equation*}
 |C_\Delta| =\begin{cases}
@@ -350,7 +400,7 @@ Therefore, the configuration distribution (the joint pdf) of the Rouse ring is g
 f_\Delta(\vec{x})=\frac{1}{\sqrt{(2\pi)^N}}\exp(-0.5x^T C_\Delta^{-1}x)
 \end{equation*}
 
-\section{Eigenvalues of the Rouse Ring}\label{section_eigenvaluesOfTheRouseRing}
+\subsection{Eigenvalues of the Rouse Ring}\label{subsection_eigenvaluesOfTheRouseRing}
 Connecting bead 1 and $N$ to form a ring, we now search for the eigenvalues of the new \textit{Rouse ring} matrix, $R$, harboring such a connection. For this end, we have to calculate the determinant of the matrix
 \begin{equation*}
 D_N=|R-\lambda I|=\left|
@@ -442,17 +492,17 @@ Therefore, the eigenvalues of the Rouse ring are
 \end{equation*}
 Since $\cos(\frac{2\pi \phi}{N})=\cos(\frac{2\pi(N-\phi)}{N})$, we have eigenvalues multiplicities. In our case, setting $\phi=p$ we have $\cos(\frac{2\pi p}{N})=\cos(\frac{2\pi(N-p)}{N})$ for $p=1,2,3,..,(N-2)$. For the end-values, $p=0$ and $p=N-1$ the eigenvalues are unique. 
 
-\section{Encounter probability in the Rouse ring}\label{section_encounterProbabilityInTheRouseRing}
+\subsection{Encounter probability in the Rouse ring}\label{subsection_encounterProbabilityInTheRouseRing}
 [UNFINISHED]
 
-Following the method in \cite{amitai2012computation}. First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{section_eigenvaluesOfTheRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
+Following the method in \cite{amitai2012computation}. First we transform the Rouse ring system of equation into normal coordinates using the Rouse ring eigenvalues found in Section \ref{subsection_eigenvaluesOfTheRouseRing}. We transform to normal coordinates by $u_p=\sum_{n=1}^N \alpha_p^nR_n$, where $\alpha_p$ are the eigenvectors. We then represent our boundary conditions that bead $j$ and bead $k$ are in the same position, using the normal coordinates representation. The probability density function in the normal coordinates should then satisfy the forward Fokker Planck equation. The solution to the probability density function should then be expanded as an infinite sum of the form 
 \begin{equation*}
 p(x,t)=\sum_{i=1}^\infty a_iw_{\lambda_i^\epsilon}(x)e^{-\lambda_i^\epsilon tD}e^{-\phi(x)}
 \end{equation*}
 where $w_{\lambda_i^\epsilon}(x)$ and $\lambda_i^\epsilon$ are the eigenvectors and eigenvalues of the forward Fokker Planck operator outside of the domain, and $a_i$ are coefficients. Integrate the probability density according to $x$, over the domain without the absorbing boundary (the encounter sphere), to get a function of time. An integration of the resulting function from time $t=0$ to $\infty$ is the first moment of the survival function, which is the mean first encounter time (i.e the first time the polymer's ends are at the absorbing sphere). 
 
 
-\section{Center of mass diffusion of the rouse ring}\label{section_centerOfMassDiffusionOfTheRouseRing}
+\subsection{Center of mass diffusion of the rouse ring}\label{subsection_centerOfMassDiffusionOfTheRouseRing}
 By summing the rows of the Rouse ring matrix, we see that the differential equation describing the diffusion of the center of mass does not change in relation to the chain's organization. Inner loops in the ring do not change the center of mass diffusion. Therefore 
 \begin{equation*}
 \frac{dcm}{dt} = \frac{1}{N}\sum_{n=1}^N g_n
@@ -518,6 +568,14 @@ The relaxation time is determined according to the formula
 \begin{equation}
 \tau_p = \frac{b^2\Delta t}{12d^2\sin^2(\frac{p\pi}{2N})}
 \end{equation} 
+
+\subsection{The dynamics of bond length}\label{subsection_theDynamicsOfBondLength}
+In simulations we would like to determine $\Delta t$ such that no 'blow-ups' will occur. For this end, we constrain the mean of squared difference between bond length in consecutive steps to lay below some predefined small value. 
+
+The result show that 
+\begin{equation*}
+\gamma=\ll\|r_n(t+\Delta t)-r_n(t) \|^2\gg = \left(\frac{3D\Delta t}{b} \right)^2+6D\Delta t
+\end{equation*}
 
 % The bibliography
 \bibliographystyle{plain}
