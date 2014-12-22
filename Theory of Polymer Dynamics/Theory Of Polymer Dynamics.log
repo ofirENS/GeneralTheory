@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.2)  22 DEC 2014 19:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.2)  22 DEC 2014 19:28
 entering extended mode
 **Theory*Of*Polymer*Dynamics.tex
 
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.tex"
+("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
+cs.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -15,7 +15,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\paper\paper.cls"
+(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\paper\paper.cls
 Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
 \hours=\count79
 \minutes=\count80
@@ -214,7 +214,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count105
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -259,8 +259,8 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.aux")
+("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
+cs.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -276,7 +276,7 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\Ofir\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen118
@@ -304,14 +304,13 @@ LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
 
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.out")
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.out")
+("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
+cs.out")
+("D:\Ofir\ENS\GeneralTheory\Theory of Polymer Dynamics\Theory Of Polymer Dynami
+cs.out")
 \@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for U+msa on input line 10.
-
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 10.
@@ -325,7 +324,7 @@ LaTeX Warning: No \author given.
 [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Ofir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Overfull \hbox (26.81882pt too wide) detected at line 59
 [] \OT1/cmr/m/n/10 = [] = [] [] [] + [] [] + 2 [] [] = [] [] = \OML/cmm/m/it/10
  Nb[]
@@ -339,12 +338,12 @@ ined on input line 400.
 
 Overfull \hbox (45.21445pt too wide) detected at line 408
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OMS/
-cmsy/m/n/10 
-msy/m/n/10 
-/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10 
-n/10 
+cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/c
+msy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m
+/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/
+n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/
 10 xD[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n
-/10 
+/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 
@@ -355,11 +354,11 @@ Overfull \hbox (83.74496pt too wide) detected at line 430
 
 
 Overfull \hbox (17.65344pt too wide) detected at line 438
-\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 
-MS/cmsy/m/n/10 
-\OMS/cmsy/m/n/10 
-/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 
-OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\O
+MS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[](\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[] + (
+\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML
+/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[] + (\
+OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 
@@ -387,7 +386,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [12]
 Overfull \hbox (3.00285pt too wide) detected at line 534
-[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 
+[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10  []\OT
 1/cmr/m/n/10 )\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\OMS/c
 msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
 /10 k  \OT1/cmr/m/n/10 ([]\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10
