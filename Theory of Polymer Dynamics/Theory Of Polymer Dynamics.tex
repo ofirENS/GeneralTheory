@@ -257,7 +257,6 @@ The Rouse ring is a Gaussian process with a joint probability density function  
 \begin{equation*}
 f_B(x)=\frac{1}{\sqrt{((2\pi)^N|C_B|)}}\exp(-0.5x^TC_B^{-1}x)
 \end{equation*}
-[UNFINISHED]
 
 The increments of the Rouse ring are
 \begin{equation*}
@@ -331,27 +330,35 @@ Therefore the determinant
 |C_\Delta|=\lambda_0=\frac{1-N}{N}
 \end{equation*}
 
-Te inverse, $C_\Delta ^{-1}$ is of the form [Show!]
+Te inverse, $C_\Delta ^{-1}$, is of the form
 \begin{equation*}
 C_\Delta^{-1}(s,t)=
+\frac{1}{1-N}+\frac{1}{N}\sum_{n=1}^{N-1}(\omega_{s-1}\omega_{t-1})^n
+\end{equation*}
+$s=1,..,N, t=1,..,N$. Therefore
+\begin{equation*}
+C^{-1}_\Delta(s,t) = 
 \begin{cases}
-\alpha & s=t\\
-\alpha-1 & s\neq t
+\frac{N-(N-1)^2}{N(1-N)} & s=t\\
+\frac{2N-1}{N(1-N)}      & s\neq t
 \end{cases}
 \end{equation*}
-with
+note that $\frac{N-(N-1)^2}{N(1-N)}-1 = \frac{2N-1}{N(1-N)} $. So, we write 
 \begin{equation*}
-C_\Delta^{-1}(s,t)=(1/N)(
-\left(\frac{N}{1-N}\right)\omega_1^{s+t-2}+\sum_{n=2}^N\omega_n^{s+t-2}) 
+C^{-1}_\Delta(s,t) = 
+\begin{cases}
+\alpha    & s=t\\
+\alpha-1  & s\neq t
+\end{cases}
 \end{equation*}
-$s=1,..,N, t=1,..,N$
+ 
 Therefore, the configuration distribution in 3D can be written as 
 \begin{equation*}
-f_\Delta(\vec{x})=\left(\frac{N}{(2\pi)^N (N-1)} \right)^{1.5}\exp(-0.5\vec{x}\cdot\vec{\delta S(\alpha)})
+f_\Delta(\vec{x})=\left(\frac{N}{(2\pi)^N (N-1)} \right)^{1.5}\exp(-1.5\vec{x}\cdot\delta S(\vec{x} ;\alpha))
 \end{equation*}
 where
 \begin{equation*}
-\vec{\delta S(\alpha)}=\left[
+\delta S(\vec{x};\alpha)=\left[
 \begin{matrix}
 \alpha\sum_{n=1}^N x_n -\sum_{n\neq 1}x_n\\
 \alpha\sum_{n=1}^N x_n -\sum_{n\neq 2}x_n\\
@@ -360,45 +367,14 @@ where
 \end{matrix}
 \right]
 \end{equation*}
-Note that when $\alpha=1$ the system becomes decoupled. 
-
-
-It can be shown, by a series of elementary operations on $C_\Delta$ that the diagonalized form of $C_\Delta$ is 
+with 
 \begin{equation*}
-C_\Delta(s,t) =
--1, \quad s = t, s=t-1, s=1..N\\
+\alpha=\frac{N-(N-1)^2}{N(1-N)}
 \end{equation*}
-for an even $N$, and 
-\begin{equation*}
-C_\Delta(s,t)=
-\begin{cases}
-\sigma_\Delta^2 & s=t=1\\
--1              & s=t,s=t-1,s\geq 2
-\end{cases}
-\end{equation*}
-for $N$ odd. 
-The eigenvalues $\lambda_j=-1\quad j=1..N$ for $N$ even, and $\lambda_1=\sigma_\Delta^2, \lambda_j=-1 \quad j=2,..N$ for $N$ odd. 
-Therefore 
-\begin{equation*}
-|C_\Delta| =\begin{cases}
-1 & $N$\quad odd\\
-\sigma_\Delta^2 & $N$ \quad even
-\end{cases}
-\end{equation*}
+Note that when $\alpha=1$ the system becomes decoupled. This happens at the limit $N\rightarrow \infty$
 
-The inverse of $C_\Delta$ can be computed to be 
-\begin{equation*}
-C^{-1}_\Delta=
-\begin{cases}
-(-1)^{s+t-1} & s\leq t\\
-0 & s>t
-\end{cases}
-\end{equation*} 
+\subsection{The distribution of bond vectors in equilibrium}\label{subsection_distributionOfBondAtEquilibrium}
 
-Therefore, the configuration distribution (the joint pdf) of the Rouse ring is given by 
-\begin{equation*}
-f_\Delta(\vec{x})=\frac{1}{\sqrt{(2\pi)^N}}\exp(-0.5x^T C_\Delta^{-1}x)
-\end{equation*}
 
 \subsection{Eigenvalues of the Rouse Ring}\label{subsection_eigenvaluesOfTheRouseRing}
 Connecting bead 1 and $N$ to form a ring, we now search for the eigenvalues of the new \textit{Rouse ring} matrix, $R$, harboring such a connection. For this end, we have to calculate the determinant of the matrix
