@@ -6,21 +6,25 @@
 \BOOKMARK [1][-]{section.4}{The Rouse Chain}{}% 6
 \BOOKMARK [2][-]{subsection.4.1}{The source of the Hookian behavior}{section.4}% 7
 \BOOKMARK [2][-]{subsection.4.2}{The center of mass}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{The distribution of the bond lengths}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.4}{Centralizing the chain}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.5}{Mean First End To end Encounter Time Of the Rouse Chain}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.6}{The Pair Correlation function}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.7}{Radius of Gyration}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{The Rouse ring}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{Configuration distribution of the Rouse ring}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{The distribution of bond vectors in equilibrium}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.3}{Eigenvalues of the Rouse Ring}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.4}{Encounter probability in the Rouse ring}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.5}{Center of mass diffusion of the rouse ring}{section.5}% 19
-\BOOKMARK [1][-]{section.6}{Generalized Rouse Chain}{}% 20
-\BOOKMARK [1][-]{section.7}{Simulations}{}% 21
-\BOOKMARK [2][-]{subsection.7.1}{Choosing t}{section.7}% 22
-\BOOKMARK [3][-]{subsubsection.7.1.1}{The case with no noise}{subsection.7.1}% 23
-\BOOKMARK [3][-]{subsubsection.7.1.2}{The case with noise}{subsection.7.1}% 24
-\BOOKMARK [2][-]{subsection.7.2}{Relaxation time}{section.7}% 25
-\BOOKMARK [2][-]{subsection.7.3}{The dynamics of bond length}{section.7}% 26
+\BOOKMARK [2][-]{subsection.4.3}{Central bead is closest to the center-of-mass}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{The distribution of the bond lengths}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{Eigenvalues of the Rouse Matrix}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.6}{Eigenvectors of the Rouse Matrix}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.7}{Centralizing the chain}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.8}{Mean First End To end Encounter Time Of the Rouse Chain}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.9}{The Pair Correlation function}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.10}{Radius of Gyration}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{The Rouse ring}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Configuration distribution of the Rouse ring}{section.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Representation in spherical coordinates}{subsection.5.1}% 19
+\BOOKMARK [2][-]{subsection.5.2}{The distribution of increments in equilibrium}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.3}{Eigenvalues of the Rouse Ring}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.4}{Encounter probability in the Rouse ring}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.5}{Center of mass diffusion of the rouse ring}{section.5}% 23
+\BOOKMARK [1][-]{section.6}{Generalized Rouse Chain}{}% 24
+\BOOKMARK [1][-]{section.7}{Simulations}{}% 25
+\BOOKMARK [2][-]{subsection.7.1}{Choosing t}{section.7}% 26
+\BOOKMARK [3][-]{subsubsection.7.1.1}{The case with no noise}{subsection.7.1}% 27
+\BOOKMARK [3][-]{subsubsection.7.1.2}{The case with noise}{subsection.7.1}% 28
+\BOOKMARK [2][-]{subsection.7.2}{Relaxation time}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.3}{The dynamics of bond length}{section.7}% 30

@@ -167,6 +167,63 @@ therefore, the differential equation for the center of mass is
 \frac{dcm}{dt}=\frac{1}{N+1}\sum_{i=0}^N{\frac{dR_i}{dt}}= \frac{1}{N+1}\sum_{i=0}^Nf_n(t)
 \end{equation*}
 
+\subsection{Central bead is closest to the center-of-mass}\label{subsection_centralbeadClosestToCenterOfMass}
+In this subsection we show that on average the central beads of the chain are closest to the center of mass of the chain. This result will be useful in future sections when we calculate the encounter probability between beads in the chain with beads outside of it, to be the multiplication of the probability of an encounter between a bead outside the loop with a phantom bead in the center of mass of the loop and the encounter between beads in the loop and its center of mass. 
+
+Let our chain be defined as a sequence of $N$ uncorrelated and independent random variables in the following way\\
+$p_1 = n_1$\\
+$p_2 = p_1+n_2=n_1+n_2$\\
+$p_3 = p_2+n_3=n1+n_2+n_3$\\
+.\\
+.\\
+$p_N = \sum_{i=1}^{i=N}n_i$\\
+where $n_i\sim N(0,1)\forall i=1..N$ and $N$ is an odd integer.
+
+We define the chain center of mass as:
+\begin{equation*}
+p_{cm}=\frac{1}{N}\sum_{i=1}^{i=N}p_i = \frac{1}{N}(Nn_1+(N-1)n_2+(N-3)n_3+...n_N)=\sum_{i=1}^{N}(\frac{N-i+1}{N})n_i
+\end{equation*}
+
+The question we address here is for which index $k\in[1..N]$ does the point $p_k$ is closest to $p_{cm}$?
+
+Each $p_i$ is distributed normally with mean $\mu_i =0$ (since the sum of means of the preceding points is zero) and $\sigma_i=\sqrt{\sigma_{i-1}^2+1+2\rho\sigma_{i-1}}$, where $\rho$ is the correlation coefficient. Since each two subsequent points are uncorrelated, by definition $\rho=0$. More specifically, the $\rho$ in the expression for the standard deviation of point $i$ is given by $E[(n_i-\mu_i)(p_{i-1}-\mu_{i-1})]/\sigma_{n_i}\sigma_{i-1}=E[n_ip_{i-1}]/\sigma_j$, where $E$ is the expectation. Since $n_i$ is independent of $p_{i-1}$, we get
+\begin{equation*}
+E[n_ip_{i-1}])=E[n_i]E[p_{i-1}]=0
+\end{equation*}
+Therefore we get 
+\begin{equation*}
+\sigma_i=\sqrt{i}
+\end{equation*}
+
+The center of mass $p_{cm}$ has mean $\mu_{cm}=0$ and standard deviation that can be written as
+\begin{equation*}
+\sigma_{cm}=\sum_{i=1}^{i=N}\left( \frac{N-i+1}{N}) \right)^2 = \frac{N(N+1)(2N+1)}{6N^2}
+\end{equation*}
+
+We now look for the point $p_j$ for which the distribution of the random variable 
+\begin{equation*}
+Y(j)=p_{cm}-p_j
+\end{equation*}
+is the most 'concentrated' around zero. 
+In this sense, the standard deviation of $Y(j)$ should be the smallest among all $i=1..N$.
+
+the random variable $Y(j)$ can be written as
+\begin{equation*}
+Y(j) = \sum_{k=1}^{N}\left(1+\frac{1-k}{N}\right)n_k -\sum_{k=1}^{j}n_k = \sum_{k=1}^{j}\frac{1-k}{N}n_k +\sum_{k=j+1}^{N}(1+\frac{1-k}{N})n_k
+\end{equation*}
+
+The standard deviation of $Y_j$ is
+\begin{equation*}
+\sigma_{Y(j)}=\sqrt{\sum_{k=1}^{j}\left(\frac{1-k}{N}\right)^2+\sum_{k=j+1}^{N}\left(\frac{N+1-k}{N} \right)^2}=\frac{1}{N}\sqrt{\sum_{k=1}^{j-1}k^2+\sum_{k=1}^{N-j}k^2}
+\end{equation*}
+To find the $j$ that minimizes this expression, we can disregard the square root, and denote $Q(j)=\sum_{k=1}^{j-1}k^2$, so $Q(N-j+1)=\sum_{k=1}^{N-j}k^2$. Differentiate to find $Q'(j)-Q'(N-j+1)=0$  we see that when $j= \frac{N+1}{2}$\\
+\begin{equation*}
+Q'(\frac{N+1}{2})-Q'(N-\frac{N+1}{2}+1)=Q'(\frac{N+1}{2})
+\end{equation*} 
+
+
+
+
 \subsection{The distribution of the bond lengths}\label{subsection_distributionOfTheBondLength}
 [UNFINISHED] 
 
@@ -177,6 +234,152 @@ with variance $\mu=b^2/3+b^2/3+b^2/3=b^2$ which is the sum of variances.
 To calculate the cumulative distribution function (CDF) of the bond length, we use result from the analysis of quadratic forms \cite{mathai1992quadratic} (chapter 3). From the CDF we will obtain the \textit{survival probability}, which its first moment is the \textit{mean first passage time} for the two ends of the polymer.
 
 For the polymer chain, the bond length is a random variable, $b\sim \mathcal{N}(0,\sigma_b)$
+\subsection{Eigenvalues of the Rouse Matrix}\label{subsection_eigenvaluesOfTheRouseMatrix}
+In this subsection we derive the eigenvalues of the Rouse matrix. The Rouse matrix defines the connection between beads as a harmonic potential. The system of differential equation governing the dynamics of the chain comprised of $N$ beads is 
+\begin{equation}
+\frac{d[X(t)]}{dt}=-k[R][X(t)]+[g(t)]
+\end{equation}
+where the $[.]$ notation represents a matrix (vector), $[g(t)]$ is an $N$ by 1 vector of normally distributed numbers with mean 0 and STD =1, $k$ is a constant and the matrix $[R]$ is defined as:
+\begin{equation}
+R=\left[
+\begin{matrix}
+ 1 & -1 &  0 &  0 &...&  &  0 \\
+-1 &  2 & -1 &  0 &...&  &  0 \\
+ 0 & -1 &  2 & -1 &...&  &  0 \\
+ . &    &    &  . &   &  &  . \\
+ . &    &    &  . &   &  &  . \\
+ 0 &    &    &    & -1& 2& -1 \\
+ 0 &    &    &    &  0&-1&  1 \\     
+\end{matrix}
+\right]
+\end{equation}
+The Rouse matrix is also called the Kirchhoff matrix of the chain's graph.
+
+To find the eigenvalues we calculate 
+\begin{equation*}
+D_N=\left|[R]-\lambda[I]\right|=0
+\end{equation*}
+which gives us a matrix of the form 
+\begin{equation*}
+R=\left[
+\begin{matrix}
+ y & -1 &  0 &  0 &...&  &  0 \\
+-1 &  x & -1 &  0 &...&  &  0 \\
+ 0 & -1 &  x & -1 &...&  &  0 \\
+ . &    &    &  . &   &  &  . \\
+ . &    &    &  . &   &  &  . \\
+ 0 &    &    &    & -1& x& -1 \\
+ 0 &    &    &    &  0&-1&  y \\     
+\end{matrix}
+\right]
+\end{equation*}
+with $x=2-\lambda$, and $y=x-1$.
+
+Developing the determinant by the last column we find a recursion relation as follows 
+\begin{equation*}
+D_N = yD_{N-1}-D_{N-2}
+\end{equation*}
+
+Since the recursion relation is slightly different for $D_{N-1}$, bt remains the same for all $j\leq N-1$, we solve the recursion relation for $D_{N-1}$ and then return to define the last term $D_N$ using the relation above. 
+
+The recurrence relation is:
+\begin{equation*}
+D_z = xD_{z-1}-D_{z-2}
+\end{equation*}
+
+with the boundary conditions
+\begin{equation*}
+D_1 = y 
+\end{equation*}
+\begin{equation*}
+D_2 = xy-1
+\end{equation*}
+We note that according to the Rouse matrix $x=y+1$.
+
+The particular solution to the recursion relation is 
+\begin{equation*}
+D_z=e^{iz\theta}
+\end{equation*}
+
+substituting it into the recursion relation gives
+\begin{equation*}
+e^{iz\theta}=xe^{i(z-1)\theta}-e^{i(z-2)\theta}
+\end{equation*}
+
+hence
+\begin{equation*}
+x=2cos(\theta)
+\end{equation*}
+
+The general solution can then be defined as 
+\begin{equation*}
+D_z=Ae^{iz\theta}+Be^{-iz\theta}
+\end{equation*}
+where $A$ and $B$ are some constants to be defined.
+
+ Using the boundary conditions we get 
+ \begin{equation*}
+ y = Ae^{i\theta}+Be^{-i\theta}
+ \end{equation*}
+ 
+ \begin{eqnarray*}
+ A & = & \frac{y-Be^{-i\theta}}{e^{i\theta}} = (2\cos(\theta)-1)e^{-i\theta}-Be^{-2i\theta}\\
+   & = & \frac{1-e^{i\theta}}{e^{-i\theta}-e^{i\theta}} = e^{i\theta/2}\frac{e^{-i\theta/2}-e^{i\theta/2}}{-2i\sin(\theta)}\\
+   & = & \frac{e^{i\theta/2}}{2\cos(\theta/2)}
+ \end{eqnarray*}
+ and 
+ \begin{equation*}
+ B=\frac{e^{-i\theta}-1}{e^{-i\theta}-e^{i\theta}}=\frac{e^{-i\theta/2}}{2cos(\theta/2)}
+ \end{equation*}
+The general solution is now
+\begin{equation}
+D_z=\frac{e^{i\theta/2}}{2\cos(\theta/2)}e^{iz\theta}+\frac{e^{-i\theta/2}}{2\cos(\theta/2)}e^{-iz\theta}=\frac{\cos((z+1/2)\theta)}{\cos(\theta/2)}
+\end{equation}
+Since the determinant must vanish, we have 
+\begin{equation*}
+D_N = yD_{N-1}-D_{N-2}=0
+\end{equation*}
+substituting the expressions for $D_{N-1}$ and $D_{N-2}$ into the equation above yields 
+\begin{equation*}
+yD_{N-1}-D_{N-2} = D_1D_{N-1}-D_{N-2} = 
+\end{equation*}
+\begin{equation*}
+\frac{\cos(3\theta/2)}{\cos(\theta/2)}\frac{\cos((N-1/2)\theta)}{\cos(\theta/2)}-\frac{\cos((N-3/2)\theta)}{\cos(\theta/2)}=0
+\end{equation*}
+therefore 
+\begin{equation*}
+\cos(3\theta/2)\cos((N-1/2)\theta)=\cos((N-3/2)\theta)\cos(\theta/2)
+\end{equation*}
+displaying the trigonometric functions as sum of exponentials we can get
+\begin{equation*}
+\cos((N+1)\theta)-\cos((N-1)\theta)=0
+\end{equation*}
+which gives 
+\begin{equation*}
+-2\sin(N\theta)\sin(\theta)=0
+\end{equation*}
+therefore 
+\begin{equation*}
+\theta = \frac{p\pi}{N}
+\end{equation*}
+$p=0,1...,N-1$ (since we have $N$ solutions)\\
+
+The eigenvalues are then
+\begin{equation*}
+\lambda_p=2-x = 2-2\cos(\theta_p)=2\left(1-\cos(\frac{p\pi}{N})\right)=4\sin^2(\frac{p\pi}{2N})
+\end{equation*}
+$p=0,1,...,(N-1)$.
+
+\subsection{Eigenvectors of the Rouse Matrix}\label{subsection_eigenvectorsOfTheRouseMatrix}
+[Show Full derivation]
+
+The $k^{th}$ entry in the $p^{th}$ eigenvector is 
+
+\begin{equation*}
+c_k = \sqrt{\frac{2}{N}}\sin(\frac{k\pi p}{N})
+\end{equation*}
+
+with $k=1,2,..,N$ and $p=0,1,...N-1$
 
 \subsection{Centralizing the chain}\label{subsection_centralizingTheChain}
 [UNFINISHED]
@@ -230,7 +433,7 @@ The pair correlation function is thus also called the radial distribution functi
 From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
 
 \section{The Rouse ring}\label{section_theRouseRing}
-Construction of the Rouse ring is done by setting the first and last beads at position $x_0=0$. This forms a discrete \textbf{Brownian bridge}, which is defined using the random walk, $w(t)$, of $N$ steps (between $N+1$ beads). 
+Construction of the Rouse ring is done by setting the first and last beads at position $x_0=0$. This forms a discrete \textbf{Brownian bridge}, which is defined using the standard random walk, $w(t)$, with $\left<w(t)^2\right>=1, \left<w(t)\right>=0$, of $N$ steps (between $N+1$ beads). 
 \begin{equation*}
 B(t)= w(t)-\frac{t}{N}w(N) \qquad t=1,..,N
 \end{equation*} 
@@ -240,23 +443,27 @@ In the context of polymer dynamics we will refer to the bridge as a \textit{Rous
 E[B(t)]=E[w(t)-\frac{t}{N}w(N)]=E[w(t)] -(t/N)E[w(N)]=0
 \end{equation*}
 
-The covariance, $C$, of $B(t)$ is 
+The covariance, $C_B$, of $B(t)$ is 
 \begin{eqnarray*}
 C_{B}  & = & E((B(t)-E[B(t)])(B(s)-E[B(s)])\\
    & = & E[B(t)B(s)]=E[(w(t)-(t/N)w(N))(w(s)-(s/N)w(N))]\\
    & = & E[w(s)w(t)-w(N)(sw(t)+tw(s))/N +(st/N^2)w(N)^2 ]\\
    & = & min(s,t)-(s/N)min(N,t)-(t/N)min(N,s)+st/N^2\\
-   & = & min(s,t)-2st/N+st/N^2=min(s,t)-(st/N^2)(2N-1)
+   & = & min(s,t)-2st/N+st/N^2\\
+   & = & min(s,t)-(st/N^2)(2N-1)
 \end{eqnarray*}
 
-We therefore see that the position of the Rouse ring are dependent. The variance is given by setting $s=t$ to be $\sigma^2_{B_t}=t-(t/N)^2(2N-1)$.
-
-\subsection{Configuration distribution of the Rouse ring}\label{subsection_configurationDistributionRouseRing}
+We therefore see that the position of the Rouse ring are dependent. The variance is given by setting $s=t$ to be 
+\begin{equation*}  
+\sigma^2_{B}=t-(t/N)^2(2N-1)
+\end{equation*}
 
 The Rouse ring is a Gaussian process with a joint probability density function  given by  
 \begin{equation*}
 f_B(x)=\frac{1}{\sqrt{((2\pi)^N|C_B|)}}\exp(-0.5x^TC_B^{-1}x)
 \end{equation*}
+
+\subsection{Configuration distribution of the Rouse ring}\label{subsection_configurationDistributionRouseRing}
 
 The increments of the Rouse ring are
 \begin{equation*}
@@ -274,15 +481,15 @@ and covariance
  \end{eqnarray*}
 Setting $s=t $ we get the variance 
 \begin{equation*}
-\sigma^2_{\Delta}=1-(1/N^2)(2N-1)
+\sigma^2_{\Delta}=1-(1/N^2)(2N-1)=\frac{(N-1)^2}{N^2}
 \end{equation*}
 
 The joint pdf of the increments
 \begin{equation*}
-f_\Delta(x) = \left(\frac{1}{\sqrt{((2\pi)^N |C_\Delta)|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
+f_\Delta(\vec{x}) = \left(\frac{1}{\sqrt{((2\pi)^N |C_\Delta)|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
 \end{equation*}
 
-To find the pdf we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\Delta$ is 
+To fully express $f_\Delta(x)$ we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\Delta$ is 
 \begin{equation*}
 C_\Delta = \left[
 \begin{matrix}
@@ -325,7 +532,7 @@ where, $c_j$ is the first row of $C_\Delta$, i.e $c_0=\sigma^2_{\Delta} , c_{N-1
   && \quad j=1,..,N-1
 \end{eqnarray*}
 
-Therefore the determinant 
+Therefore, the determinant is
 \begin{equation*}
 |C_\Delta|=\lambda_0=\frac{1-N}{N}
 \end{equation*}
@@ -335,7 +542,7 @@ Te inverse, $C_\Delta ^{-1}$, is of the form
 C_\Delta^{-1}(s,t)=
 \frac{1}{1-N}+\frac{1}{N}\sum_{n=1}^{N-1}(\omega_{s-1}\omega_{t-1})^n
 \end{equation*}
-$s=1,..,N, t=1,..,N$. Therefore
+$s=1,..,N, t=1,..,N$. Therefore,
 \begin{equation*}
 C^{-1}_\Delta(s,t) = 
 \begin{cases}
@@ -343,7 +550,7 @@ C^{-1}_\Delta(s,t) =
 \frac{2N-1}{N(1-N)}      & s\neq t
 \end{cases}
 \end{equation*}
-note that $\frac{N-(N-1)^2}{N(1-N)}-1 = \frac{2N-1}{N(1-N)} $. So, we write 
+note, that $\frac{N-(N-1)^2}{N(1-N)}-1 = \frac{2N-1}{N(1-N)} $, so we can write 
 \begin{equation*}
 C^{-1}_\Delta(s,t) = 
 \begin{cases}
@@ -351,8 +558,11 @@ C^{-1}_\Delta(s,t) =
 \alpha-1  & s\neq t
 \end{cases}
 \end{equation*}
+\begin{equation*}
+ \alpha=\frac{N-(N-1)^2}{N(1-N)}
+\end{equation*}
  
-Therefore, the configuration distribution in 3D can be written as 
+The configuration distribution in 3D can be written as 
 \begin{equation*}
 f_\Delta(\vec{x})=\left(\frac{N}{(2\pi)^N (N-1)} \right)^{1.5}\exp(-1.5\vec{x}\cdot\delta S(\vec{x} ;\alpha))
 \end{equation*}
@@ -367,16 +577,38 @@ where
 \end{matrix}
 \right]
 \end{equation*}
-with 
-\begin{equation*}
-\alpha=\frac{N-(N-1)^2}{N(1-N)}
-\end{equation*}
-Note that when $\alpha=1$ the system becomes decoupled. This happens at the limit $N\rightarrow \infty$, which makes the increments of the bridge 
+Note, that when $\alpha=1$ the system becomes decoupled. This happens at the limit $N\rightarrow \infty$, which makes the increments of the bridge 
 \begin{equation*}
 \lim_{N\rightarrow \infty} \Delta B_t=\lim_{N\rightarrow \infty} w(t+1)-w(t)-(1/N)w(N)= w(t+1)-w(t)
 \end{equation*}
+\subsubsection{Representation in spherical coordinates}\label{subsubsection_representationInSphericalCoordinates}
+If we set each increment vector $\vec{x}_n=(x_n,y_n,z_n)$ in spherical coordinates such that
+\begin{eqnarray*}
+x_n & = & r_n\sin(\theta_n)\cos(\phi_n)\\
+y_n & = & r_n\sin(\theta_n)\sin(\phi_n)\\
+z_n & = & r_n\cos(\theta_n)
+\end{eqnarray*}
+Then the Jacobian of the transformation becomes 
+\begin{equation*}
+|J|_n= r_n^2\sin(\theta_n)
+\end{equation*}
+and the configuration distribution for $N$ increments is 
+\begin{equation*}
+f_\Delta(\vec{\theta},\vec{\phi},\vec{r}) = \left(\frac{N}{(2\pi)^N (N-1)} \right)^{1.5}\exp(-1.5\vec{x}\cdot\delta S(\vec{x} ;\alpha))|J|_n^N
+\end{equation*}
+\subsection{The distribution of increments in equilibrium}\label{subsection_distributionOfIncrementsAtEquilibrium}
+We now turn to evaluate the distribution of the vector $\rho$ between bead 1 and $m$. The distribution is set between the first bead and the $m^{th}$ bead, assuming the distribution of the vector between bead $i$ and $j$ is similar (because in the ring we cannot distinguish between the beads).
+ 
+In general, the equilibrium distribution for $\rho$ is calculated using the Rouse ring configuration distribution as 
+\begin{equation*}
+\psi_\Delta(\rho,N)=\int\int\int... \int \delta(\rho-\sum_{j=1}^m x_j)f_\Delta(x) dx_1dx_2...dx_N
+\end{equation*}
+Using the identity for the delta function 
+\begin{equation*}
+\delta(\rho-\sum_{j=1}^m x_j) =\frac{1}{(2\pi)^3}\int e^{ik(\rho-\sum_{j=1}^m x_j)}dk
+\end{equation*}
+(see also \ref{subsection_distributionOfTheEndToEndVector}). 
 
-\subsection{The distribution of bond vectors in equilibrium}\label{subsection_distributionOfBondAtEquilibrium}
 
 
 \subsection{Eigenvalues of the Rouse Ring}\label{subsection_eigenvaluesOfTheRouseRing}
