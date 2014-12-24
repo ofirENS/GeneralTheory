@@ -16,15 +16,15 @@
 \BOOKMARK [2][-]{subsection.4.10}{Radius of Gyration}{section.4}% 16
 \BOOKMARK [1][-]{section.5}{The Rouse ring}{}% 17
 \BOOKMARK [2][-]{subsubsection.5.0.1}{Derivation of the probability density of the Rouse ring}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.1}{Encounter between beads in the Rouse ring}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.1}{Encounter probability in the Rouse ring}{section.5}% 19
 \BOOKMARK [2][-]{subsection.5.2}{Configuration distribution of the Rouse ring}{section.5}% 20
 \BOOKMARK [2][-]{subsection.5.3}{Eigenvalues of the Rouse Ring}{section.5}% 21
-\BOOKMARK [2][-]{subsection.5.4}{Encounter probability in the Rouse ring}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.5}{Center of mass diffusion of the rouse ring}{section.5}% 23
-\BOOKMARK [1][-]{section.6}{Generalized Rouse Chain}{}% 24
-\BOOKMARK [1][-]{section.7}{Simulations}{}% 25
-\BOOKMARK [2][-]{subsection.7.1}{Choosing t}{section.7}% 26
-\BOOKMARK [3][-]{subsubsection.7.1.1}{The case with no noise}{subsection.7.1}% 27
-\BOOKMARK [3][-]{subsubsection.7.1.2}{The case with noise}{subsection.7.1}% 28
-\BOOKMARK [2][-]{subsection.7.2}{Relaxation time}{section.7}% 29
-\BOOKMARK [2][-]{subsection.7.3}{The dynamics of bond length}{section.7}% 30
+\BOOKMARK [2][-]{subsection.5.4}{Mean First Encounter Time in the Rouse ring}{section.5}% 22
+\BOOKMARK [1][-]{section.6}{A ring and a chain}{}% 23
+\BOOKMARK [1][-]{section.7}{Generalized Rouse Chain}{}% 24
+\BOOKMARK [1][-]{section.8}{Simulations}{}% 25
+\BOOKMARK [2][-]{subsection.8.1}{Choosing t}{section.8}% 26
+\BOOKMARK [3][-]{subsubsection.8.1.1}{The case with no noise}{subsection.8.1}% 27
+\BOOKMARK [3][-]{subsubsection.8.1.2}{The case with noise}{subsection.8.1}% 28
+\BOOKMARK [2][-]{subsection.8.2}{Relaxation time}{section.8}% 29
+\BOOKMARK [2][-]{subsection.8.3}{The dynamics of bond length}{section.8}% 30
