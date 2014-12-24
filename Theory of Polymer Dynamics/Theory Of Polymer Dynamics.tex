@@ -463,6 +463,35 @@ The Rouse ring is a Gaussian process with a joint probability density function  
 f_B(x)=\frac{1}{\sqrt{((2\pi)^N|C_B|)}}\exp(-0.5x^TC_B^{-1}x)
 \end{equation*}
 
+\subsubsection{Derivation of the probability density of the Rouse ring}
+The Rouse ring is a tied-down random walk, with $w(N)=w(0)$. Without loss of generality, we set $w(0)=0$, as in the classical random walk.
+
+The probability density function of the random walk in 3D is given by the Weiner measure as  
+\begin{equation*}
+f(w(x),N)=\left( \frac{1}{2\pi N}\right)^{3/2}\exp(-\frac{3x^2}{2N^2})
+\end{equation*}
+
+Conditioning the random walk on the event that $w(N)=w(0)$ we get 
+\begin{eqnarray*}
+f(0,x,0;0,t/N,N)&=&\frac{1}{\sqrt{(2\pi)^2 t(N-t/N)/N}}\exp(-\frac{x^2}{2t/N}-\frac{x^2}{2(N-t/N)})\\
+&=&\frac{N}{2\pi\sqrt{t(N-t)}} \exp(-\frac{x^2}{2t(N-t)/N^2})
+\end{eqnarray*}
+and in 3D
+\begin{equation*}
+f(0,x,0;0,\frac{t}{N},N) = \left(\frac{N}{2\pi\sqrt{t(N-t)}}\right)^3 \exp(-\frac{3x^2}{2t(N-t)/N^2})
+\end{equation*}
+
+\subsection{Encounter between beads in the Rouse ring}\label{subsection_encounterBetweenBeadsInTheRing}
+The vector between bead 1 and bead $m$ of the chain has the pdf 
+$f(0,x,0;0,\frac{m}{N},0)$. Since in the ring we cannot distinguish between beads, we see that the encounter probability at equilibrium between beads $m$ and $n$ is 
+$f(0,0,0;0,\frac{|m-n|}{N},0)=\left(\frac{N}{2\pi \sqrt{|m-n|(N-|m-n|)}}\right)^3$
+
+The quantity above is not normalized,therefore we write 
+\begin{equation*}
+f(0,x,0;0,\frac{m}{N},0)=\left(\frac{N}{2\pi\sqrt{m(N-m)}}\right)^3 /\sum_{t=1}^{N-1}\left(\frac{N}{2\pi\sqrt{t(N-t)}}\right)^3 
+\end{equation*}
+which is the encounter probability at equilibrium between two beads with a distance $m$ along the ring between them. 
+
 \subsection{Configuration distribution of the Rouse ring}\label{subsection_configurationDistributionRouseRing}
 
 The increments of the Rouse ring are
@@ -581,35 +610,6 @@ Note, that when $\alpha=1$ the system becomes decoupled. This happens at the lim
 \begin{equation*}
 \lim_{N\rightarrow \infty} \Delta B_t=\lim_{N\rightarrow \infty} w(t+1)-w(t)-(1/N)w(N)= w(t+1)-w(t)
 \end{equation*}
-\subsubsection{Representation in spherical coordinates}\label{subsubsection_representationInSphericalCoordinates}
-If we set each increment vector $\vec{x}_n=(x_n,y_n,z_n)$ in spherical coordinates such that
-\begin{eqnarray*}
-x_n & = & r_n\sin(\theta_n)\cos(\phi_n)\\
-y_n & = & r_n\sin(\theta_n)\sin(\phi_n)\\
-z_n & = & r_n\cos(\theta_n)
-\end{eqnarray*}
-Then the Jacobian of the transformation becomes 
-\begin{equation*}
-|J|_n= r_n^2\sin(\theta_n)
-\end{equation*}
-and the configuration distribution for $N$ increments is 
-\begin{equation*}
-f_\Delta(\vec{\theta},\vec{\phi},\vec{r}) = \left(\frac{N}{(2\pi)^N (N-1)} \right)^{1.5}\exp(-1.5\vec{x}\cdot\delta S(\vec{x} ;\alpha))|J|_n^N
-\end{equation*}
-\subsection{The distribution of increments in equilibrium}\label{subsection_distributionOfIncrementsAtEquilibrium}
-We now turn to evaluate the distribution of the vector $\rho$ between bead 1 and $m$. The distribution is set between the first bead and the $m^{th}$ bead, assuming the distribution of the vector between bead $i$ and $j$ is similar (because in the ring we cannot distinguish between the beads).
- 
-In general, the equilibrium distribution for $\rho$ is calculated using the Rouse ring configuration distribution as 
-\begin{equation*}
-\psi_\Delta(\rho,N)=\int\int\int... \int \delta(\rho-\sum_{j=1}^m x_j)f_\Delta(x) dx_1dx_2...dx_N
-\end{equation*}
-Using the identity for the delta function 
-\begin{equation*}
-\delta(\rho-\sum_{j=1}^m x_j) =\frac{1}{(2\pi)^3}\int e^{ik(\rho-\sum_{j=1}^m x_j)}dk
-\end{equation*}
-(see also \ref{subsection_distributionOfTheEndToEndVector}). 
-
-
 
 \subsection{Eigenvalues of the Rouse Ring}\label{subsection_eigenvaluesOfTheRouseRing}
 Connecting bead 1 and $N$ to form a ring, we now search for the eigenvalues of the new \textit{Rouse ring} matrix, $R$, harboring such a connection. For this end, we have to calculate the determinant of the matrix

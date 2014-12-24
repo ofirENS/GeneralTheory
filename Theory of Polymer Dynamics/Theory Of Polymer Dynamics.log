@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  23 DEC 2014 17:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  24 DEC 2014 13:57
 entering extended mode
 **Theory*Of*Polymer*Dynamics.tex
 
@@ -341,7 +341,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--366
 
  []
 
-[9] [10] [11] [12] [13] [14]
+[9] [10]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 466.
+
+[11] [12] [13] [14]
 
 LaTeX Warning: Reference `section_eigenvaluesOfTheRouseMatrix' on page 15 undef
 ined on input line 635.
@@ -426,35 +431,34 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 794.
  ) 
 Here is how much of TeX's memory you used:
- 6156 strings out of 493921
- 89176 string characters out of 3144879
- 176358 words of memory out of 3000000
- 9333 multiletter control sequences out of 15000+200000
+ 6155 strings out of 493921
+ 89117 string characters out of 3144879
+ 176277 words of memory out of 3000000
+ 9332 multiletter control sequences out of 15000+200000
  15553 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,9n,31p,766b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb>
-<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><d:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb><d:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "Theory Of Polymer Dynamics.pdf" (19 pages, 296080 bytes).
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb><d:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on "Theory Of Polymer Dynamics.pdf" (19 pages, 288110 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
+ 318 PDF objects out of 1000 (max. 8388607)
  61 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
