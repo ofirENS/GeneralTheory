@@ -714,8 +714,29 @@ where $w_{\lambda_i^\epsilon}(x)$ and $\lambda_i^\epsilon$ are the eigenvectors 
 
 \section{A ring and a chain}\label{section_aRingAndAChain}
 In this section we combine the result of the Rouse chain and the Rouse ring by attaching a linear chain with a ring, reordering the indexes and deriving the encounter probability between beads in the composite structure. 
- 
+
+
 \subsection{Construction}\label{subsection_construction}
+We start by attaching the a chain of $N_c-1$ beads to a ring of $N_r$ beads by connecting bead $N_c$ to an arbitrary bead in the ring. The first bead in the chain will be numbered 1. Given the choice of the connecting bead, we index the first bead in the ring as $N_c$ and the last as $N_r+N_c$. 
+
+In equilibrium, the link vectors are independent and we can treat the two structure, the ring and the chain, separately. The first bead in the loop will be our reference point for the calculation of the encounter probability at equilibrium, by calculating the probability that both the vector $R_m-R_{N_c}$ and $R_n-R_{N_c}$ is equal to some $s$, over all possible vectors $s$.
+
+\subsection{the encounter probability}\label{subsection_theEncounterProbabilityChainAndRing}
+We note that distribution of the vectors between bead $m$ and $n$ at equilibrium is given by 
+\begin{equation*}
+f_c(R_m-R_n,n-m)= \left(\frac{3}{2\pi|m-n| b^2}\right)^{1.5}\exp(-\frac{3(R_m-R_n)^2}{2|m-n|b^2})
+\end{equation*}
+for the Rouse chain, and 
+\begin{equation*}
+f_r(R_t,N_r) = \left(\frac{N_r^2}{(2\pi)^2\sqrt{t(N_r-t)}}\right)^{1.5} \exp(-\frac{3R_t^2}{2t(N_r-t)/N_r^2})
+\end{equation*}
+for the Rouse ring.
+
+Due to the independence between the structures in equilibrium, the encounter probability between bead $m$ of the chain ($1\leq m \leq N_c$) and bead $n$ ($N_c\leq n \leq N_l$) is the joint probability that the two end to end vectors are $\vec{s}$. That is 
+\begin{equation*}
+P(R_m-R_{N_c}= R_n-R_{N_c})=
+\end{equation*}
+
 
 \section{Generalized Rouse Chain}\label{section_generalizedRouseChain}
 Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. the configuration distribution of the chain is given by 
