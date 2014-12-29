@@ -478,7 +478,7 @@ f(0,x,0;0,t/N,N)&=&\frac{1}{\sqrt{(2\pi)^2 t(N-t/N)/N}}\exp(-\frac{x^2}{2t/N}-\f
 \end{eqnarray*}
 and in 3D
 \begin{equation*}
-f(0,x,0;0,\frac{t}{N},N) = \left(\frac{N}{2\pi\sqrt{t(N-t)}}\right)^3 \exp(-\frac{3x^2}{2t(N-t)/N^2})
+f(0,x,0;0,\frac{t}{N},N) = \left(\frac{N}{\sqrt{2\pi t(N-t)}}\right)^3 \exp\left(-\frac{xx^T}{2t(N-t)/N^2}\right)
 \end{equation*}
 
 \subsection{Encounter probability in the Rouse ring}\label{subsection_encounterProbabilityInTheRing}
@@ -493,7 +493,7 @@ f(0,x,0;0,\frac{m}{N},0)=\left(\frac{N}{2\pi\sqrt{m(N-m)}}\right)^3 /\sum_{t=1}^
 which is the encounter probability at equilibrium between two beads with a distance $m$ along the ring between them (note the symmetry between $m$ and $N-m$). 
 
 \begin{figure}[h!]
-\includegraphics[scale=0.2]{encounterProbBead1InLoopOf64BeadsSimpleRouse}\caption{Encounter Probability of bead 1 in a ring of 64 beads (blue) from simulation compared to the theoretical result (red)}\label{figure_rouseRingEncounterProbabilityComparisionToTheory}
+\includegraphics[scale=0.2]{encounterProbBead1InLoopOf64BeadsSimpleRouse}\caption{Encounter Probability of bead 1 in a ring of 64 beads (blue) from 10,000 simulation compared to the theoretical result (red)}\label{figure_rouseRingEncounterProbabilityComparisionToTheory}
 \end{figure}
 
 \subsection{Configuration distribution of the Rouse ring}\label{subsection_configurationDistributionRouseRing}
@@ -719,38 +719,41 @@ where $w_{\lambda_i^\epsilon}(x)$ and $\lambda_i^\epsilon$ are the eigenvectors 
 \section{A ring and a chain}\label{section_aRingAndAChain}
 In this section we combine the result of the Rouse chain and the Rouse ring by attaching a linear chain with a ring, reordering the indexes and deriving the encounter probability between beads in the composite structure. 
 
-
 \subsection{Construction}\label{subsection_construction}
 We start by attaching the a chain of $N_c-1$ beads to a ring of $N_r$ beads by connecting bead $N_c$ to an arbitrary bead in the ring. The first bead in the chain will be numbered 1. Given the choice of the connecting bead, we index the first bead in the ring as $N_c$ and the last as $N_r+N_c$. 
 
 In equilibrium, the link vectors are independent and we can treat the two structure, the ring and the chain, separately. The first bead in the loop will be our reference point for the calculation of the encounter probability at equilibrium, by calculating the probability that both the vector $R_m-R_{N_c}$ and $R_n-R_{N_c}$ is equal to some $s$, over all possible vectors $s$.
 
-\subsection{the encounter probability}\label{subsection_theEncounterProbabilityChainAndRing}
-We note that distribution of the vectors between bead $m$ and $n$ at equilibrium is given by 
+\begin{figure}[h!]
+\includegraphics[scale=0.2]{chainAndRing}
+\end{figure}
+
+\subsection{The encounter probability}\label{subsection_theEncounterProbabilityChainAndRing}
+We note that distribution of the vectors between bead $m$ and $n$ at equilibrium is given by (assuming $b=\sqrt{3}$)
 \begin{equation*}
-f_c(R_m-R_n,n-m)= \left(\frac{3}{2\pi|m-n| b^2}\right)^{1.5}\exp(-\frac{3(R_m-R_n)^2}{2|m-n|b^2})
+f_c(R_m-R_n,n-m)= \left(\frac{1}{\sqrt{2\pi|m-n|/N_c} }\right)^3\exp(-\frac{(R_m-R_n)^2}{2|m-n|/N_c})
 \end{equation*}
-for the Rouse chain with $b^2=\left<(R_n-R_{n-1})^2 \right> =1$, and 
+for the Rouse chain with $b=\left<(R_n-R_{n-1})^2 \right> =\sqrt{3}$, and 
 \begin{equation*}
-f_r(R_t,N_r) = \left(\frac{N_r^2}{(2\pi)^2t(N_r-t)}\right)^{1.5} \exp \left(-\frac{3R_t^2}{2t(N_r-t)/N_r^2}\right)
+f_r(R_t,N_r) = \left(\frac{N_r}{\sqrt{2\pi t(N_r-t)}}\right)^3 \exp \left(-\frac{R_t^2}{2t(N_r-t)/N_r^2}\right)
 \end{equation*}
-for the Rouse ring.
+for the Rouse ring, with $R_t$ the vector from the connecting bead between the chain and the ring and the $t^{th}$ bead of the ring. 
 
 Due to the independence between the structures in equilibrium, the encounter probability between bead $m$ of the chain ($1\leq m \leq N_c$) and bead $n$ ($N_c\leq n \leq N_l$) of the ring is the joint probability that $R_n-R_{N_c}=R_m-R_{N_c}=\vec{s}$. That is 
 \begin{equation*}
 P(R_m-R_{N_c}=\vec{s}, R_n-R_{N_c}=\vec{s})=f_r(s,N_r)f_c(s,|m-N_c|)
 \end{equation*}
-Another way to see it is to calculate the probability that $R_n-R_{N_c}+R_m-R_{N_c}=2s$. Because both $f_r$ and $f_c$ are Gaussian densities, the sum of the two random variables is Gaussian with 
-\begin{eqnarray*}
-\mu_{rc} & = & 0\\
-\sigma_{rc}^2 & = & (n-N_c)(N_r-(n-N_c))/N_r^2 +N_c-m
-\end{eqnarray*}
-
-The probability that $P(R_m+R_n-2R_{N_c})=2\vec{s}$ is then given by 
+or, $P(R_m+R_n-2R_c=2s)$. Since the sum of these random variables is the convolution of their respective pdfs, we can perform the integration. However, this integration over all values of $s$ is not trivial, and therefore we calculate the pdf of the general sum of the two vectors $P(R_m-R_{N_c})$, which is normally distributed with mean 0 and variance 
 \begin{equation*}
-f_{rc}(2s)=\left(\frac{3}{\sqrt{2\pi} \sigma_{rc}} \right)\exp(-3s^2/\sigma_{rc}^2)
+1+n(N_r-n)/N_r^2=\frac{N_r^2+n(N_r-n)}{N_r^2}
 \end{equation*}
+as a sum of two normally distributed r.v 
 
+The probability of encounter between bead 1 of the chain and bead $n$ of the ring is then given by 
+\begin{equation*}
+f_{rc}(0,N_c,N_r)=\left(\frac{N_r}{\sqrt{2\pi(N_r^2+n(N_r-n)) } }\right)^3
+\end{equation*}
+and we normalize such that $\displaystyle \sum_n f_{rc}(0,N_c,N_r)=1$
 \section{Generalized Rouse Chain}\label{section_generalizedRouseChain}
 Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. the configuration distribution of the chain is given by 
 \begin{equation*}
