@@ -729,31 +729,38 @@ In equilibrium, the link vectors are independent and we can treat the two struct
 \end{figure}
 
 \subsection{The encounter probability}\label{subsection_theEncounterProbabilityChainAndRing}
-We note that distribution of the vectors between bead $m$ and $n$ at equilibrium is given by (assuming $b=\sqrt{3}$)
+We note that distribution of the vectors between bead $m$ and $n$ at equilibrium is given by 
 \begin{equation*}
-f_c(R_m-R_n,n-m)= \left(\frac{1}{\sqrt{2\pi|m-n|/N_c} }\right)^3\exp(-\frac{(R_m-R_n)^2}{2|m-n|/N_c})
+f_c(R_m-R_n,n-m)= \left(\frac{1}{2\pi|m-n|b^2 }\right)^{3/2}\exp(-\frac{(R_m-R_n)^2}{2|m-n|b^2})
 \end{equation*}
-for the Rouse chain with $b=\left<(R_n-R_{n-1})^2 \right> =\sqrt{3}$, and 
+
+The Rouse ring requires a change of variables such that the steps of the Brownian bridge will be at the same scale as that of the chain. Therefore, we define our ring as the process 
 \begin{equation*}
-f_r(R_t,N_r) = \left(\frac{N_r}{\sqrt{2\pi t(N_r-t)}}\right)^3 \exp \left(-\frac{R_t^2}{2t(N_r-t)/N_r^2}\right)
+B(t)= \sqrt{N_r}b[\omega(t)-\frac{t}{N_r}\omega(N_r)]
+\end{equation*}
+which has the pdf 
+\begin{equation*}
+f_r(R_t,N_r) = \left(\frac{1}{2\pi b^2t(N_r-t)}\right)^{3/2} \exp \left(-\frac{R_t^2}{2tb^2(N_r-t)}\right)
 \end{equation*}
 for the Rouse ring, with $R_t$ the vector from the connecting bead between the chain and the ring and the $t^{th}$ bead of the ring. 
 
-Due to the independence between the structures in equilibrium, the encounter probability between bead $m$ of the chain ($1\leq m \leq N_c$) and bead $n$ ($N_c\leq n \leq N_l$) of the ring is the joint probability that $R_n-R_{N_c}=R_m-R_{N_c}=\vec{s}$. That is 
+Due to the independence between the structures in equilibrium, the encounter probability between bead $m$ of the chain ($1\leq m \leq N_c$) and bead $t$ ($N_c\leq t \leq N_l$) of the ring is the joint probability that $R_t-R_{N_c}= R_m-R_{N_c}=\vec{s}$. That is 
 \begin{equation*}
 P(R_m-R_{N_c}=\vec{s}, R_n-R_{N_c}=\vec{s})=f_r(s,N_r)f_c(s,|m-N_c|)
 \end{equation*}
-or, $P(R_m+R_n-2R_c=2s)$. Since the sum of these random variables is the convolution of their respective pdfs, we can perform the integration. However, this integration over all values of $s$ is not trivial, and therefore we calculate the pdf of the general sum of the two vectors $P(R_m-R_{N_c})$, which is normally distributed with mean 0 and variance 
+or, $P(R_m+R_n-2R_c=2s)$. Since the sum of these random variables is the convolution of their respective pdfs, we can perform the integration. However, this integration over all values of $s$ is not trivial, and therefore we calculate the pdf of the general sum of the two vectors
+$s_1(m)= R_m-R_c, s_2(t)= R_t-R_c$ which is normally distributed 
 \begin{equation*}
-1+n(N_r-n)/N_r^2=\frac{N_r^2+n(N_r-n)}{N_r^2}
+f_{rc}(s_1+s_2;N_c,N_r)=\left(\frac{1}{\sqrt{2\pi b^2(N_c-m+t(N_r-t))}} \right)^3\exp\left(-\frac{(s_1+s_2)^2}{2(b^2(N_c-m+t(N_r-t)))}\right)
 \end{equation*}
-as a sum of two normally distributed r.v 
+as a sum of two normally distributed r.v. and $0 \leq t\leq N_r, 0\leq m\leq N_c$
 
-The probability of encounter between bead 1 of the chain and bead $n$ of the ring is then given by 
+The encounter probability between bead $m$ of the chain and bead $t$ of the ring is then given by 
 \begin{equation*}
-f_{rc}(0,N_c,N_r)=\left(\frac{N_r}{\sqrt{2\pi(N_r^2+n(N_r-n)) } }\right)^3
+f_{rc}(0;N_c,N_r)=\left(\frac{1}{\sqrt{2\pi b^2(N_c-m+t(N_r-t))}}\right)^3
 \end{equation*}
-and we normalize such that $\displaystyle \sum_n f_{rc}(0,N_c,N_r)=1$
+
+
 \section{Generalized Rouse Chain}\label{section_generalizedRouseChain}
 Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. the configuration distribution of the chain is given by 
 \begin{equation*}
