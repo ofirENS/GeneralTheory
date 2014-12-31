@@ -731,16 +731,16 @@ In equilibrium, the link vectors are independent and we can treat the two struct
 \subsection{The encounter probability}\label{subsection_theEncounterProbabilityChainAndRing}
 We note that distribution of the vectors between bead $m$ and $n$ at equilibrium is given by 
 \begin{equation*}
-f_c(R_m-R_n,n-m)= \left(\frac{1}{2\pi|m-n|b^2 }\right)^{3/2}\exp(-\frac{(R_m-R_n)^2}{2|m-n|b^2})
+f_c(R_m-R_n,n-m)= \left(\frac{3}{2\pi|m-n|b^2 }\right)^{3/2}\exp(-\frac{3(R_m-R_n)^2}{2|m-n|b^2})
 \end{equation*}
 
 The Rouse ring requires a change of variables such that the steps of the Brownian bridge will be at the same scale as that of the chain. Therefore, we define our ring as the process 
 \begin{equation*}
-B(t)= \sqrt{N_r}b[\omega(t)-\frac{t}{N_r}\omega(N_r)]
+B(t)= \sqrt{\frac{N_r}{3}}b[\omega(t)-\frac{t}{N_r}\omega(N_r)]
 \end{equation*}
 which has the pdf 
 \begin{equation*}
-f_r(R_t,N_r) = \left(\frac{1}{2\pi b^2t(N_r-t)}\right)^{3/2} \exp \left(-\frac{R_t^2}{2tb^2(N_r-t)}\right)
+f_r(R_t,N_r) = \left(\frac{3}{2\pi b^2t(N_r-t)}\right)^{3/2} \exp \left(-\frac{3R_t^2}{2tb^2(N_r-t)}\right)
 \end{equation*}
 for the Rouse ring, with $R_t$ the vector from the connecting bead between the chain and the ring and the $t^{th}$ bead of the ring. 
 
@@ -748,7 +748,32 @@ Due to the independence between the structures in equilibrium, the encounter pro
 \begin{equation*}
 P(R_m-R_{N_c}=\vec{s}, R_n-R_{N_c}=\vec{s})=f_r(s,N_r)f_c(s,|m-N_c|)
 \end{equation*}
-or, $P(R_m+R_n-2R_c=2s)$. Since the sum of these random variables is the convolution of their respective pdfs, we can perform the integration. However, this integration over all values of $s$ is not trivial, and therefore we calculate the pdf of the general sum of the two vectors
+or, $P(R_m+R_n-2R_c=2s)$. Since the sum of these random variables is the convolution of their respective pdfs, we can perform the integration, stated in the general form.
+\begin{equation*}
+\left(f_r*f_c\right)(x)=\left(\frac{1}{(2\pi)^2 \sigma_r\sigma_c} \right)^{1.5}\int_{-\infty}^{\infty}\exp\left(- \left(\frac{(x-y)^2}{\sigma_c}+\frac{y^2}{\sigma_r}\right)\right)dy
+\end{equation*}
+which can be written as
+\begin{equation*}
+\left(f_r*f_c\right)(x)=k\int_{-\infty}^{\infty}\exp(-fy^2+gy+h)dy
+\end{equation*}
+with 
+\begin{eqnarray*}
+k &=& \left(\frac{1}{(2\pi)^2 \sigma_c\sigma_r}\right)^{3/2}\\
+f &=& \frac{\sigma_c+\sigma_r}{2\sigma_r\sigma_c}\\
+g &=& \frac{x}{\sigma_c}\\
+h &=& -\frac{x^2}{2\sigma_c}
+\end{eqnarray*}
+
+Using the identity for Gaussian integral, we get
+\begin{equation*}
+\left(f_r*f_c\right)(x) = k\sqrt{\frac{\pi}{f}}\exp(\frac{g}{4f}+h)=\left(\frac{1}{(2\pi)^2\sigma_c\sigma_r}\right)^{3/2}\sqrt{\frac{2\pi\sigma_r\sigma_c}{\sigma_r+\sigma_c}}\exp\left(-\frac{x^2}{2\sigma_c}\left(1-\frac{\sigma_r}{\sigma_c(\sigma_r+\sigma_c)}\right)\right)
+\end{equation*}
+with 
+\begin{eqnarray*}
+\sigma_c &=& (N_c-m)\frac{b^2}{3}\\
+\sigma_r &=& t(N_r-t)\frac{b^2}{3}\\
+\end{eqnarray*}
+ However, this integration over all values of $s$ is not trivial, and therefore we calculate the pdf of the general sum of the two vectors
 $s_1(m)= R_m-R_c, s_2(t)= R_t-R_c$ which is normally distributed 
 \begin{equation*}
 f_{rc}(s_1+s_2;N_c,N_r)=\left(\frac{1}{\sqrt{2\pi b^2(N_c-m+t(N_r-t))}} \right)^3\exp\left(-\frac{(s_1+s_2)^2}{2(b^2(N_c-m+t(N_r-t)))}\right)
