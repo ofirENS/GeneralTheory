@@ -748,9 +748,9 @@ Due to the independence between the structures in equilibrium, the encounter pro
 \begin{equation*}
 P(R_m-R_{N_c}=\vec{s}, R_n-R_{N_c}=\vec{s})=f_r(s,N_r)f_c(s,|m-N_c|)
 \end{equation*}
-or, $P(R_m+R_n-2R_c=2s)$. Since the sum of these random variables is the convolution of their respective pdfs, we can perform the integration, stated in the general form.
+or, $P(R_m+R_n-2R_c=2s)$. Since the sum of these random variables is the convolution of their respective pdfs, we can perform the integration, stated in the general form for each dimension.
 \begin{equation*}
-\left(f_r*f_c\right)(x)=\left(\frac{1}{(2\pi)^2 \sigma_r\sigma_c} \right)^{1.5}\int_{-\infty}^{\infty}\exp\left(- \left(\frac{(x-y)^2}{\sigma_c}+\frac{y^2}{\sigma_r}\right)\right)dy
+f_{rc}(x)=\left(f_r*f_c\right)(x)=\left(\frac{1}{(2\pi)^2 \sigma_r\sigma_c} \right)^{1/2}\int_{-\infty}^{\infty}\exp\left(- \left(\frac{(x-y)^2}{\sigma_c}+\frac{y^2}{\sigma_r}\right)\right)dy
 \end{equation*}
 which can be written as
 \begin{equation*}
@@ -758,31 +758,26 @@ which can be written as
 \end{equation*}
 with 
 \begin{eqnarray*}
-k &=& \left(\frac{1}{(2\pi)^2 \sigma_c\sigma_r}\right)^{3/2}\\
+k &=& \left(\frac{1}{(2\pi)^2 \sigma_c\sigma_r}\right)^{1/2}\\
 f &=& \frac{\sigma_c+\sigma_r}{2\sigma_r\sigma_c}\\
 g &=& \frac{x}{\sigma_c}\\
 h &=& -\frac{x^2}{2\sigma_c}
 \end{eqnarray*}
 
-Using the identity for Gaussian integral, we get
+Using the identity for Gaussian integral, we get for 3D
 \begin{equation*}
-\left(f_r*f_c\right)(x) = k\sqrt{\frac{\pi}{f}}\exp(\frac{g}{4f}+h)=\left(\frac{1}{(2\pi)^2\sigma_c\sigma_r}\right)^{3/2}\sqrt{\frac{2\pi\sigma_r\sigma_c}{\sigma_r+\sigma_c}}\exp\left(-\frac{x^2}{2\sigma_c}\left(1-\frac{\sigma_r}{\sigma_c(\sigma_r+\sigma_c)}\right)\right)
+f_{rc}(x) = k\sqrt{\frac{\pi}{f}}\exp(\frac{g}{4f}+h)=\left(\frac{1}{2\pi(\sigma_c^2 +\sigma_r^2}\right)^{3/2}\exp\left(-\frac{xx^T}{2(\sigma_c^2+\sigma_r^2)}\right)
 \end{equation*}
-with 
+as in the classical result. with 
 \begin{eqnarray*}
 \sigma_c &=& (N_c-m)\frac{b^2}{3}\\
 \sigma_r &=& t(N_r-t)\frac{b^2}{3}\\
 \end{eqnarray*}
- However, this integration over all values of $s$ is not trivial, and therefore we calculate the pdf of the general sum of the two vectors
-$s_1(m)= R_m-R_c, s_2(t)= R_t-R_c$ which is normally distributed 
-\begin{equation*}
-f_{rc}(s_1+s_2;N_c,N_r)=\left(\frac{1}{\sqrt{2\pi b^2(N_c-m+t(N_r-t))}} \right)^3\exp\left(-\frac{(s_1+s_2)^2}{2(b^2(N_c-m+t(N_r-t)))}\right)
-\end{equation*}
-as a sum of two normally distributed r.v. and $0 \leq t\leq N_r, 0\leq m\leq N_c$
+and $0 \leq t\leq N_r, 0\leq m\leq N_c$
 
 The encounter probability between bead $m$ of the chain and bead $t$ of the ring is then given by 
 \begin{equation*}
-f_{rc}(0;N_c,N_r)=\left(\frac{1}{\sqrt{2\pi b^2(N_c-m+t(N_r-t))}}\right)^3
+f_{rc}(\vec{0},m,t;N_c,N_r)=\left(\frac{3}{2\pi b^2(N_c-m+t(N_r-t))}\right)^{3/2}
 \end{equation*}
 
 
