@@ -519,7 +519,7 @@ Setting $s=t $ we get the variance
 
 The joint pdf of the increments
 \begin{equation*}
-f_\Delta(\vec{x}) = \left(\frac{1}{\sqrt{((2\pi)^N |C_\Delta)|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
+f_\Delta(\vec{x}) = \left(\frac{1}{\sqrt{(2\pi)^N |C_\Delta|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
 \end{equation*}
 
 To fully express $f_\Delta(x)$ we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\Delta$ is 
@@ -613,6 +613,13 @@ where
 Note, that when $\alpha=1$ the system becomes decoupled. This happens at the limit $N\rightarrow \infty$, which makes the increments of the bridge 
 \begin{equation*}
 \lim_{N\rightarrow \infty} \Delta B_t=\lim_{N\rightarrow \infty} w(t+1)-w(t)-(1/N)w(N)= w(t+1)-w(t)
+\end{equation*}
+
+From $f_\Delta(\vec{x})$ we see that whenever $\displaystyle \sum_{n=1}^{N}x_n = 0$ we get $\delta S(\vec{x};\alpha)=[x_1,x_2,...,x_N]$ and we retrieve the pdf of the ring. 
+
+The term $\vec{x}\delta S(\vec{x},\alpha)$ in the exponent of the pdf, can be written in the following form 
+\begin{equation*}
+\vec{x}\delta S(\vec{x};\alpha)=(\alpha-1)\left( \sum_{n=1}^N x_n\right)^2 +\sum_{n=1}^N x_n^2
 \end{equation*}
 
 \subsection{Eigenvalues of the Rouse Ring}\label{subsection_eigenvaluesOfTheRouseRing}
