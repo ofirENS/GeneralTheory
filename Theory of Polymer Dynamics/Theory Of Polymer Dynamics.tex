@@ -517,7 +517,7 @@ Setting $s=t $ we get the variance
 \sigma^2_{\Delta}=1-(1/N^2)(2N-1)=\frac{(N-1)^2}{N^2}
 \end{equation*}
 
-The joint pdf of the increments
+The joint pdf of the increments is therefore 
 \begin{equation*}
 f_\Delta(\vec{x}) = \left(\frac{1}{\sqrt{(2\pi)^N |C_\Delta|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
 \end{equation*}
@@ -621,6 +621,26 @@ The term $\vec{x}\delta S(\vec{x},\alpha)$ in the exponent of the pdf, can be wr
 \begin{equation*}
 \vec{x}\delta S(\vec{x};\alpha)=(\alpha-1)\left( \sum_{n=1}^N x_n\right)^2 +\sum_{n=1}^N x_n^2
 \end{equation*}
+
+In the 3D case $N=3$ and therefore $\alpha = -1/6$. We now derive the probability distribution of the vector between step 0 and $m$, $R_m$. Using the configuration distribution 
+\begin{equation*}
+Pr(R_m)= \int \delta(R_m-\sum_{i=1}^m x_i)f_{\Delta}\{\vec{x}\}d\vec{x}
+\end{equation*}
+Using the identity of the delta function in 1D
+\begin{equation*}
+\delta(r)=\frac{1}{2\pi}\int e^{irs}ds
+\end{equation*}
+we get 
+\begin{equation*}
+Pr(R_m)=\frac{N}{(2\pi)^{N+1}(N-1)}\int \int\exp(i(R_m-\sum_{n=1}^m x_n)s -0.5(\alpha-1)\left(\sum_{n=1}^Nx_n\right)^2+\left(\sum_{n=1}^Nx_n^2\right))d\vec{x}ds
+\end{equation*}
+we can perform the integration for $x_1$ by collecting all terms related to it. The integral over $x_1$ is 
+\begin{equation*}
+\int \exp(-(\alpha-1)x_1^2-x_1(ik+(\alpha-1)\sum_{n=2}^Nx_n))dx_1=\sqrt{\frac{\pi}{(\alpha-1)}}\exp(\frac{(ik+(\alpha-1)\sum_{n=2}^Nx_n)^2}{-4(\alpha-1)}
+\end{equation*}
+
+
+
 
 \subsection{Eigenvalues of the Rouse Ring}\label{subsection_eigenvaluesOfTheRouseRing}
 Connecting bead 1 and $N$ to form a ring, we now search for the eigenvalues of the new \textit{Rouse ring} matrix, $R$, harboring such a connection. For this end, we have to calculate the determinant of the matrix
