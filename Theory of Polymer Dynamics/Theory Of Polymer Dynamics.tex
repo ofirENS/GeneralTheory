@@ -495,6 +495,7 @@ which is the encounter probability at equilibrium between two beads with a dista
 \begin{figure}[h!]
 \includegraphics[scale=0.2]{encounterProbBead1InLoopOf64BeadsSimpleRouse}\caption{Encounter Probability of bead 1 in a ring of 64 beads (blue) from 10,000 simulation compared to the theoretical result (red)}\label{figure_rouseRingEncounterProbabilityComparisionToTheory}
 \end{figure}
+The normalization is made in accordance to the encounter data, in which we divide all encounter frequency by the total number of encounter for each bead, to give an area under the curve of 1. 
 
 \subsection{Configuration distribution of the Rouse ring}\label{subsection_configurationDistributionRouseRing}
 
@@ -522,7 +523,8 @@ The joint pdf of the increments is therefore
 f_\Delta(\vec{x}) = \left(\frac{1}{\sqrt{(2\pi)^N |C_\Delta|}}\right)\exp(-0.5x^TC_\Delta^{-1}x)
 \end{equation*}
 
-To fully express $f_\Delta(x)$ we need to estimate $|C_\Delta|$ and $C^{-1}$, the form of $C_\Delta$ is 
+To fully express $f_\Delta(x)$ we need to estimate $|C_\Delta|$ and $C^{-1}$. The form of $C_\Delta$ is 
+
 \begin{equation*}
 C_\Delta = \left[
 \begin{matrix}
@@ -536,7 +538,7 @@ C_\Delta = \left[
 \end{matrix}
 \right]
 \end{equation*}
-in short
+or shortly 
 \begin{equation*}
 C_\Delta(s,t)=
 \begin{cases}
@@ -621,25 +623,6 @@ The term $\vec{x}\delta S(\vec{x},\alpha)$ in the exponent of the pdf, can be wr
 \begin{equation*}
 \vec{x}\delta S(\vec{x};\alpha)=(\alpha-1)\left( \sum_{n=1}^N x_n\right)^2 +\sum_{n=1}^N x_n^2
 \end{equation*}
-
-In the 3D case $N=3$ and therefore $\alpha = -1/6$. We now derive the probability distribution of the vector between step 0 and $m$, $R_m$. Using the configuration distribution 
-\begin{equation*}
-Pr(R_m)= \int \delta(R_m-\sum_{i=1}^m x_i)f_{\Delta}\{\vec{x}\}d\vec{x}
-\end{equation*}
-Using the identity of the delta function in 1D
-\begin{equation*}
-\delta(r)=\frac{1}{2\pi}\int e^{irs}ds
-\end{equation*}
-we get 
-\begin{equation*}
-Pr(R_m)=\frac{N}{(2\pi)^{N+1}(N-1)}\int \int\exp(i(R_m-\sum_{n=1}^m x_n)s -0.5(\alpha-1)\left(\sum_{n=1}^Nx_n\right)^2+\left(\sum_{n=1}^Nx_n^2\right))d\vec{x}ds
-\end{equation*}
-we can perform the integration for $x_1$ by collecting all terms related to it. The integral over $x_1$ is 
-\begin{equation*}
-\int \exp(-(\alpha-1)x_1^2-x_1(ik+(\alpha-1)\sum_{n=2}^Nx_n))dx_1=\sqrt{\frac{\pi}{(\alpha-1)}}\exp(\frac{(ik+(\alpha-1)\sum_{n=2}^Nx_n)^2}{-4(\alpha-1)}
-\end{equation*}
-
-
 
 
 \subsection{Eigenvalues of the Rouse Ring}\label{subsection_eigenvaluesOfTheRouseRing}
@@ -753,9 +736,11 @@ In equilibrium, the link vectors are independent and we can treat the two struct
 
 \begin{figure}[h!]
 \includegraphics[scale=0.2]{chainAndRing}
+\caption{A sketch of the composite structure of a chain and a ring connected}\label{figure_sketchRingChainPolymer}
 \end{figure}
 
 \subsection{The encounter probability}\label{subsection_theEncounterProbabilityChainAndRing}
+
 We note that distribution of the vectors between bead $m$ and $n$ at equilibrium is given by 
 \begin{equation*}
 f_c(R_m-R_n,n-m)= \left(\frac{3}{2\pi|m-n|b^2 }\right)^{3/2}\exp(-\frac{3(R_m-R_n)^2}{2|m-n|b^2})
@@ -800,14 +785,31 @@ as in the classical result. with
 \sigma_c &=& (N_c-m)\frac{b^2}{3}\\
 \sigma_r &=& t(N_r-t)\frac{b^2}{3}\\
 \end{eqnarray*}
-and $0 \leq t\leq N_r, 0\leq m\leq N_c$
+and $0 \leq t\leq N_r, 1\leq m\leq N_c$
 
 The encounter probability between bead $m$ of the chain and bead $t$ of the ring is then given by 
 \begin{equation*}
-f_{rc}(\vec{0},m,t;N_c,N_r)=\left(\frac{3}{2\pi b^2(N_c-m+t(N_r-t))}\right)^{3/2}
+f_{rc}(\vec{0},m,t;N_c,N_r)=\left(\frac{3}{2\pi b^2(N_c-m+t(N_r-t))}\right)^{3/2}/S
 \end{equation*}
 
+with $S$, the normalization constant, given by 
+\begin{equation*}
+S= \left(\frac{3}{2\pi b^2}\right)^{3/2}\left(\sum_{n=1}^{N_c} \left(\frac{1}{n}\right)^{3/2}+\sum_{t=1}^{N_r-1} \left(\frac{N_r}{ t(N_r-t)}\right)^{3/2}\right)
+\end{equation*}
+$0\leq t\leq N_r$. 
+We therefore see that $b$ is singled out in the calculation. 
+\begin{figure}[h!]
+\includegraphics[scale=0.2]{encounterProbChainRingBead1}
+\caption{the encounter probability of bead 1 in a bead-ring structure in linear (left) and log (right) scales. A chain of 10 beads is connected to a ring of 15 beads. The encounter probability signal is shown to be equal between beads in equal distance along the chain. For the case of the ring, the distance is the shortest distance along the graph representing the polymer} \label{figure_encounterProbChainRingBead1}
+\end{figure}
 
+\section{Two Rings}\label{section_twoRings}
+We now turn to investigate the encounter probabilities between beads in a 2-ring connected structure. 
+\subsection{Construction}\label{subsection_twoRingsConstruction}
+We connect two Rouse rings in a signle bead, i.e there exist a bead $k$ which is shared by the two rings. The first ring is of size $N_1$, the second $N_2$
+ 
+
+ 
 \section{Generalized Rouse Chain}\label{section_generalizedRouseChain}
 Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. the configuration distribution of the chain is given by 
 \begin{equation*}
