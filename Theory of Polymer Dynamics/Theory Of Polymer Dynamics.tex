@@ -478,7 +478,7 @@ f(0,x,0;0,t/N,N)&=&\frac{1}{\sqrt{(2\pi)^2 t(N-t/N)/N}}\exp(-\frac{x^2}{2t/N}-\f
 \end{eqnarray*}
 and in 3D
 \begin{equation*}
-f(0,x,0;0,\frac{t}{N},N) = \left(\frac{N}{\sqrt{2\pi t(N-t)}}\right)^3 \exp\left(-\frac{xx^T}{2t(N-t)/N^2}\right)
+f(0,x,0;0,\frac{t}{N},N) = \left(\frac{N}{2\pi\sqrt{ t(N-t)}}\right)^3 \exp\left(-\frac{xx^T}{2t(N-t)/N^2}\right)
 \end{equation*}
 
 \subsection{Encounter probability in the Rouse ring}\label{subsection_encounterProbabilityInTheRing}
@@ -497,6 +497,15 @@ which is the encounter probability at equilibrium between two beads with a dista
 \end{figure}
 The normalization is made in accordance to the encounter data, in which we divide all encounter frequency by the total number of encounter for each bead, to give an area under the curve of 1. 
 
+\subsection{The relation between a ring and a chain}\label{subsction_theRelationBetweenARingAndAChain}
+We note that the pdf of the ring is just the conditional probability of the end to end vector of a chain of length $N-t$ and a chain of length $t$ are equal. This can easily be verified by multiplying the pdfs of the mentioned chains. [Needs elaboration]
+
+We further note that by adding the encounter probabilities of bead 1 and $t=1..N$ and bead $N$ with $t=N-1,N-2,...,1$ we get something similar to the Rouse ring, although a weighting must be applied 
+\begin{equation*}
+\left(\frac{3}{2\pi b^2 t}\right)^{1.5}+\left(\frac{3}{2\pi b^2(N-t)}\right)^{1.5}=\left(\frac{3N}{2\pi b^2 t(N-t)}\right)^{1.5}\left((1-\frac{t}{N})^{1.5}+\left(\frac{t}{N} \right)^{1.5}\right)
+\end{equation*}
+which is a scaled version of the Rouse ring's encounter probability. 
+effectively, we can now try to replace each ring with a sum of two chains. 
 \subsection{Configuration distribution of the Rouse ring}\label{subsection_configurationDistributionRouseRing}
 
 The increments of the Rouse ring are
@@ -778,7 +787,7 @@ h &=& -\frac{x^2}{2\sigma_c}
 
 Using the identity for Gaussian integral, we get for 3D
 \begin{equation*}
-f_{rc}(x) = k\sqrt{\frac{\pi}{f}}\exp(\frac{g}{4f}+h)=\left(\frac{1}{2\pi(\sigma_c^2 +\sigma_r^2}\right)^{3/2}\exp\left(-\frac{xx^T}{2(\sigma_c^2+\sigma_r^2)}\right)
+f_{rc}(x) = k\sqrt{\frac{\pi}{f}}\exp(\frac{g^2}{4f}+h)=\left(\frac{1}{2\pi(\sigma_c^2 +\sigma_r^2)}\right)^{3/2}\exp\left(-\frac{xx^T}{2(\sigma_c^2+\sigma_r^2)}\right)
 \end{equation*}
 as in the classical result. with 
 \begin{eqnarray*}
