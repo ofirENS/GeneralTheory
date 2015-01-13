@@ -10,7 +10,32 @@
 \section{Introduction}
 This document summarizes information related to the construction of theoretical models representing polymers. 
 It is mainly drawn from the books by Doi \cite{doi1986theory}\cite{doi1996introduction}, and Bird \cite{bird1987dynamics}. 
+
+\section{The elastic dumbbell model}
+Taken from \cite{bird1987dynamics} chapter 13 The dumbbell model is an idealized toy model composed of two beads of mass $m$ connected by a Hookian spring. The position of the beads in space will be labeled $r_1$ and $r_2$.  The connector vector $Q=r_1-r_2$ describes the orientation and configuration of the dumbbell. 
+
+The define the configuration-space distribution function $\Psi(r_1,r_2,t)$ as 
+\begin{equation*}
+F(r_1,r_2,\dot{r}_1,\dot{r}_2,t)=\Psi(r_1,r_2,t)\varXi(\dot{r}_1,\dot{r}_2,r_2,r_2,t)
+\end{equation*}
+ with $\varXi$ the velocity-space distribution function, which satisfies $\int\int\varXi d\dot{r}_1\dagger\dot{r}_2=1$. We further assume that the configuration-space distribution can be factored, to be independent of the position, as $\Psi(r_1,r_2,t)=n\psi(Q,t)$. The distribution function $\psi(Q,t)$ satisfies $\int\psi dQ=1$.
  
+ The Brownian force $F_v^{(b)}$ and the elastic force $F_v^{(\phi)}$, acting upon each bead will be defined as 
+ \begin{eqnarray*}
+ F_v^{(b)} &=& -KT(\partial \ln \Psi/\partial r_v) \quad v=1,2\\
+ F_v^{(\phi)} &=& -\frac{\partial}{\partial r_v}\phi
+ \end{eqnarray*}
+ 
+ The \textbf{equation of continuity} for the dumbbell is given by 
+ \begin{equation*}
+ \frac{\partial \psi}{\partial t}=-\left(\frac{\partial}{\partial Q}[\dot{Q}]\psi \right)
+ \end{equation*}
+
+The \textbf{configuration distribution} is given by 
+\begin{equation*}
+\Psi(Q,t)=\frac{(H/2\pi KT)^{3/2}}{\sqrt{det\alpha}}\exp(-H/2KT \alpha^{-1}:QQ)
+\end{equation*}
+
 \section{The freely jointed chain}\label{section_theFreelyJointedChain}
 From \cite{doi1986theory}.We start with a simple model: a chain consisting of $N$ links, each of length $b_0$ and able to point in any direction independently of each other. The conformation of the model is represented by $(N+1)$ position vectors $\{R_n\}=\{R_0,R_1,...,R_{N}\}$, or by the set of bond vectors $\{r_n\}=(r_1,r_2,...,r_N)$, where $r_n=R_{n}-R_{n-1}$. 
 
@@ -831,7 +856,7 @@ with $N_i$ the number of connections of bead $i$, with multiplication over uniqu
 The dynamics of beads is governed by the equation
 \begin{equation*}
 \frac{dP}{dt} = -\frac{3D}{b^2}RP+\sqrt{2D}f_n
-\end{equation*}
+ \end{equation*}
 
 if we represent the Rouse matrix in its diagonal form 
 \begin{equation*}
@@ -885,6 +910,11 @@ The result show that
 \begin{equation*}
 \gamma=\ll\|r_n(t+\Delta t)-r_n(t) \|^2\gg = \left(\frac{3D\Delta t}{b} \right)^2+6D\Delta t
 \end{equation*}
+
+\subsection{Encounter signal noise estimation}\label{subsection_encounterSignalnoiseEstimation}
+[UNFINISHED]
+
+We now ask what is the expected probability to find bead $n$ close to bead $m$ given that bead 1 and $N$ have met. This is given by the calculation in \ref{section_aRingAndAChain}. 
 
 % The bibliography
 \bibliographystyle{plain}
