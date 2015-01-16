@@ -1,0 +1,43 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+\begin{document}
+\title{Attempt 01}
+\maketitle
+Assume that the assertion $2n=P_1+P_2$ is false $\forall n$, for $n\in\mathbb{N}\quad, P_1,P_2-prime$. Then we can say that there exists 4 prime numbers $P_{11},P_{12},P_{22} P_{21}$ such that 
+\begin{equation}\label{eq_firstEquality}
+P_{11}+P_{12}+D_{11}=2n=P_{21}+P_{22}-D_{12}
+\end{equation}
+with $D_{11},D_{12}>0$ the smallest number satisfying the equalities \ref{eq_firstEquality}. 
+We note that $P_{21}+P_{22}-(P_{11}+P_{12})>0$. We will attempt to prove the converse, namely $P_{21}+P_{22}-(P_{11}+P_{12})<0$.
+
+Subtracting 2, we can say that there exists $P_{31},P_{32},P_{41},P_{42}$ primes, such that 
+\begin{equation}
+P_{31}+P_{32}+D_{21}=2n-2=P_{41}+P_{42}-D_{22}
+\end{equation}
+equating, we get 
+\begin{eqnarray}
+P_{31}+P_{32}+D_{21}+2 &=& P_{11}+P_{12}+D_{11}\\
+P_{41}+P_{42}-D_{22}+2 &=& P_{21}+P_{22}-D_{12}
+\end{eqnarray}
+subtracting the equations 
+\begin{equation}
+P_{21}+P_{22}-D_{12}-D_{11}-(P_{11}+P_{12})=P_{41}+P_{42}-D_{22}+2-2-D_{21}-(P_{31}+P_{32})
+\end{equation}
+\begin{equation}
+P_{21}+P_{22}-(P_{11}+P_{12})= P_{41}+P_{42}-(P_{31}+P_{32})-D_{22}+D_{11}+D_{12}-D_{21}
+\end{equation}
+There are two cases to consider $(1)P_{32}+P_{32}<P_{11}+P_{12}$, in this case the difference $D_{11}$ must equal 1, and $P_{41}+P_{42}=P_{21}+P_{22}$ and hence $D_{22}=1$ as well. substituting in the equation
+\begin{equation}
+P_{21}+P_{22}-(P_{11}+P_{12})= P_{41}+P_{42}-(P_{31}+P_{32})-1+1+D_{12}-D_{21}
+\end{equation}
+replacing the terms 
+\begin{equation*}
+P_{21}+P_{22}-(P_{11}+P_{12})=2n-2+D_{22}-(2n-2 -D_{21})+D_{12}-D_{21}=D_{22}+D_{12}=1+D_{12}
+\end{equation*}
+
+
+\end{document}
