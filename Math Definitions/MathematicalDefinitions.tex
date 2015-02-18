@@ -52,6 +52,14 @@ Q(X) = (U+b)'diag(\lambda_1,\lambda_2,...,\lambda_p)(U+b)
 \end{equation}
 with $b = (P'\Sigma^{-0.5}\mu)'$ 
 
+\section{Spline interpolation}\label{section_splineInterpolation}
+This section is mainly taken from \cite{de1978practical}. The Newton from of the interpolation polynomial is defined using the divided differences as:
+\begin{equation*}
+p_n(x)=\sum_{i=1}^{n}(x-\tau_1)\cdot\cdot\cdot(x-\tau_n)[\tau_1,\tau_2,..\tau_n]g
+\end{equation*}
+where $\tau_i$ are the nodes of the function $g$ to be interpolated, in which the polynomial $p_n(x) $ of order $n$ agrees with it i.e $p_n(\tau_i)=g(\tau_i)\quad \forall i=1..n$
+
+
 % The bibliography
 \bibliographystyle{plain}
 \bibliography{MathematicalDefinitionsBibliography} % the bibliography.bib file 

@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{de1978practical}
+Carl De~Boor.
+\newblock A practical guide to splines.
+\newblock {\em Mathematics of Computation}, 1978.
+
 \bibitem{mathai1992quadratic}
 Arakaparampil~M Mathai and Serge~B Provost.
 \newblock {\em Quadratic forms in random variables: theory and applications}.
