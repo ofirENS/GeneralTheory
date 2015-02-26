@@ -59,6 +59,46 @@ p_n(x)=\sum_{i=1}^{n}(x-\tau_1)\cdot\cdot\cdot(x-\tau_n)[\tau_1,\tau_2,..\tau_n]
 \end{equation*}
 where $\tau_i$ are the nodes of the function $g$ to be interpolated, in which the polynomial $p_n(x) $ of order $n$ agrees with it i.e $p_n(\tau_i)=g(\tau_i)\quad \forall i=1..n$
 
+\section{the Heat equation $u_t=ku_xx$}
+Taken from \cite{bleecker1992basic}. The heat equation is a second order linear parabolic PDE describing the change of temperature in a surface with time. The constant $k$ is called the conductivity . A fundamental source solution to the one-dimensional homogeneous equation is given by 
+\begin{equation*}
+u(x,t) = (4\pi kt)^{-0.5} \exp(-x^2/(4kt))\quad t>0, -\infty <x <\infty
+\end{equation*}
+the area under the graph of the solution is always 1. 
+In general, to solve the equation we need to specify an initial condition (in terms of time) and two boundary conditions (in terms of space).
+
+
+To begin to solve the heat equation, we search for product solutions of the form $u(x,t)=X(x)T(t)$, thus we perform the differentiation to obtain a function of time to equal a function of space, which is only possible if the two equal a constant $c$. Thus we arrive at two equations
+\begin{equation*}
+T'(t)-kcT(t)=0
+\end{equation*}
+\begin{equation*}
+X''(x)-cX(x)=0
+\end{equation*}
+which their solution depends on the value of $c$
+\begin{equation*}
+u(x,t)=e^{-\lambda^2kt}(c_1\sin(\lambda x)+c_2\cos(\lambda x) ,\quad c=-\lambda^2<0
+\end{equation*}
+\begin{equation*}
+u(x,t)=e^{\lambda^2 kt}(c_1e^{\lambda x}+c_2e^{-\lambda x}),\quad c=\lambda^2 >0
+\end{equation*}
+\begin{equation*}
+u(x,t)=c_1x+c_2, \quad c=0
+\end{equation*}
+
+If $u(x,t)$ is a solution of $u_t = ku_{xx}$ then
+\begin{enumerate}
+\item  $v(x,t)=u(ax-x_0,a^2t-t_0)$ is a solution of $v_t=kv_{xx}$ for any $a,x_0,t_0$
+\item $v(x,t)=u(x,(k'/k)t)$ is a solution of $v_t=k'v_{xx}$
+\end{enumerate}
+
+The solutions of the heat equations are \textbf{unique}, in the sense that if $u_1,u_2$ are solutions of $u_t=ku_{xx}$ with $0\leq x\leq L, t\geq 0$, $u(0,t)=a(t), u(L,t)= b(t), u(x,0) = f(x)$, then $u_1=u_2$ 
+
+The stability, or change of solution in respect to small variation in the initial conditions, is seen through the \textbf{maximum principle}. If $u(x,t)$ is a $C^2$ solution of $u_t=ku_{xx}$ with $0\leq x\leq L, t\geq 0$, $u(0,t)=a(t), u(L,t) = b(t), u(x,0) = f(x)$, with $a,b,f$ a given $C^2$ functions with $A,B,M$ the maximum temperature of $a(t),b(t),f(x)$ respectively and $\bar{M}=max(A,B,M)$. Then $u(x,t)\leq \bar{M}$ in the whole range. 
+The proof of the maximal principle can be found in \cite{bleecker1992basic} page 148.
+
+The \textbf{Duhanel's principle} for inhomogeneous heat equations
+
 
 % The bibliography
 \bibliographystyle{plain}

@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{bleecker1992basic}
+David Bleecker and George Csordas.
+\newblock {\em Basic partial differential equations}.
+\newblock CRC Press, 1992.
+
 \bibitem{de1978practical}
 Carl De~Boor.
 \newblock A practical guide to splines.
