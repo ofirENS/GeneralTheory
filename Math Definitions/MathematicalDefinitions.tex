@@ -97,6 +97,40 @@ The solutions of the heat equations are \textbf{unique}, in the sense that if $u
 The stability, or change of solution in respect to small variation in the initial conditions, is seen through the \textbf{maximum principle}. If $u(x,t)$ is a $C^2$ solution of $u_t=ku_{xx}$ with $0\leq x\leq L, t\geq 0$, $u(0,t)=a(t), u(L,t) = b(t), u(x,0) = f(x)$, with $a,b,f$ a given $C^2$ functions with $A,B,M$ the maximum temperature of $a(t),b(t),f(x)$ respectively and $\bar{M}=max(A,B,M)$. Then $u(x,t)\leq \bar{M}$ in the whole range. 
 The proof of the maximal principle can be found in \cite{bleecker1992basic} page 148.
 
+For an \textbf{inhomogeneous heat equation}, with a heat source term $Q(x,t)$ we have 
+\begin{equation*}
+u_t=ku_{xx}+Q(x,t)
+\end{equation*}
+with B.C $u(-1,t)=u(1,t)$ and I.C $u(x,0)=f(x)=const$, we perform the following steps:
+\begin{enumerate}
+\item we first solve the homogeneous equation $u_t=ku_{xx}$ by separation of variables, to find the eigenfunctions $\sin(n\pi x)$ and eigenvalues $(n\pi)^2$, $n=1..\infty$
+\item then the solution can be expanded in terms of the eigenfunctions as 
+\begin{equation*}
+u=\sum_{n=1}^{\infty}c_n(t)\sin(n\pi x)
+\end{equation*}
+\item assume that the source term can be expanded as a Fourier series
+\begin{equation*}
+Q(x,t)= \sum_{n=1}^{\infty}d_n\sin(n\pi x)
+\end{equation*}
+From the Fourier series theory we know that 
+\begin{equation*}
+d_n=\int Q(x,t)\sin(n\pi x)dx
+\end{equation*}
+but $d_n$ must be a function of time and only a constant as a function of $x$, therefore setting $a_n(t) = d_n$ and assuming we can perform the integration 
+\begin{equation*}
+Q(x,t) = \sum_{n=1}^{\infty}a_n(t)\sin(n\pi x)
+\end{equation*}
+\item we now substitute the series expansion of $u$ into the inhomogeneous equation to obtain 
+\begin{equation*}
+\sum_{n=1}^{\infty}c'_n(t)\sin(n\pi x)=-k\sum_{n=1}^{\infty}(n\pi)^2c_n(t)\sin(n\pi x)+\sum_{n=1}^{\infty}a_n(t)\sin(n\pi x)
+\end{equation*}
+\item the Fourier coefficients must be equal, then we have the ODE
+\begin{equation*}
+c'_n(t)= -k(n\pi)^2 c_n(t)+a_n(t)=-k\lambda_n c_n(t)+a_n(t)
+\end{equation*}
+\item we can solve the ODE by multiplying by the integration factor $e^{\lambda_n k t}$
+\end{enumerate}
+
 The \textbf{Duhanel's principle} for inhomogeneous heat equations
 
 
