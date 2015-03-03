@@ -131,7 +131,30 @@ c'_n(t)= -k(n\pi)^2 c_n(t)+a_n(t)=-k\lambda_n c_n(t)+a_n(t)
 \item we can solve the ODE by multiplying by the integration factor $e^{\lambda_n k t}$
 \end{enumerate}
 
-The \textbf{Duhanel's principle} for inhomogeneous heat equations
+The \textbf{Duhanel's principle} for inhomogeneous heat equations. suppose that $h(x,t)\in C^2 \quad 0\leq x\leq L, t\geq 0$ 
+then the inhomogeneous source problem $u_t-ku_{xx}=h(x,t)$ with $u(0,t)=u(L,t)=0 \quad u(x,0)=	0$, is solved by first solving the related problem 
+$v_t=kv_{xx}$ with $v(0,t;s)=v(L,t;s)=0 \quad v(x,s;s)=h(x,s)\quad 0\leq x\leq L, t\geq s$
+in which the source term is translated into initial condition, and then performing the integration 
+\begin{equation*}
+u(x,t)= \int_0^t v(x,t-s;s)ds
+\end{equation*}
+
+For \textbf{inhomogeneous boundary conditions} we have to present the solution as a combination of a particular and a homogeneous solutions. So first we look at homogeneous problems in an infinite domain
+$u_t=ku_{xx}\quad -\infty\leq x\leq \infty \quad t\geq 0$ with the initial and boundary conditions: $u(x,0)=f(x)$.
+
+We use the heat kernel, which is also the fundamental solution for the heat equation, namely 
+\begin{equation*}
+G(x,t)=\frac{1}{\sqrt{4\pi k t}}\exp(-\frac{x^2}{4kt})
+\end{equation*}
+The fundamental solution solve the initial value problem with singular initial data $G(x,t\rightarrow 0)=\delta(x)$ and it satisfies the heat equation. This function is exactly the Green's function. The Green's function $G(x,t;\zeta)$ is a solution with the initial singular data $\delta(x-\zeta)$
+\begin{equation*}
+G(x,t;\zeta)=G(x-\zeta,t)=\frac{1}{\sqrt{4\pi k t}}\exp(-\frac{(x-\zeta)^2}{4kt})
+\end{equation*}
+
+The solution to the initial problem is then given by 
+\begin{equation*}
+u(x,t)= \int_{-\infty}^{\infty}G(x,t;\zeta)f(\zeta)d\zeta
+\end{equation*}
 
 
 % The bibliography
