@@ -1,23 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.19)  21 JAN 2015 11:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.3)  6 MAY 2015 17:22
 entering extended mode
-**Theory*Of*Polymer*Dynamics.tex
-
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.tex"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Theory Of Polymer Dynamics.tex"
+(./Theory Of Polymer Dynamics.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,24 +24,24 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -91,41 +82,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count100
@@ -133,16 +124,16 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -173,7 +164,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -181,25 +172,25 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen114
 \Hy@linkcounter=\count101
 \Hy@pagecounter=\count102
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count103
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -211,7 +202,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count104
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -236,28 +227,29 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count109
 \c@bookmark@seq@number=\count110
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip46
 )
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.aux")
+(./Theory Of Polymer Dynamics.aux)
+\openout1 = `"Theory Of Polymer Dynamics.aux"'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -273,7 +265,7 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen118
@@ -286,13 +278,28 @@ LaTeX Font Info:    ... okay on input line 7.
 \MPnumerator=\count115
 \makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box29
 Package hyperref Info: Link coloring OFF on input line 7.
- ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count117
@@ -301,19 +308,18 @@ LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
 
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.out")
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.out")
+(./Theory Of Polymer Dynamics.out) (./Theory Of Polymer Dynamics.out)
 \@outlinefile=\write3
+\openout3 = `"Theory Of Polymer Dynamics.out"'.
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 10.
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
-("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
@@ -321,9 +327,9 @@ LaTeX Warning: No \author given.
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]pdfTeX warning (ext4): des
-tination with the same identifier (name{page.1}) has been already used, duplica
-te ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
+ination with the same identifier (name{page.1}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
 l.49 \end{equation*}
@@ -344,7 +350,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--391
  []
 
 [9] [10] [11] [12]
-<encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg, id=230, 1686.3pt x 890.32625
+<encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg, id=232, 1686.3pt x 890.32625
 pt>
 File: encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg Graphic file (type jpg)
  <use encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg>
@@ -356,24 +362,23 @@ Overfull \hbox (6.41331pt too wide) detected at line 531
 [][] \OT1/cmr/m/n/10 + [][] = [][] []
  []
 
-[13 <D:/Ofir/Work/ENS/Documents/General Theory/Theory of Polymer Dynamics/encou
-nterProbBead1InLoopOf64BeadsSimpleRouse.jpg>] [14] [15]
+[13 <./encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg>] [14] [15]
 Overfull \hbox (2.65184pt too wide) in paragraph at lines 654--655
 []\OT1/cmr/m/n/10 From $\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ([])$ we see that w
 hen-ever $[] \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = 0$ we get $\OML/cmm/m/it/10
- S\OT1/cmr/m/n/10 ([]; \OML/cmm/m/it/10 \OT1/cmr/m/n/10 ) = [\OML/cmm/m/it/10
- x[]; x[]; :::; x[]\OT1/cmr/m/n/10 ]$
+ ^^NS\OT1/cmr/m/n/10 ([]; \OML/cmm/m/it/10 \OT1/cmr/m/n/10 ) = [\OML/cmm/m/it/
+10 x[]; x[]; :::; x[]\OT1/cmr/m/n/10 ]$
  []
 
 
 Overfull \hbox (45.21445pt too wide) detected at line 691
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OMS/
-cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/c
-msy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m
-/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/
-n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/
-10 xD[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n
-/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
+cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS
+/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML
+/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)(\OMS
+/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML
+/cmm/m/it/10 xD[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OM
+S/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 [16]
@@ -384,11 +389,11 @@ Overfull \hbox (83.74496pt too wide) detected at line 713
 
 
 Overfull \hbox (17.65344pt too wide) detected at line 721
-\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\O
-MS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[](\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[] + (
-\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML
-/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[] + (\
-OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
+\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)(
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)
+[] + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/1
+0 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/
+10 1)[] + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 
@@ -401,15 +406,14 @@ Overfull \hbox (27.80553pt too wide) in alignment at lines 735--740
  [][][] []
  []
 
-[17] [18] <chainAndRing.jpg, id=262, 963.6pt x 542.025pt>
+[17] [18] <chainAndRing.jpg, id=264, 963.6pt x 542.025pt>
 File: chainAndRing.jpg Graphic file (type jpg)
 
 <use chainAndRing.jpg>
 Package pdftex.def Info: chainAndRing.jpg used on input line 772.
 (pdftex.def)             Requested size: 192.71658pt x 108.40308pt.
- [19 <D:/Ofir/Work/ENS/Documents/General Theory/Theory of Polymer Dynamics/chai
-nAndRing.jpg>]
-<encounterProbChainRingBead1.jpg, id=268, 1686.3pt x 890.32625pt>
+ [19 <./chainAndRing.jpg>]
+<encounterProbChainRingBead1.jpg, id=270, 1686.3pt x 890.32625pt>
 File: encounterProbChainRingBead1.jpg Graphic file (type jpg)
 
 <use encounterProbChainRingBead1.jpg>
@@ -433,63 +437,60 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 855.
 
-[21 <D:/Ofir/Work/ENS/Documents/General Theory/Theory of Polymer Dynamics/encou
-nterProbChainRingBead1.jpg>]
+[21 <./encounterProbChainRingBead1.jpg>]
 Overfull \hbox (3.00285pt too wide) detected at line 892
-[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10  []\OT
-1/cmr/m/n/10 )\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\OMS/c
-msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
-/10 k  \OT1/cmr/m/n/10 ([]\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10
- k \OT1/cmr/m/n/10 + []\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 Qf\OMS/cmsy/m/n/10 k\
-OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 k
+[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\
+OT1/cmr/m/n/10 ^^C)\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\O
+MS/cmsy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy
+/m/n/10 k ^^T \OT1/cmr/m/n/10 ([]\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 ^^C)\OMS/cms
+y/m/n/10 k \OT1/cmr/m/n/10 + []\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 Qf\OMS/cmsy/m
+/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 k
+
  []
 
-[22]
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.bbl" [23])
+[22] (./Theory Of Polymer Dynamics.bbl [23])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 922.
  [24
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 922.
 
-("D:\Ofir\Work\ENS\Documents\General Theory\Theory of Polymer Dynamics\Theory O
-f Polymer Dynamics.aux")
+(./Theory Of Polymer Dynamics.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 922.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 922.
-Package rerunfilecheck Info: File `Theory*Of*Polymer*Dynamics.out' has not chan
-ged.
-(rerunfilecheck)             Checksum: <no file>.
+Package rerunfilecheck Info: File `"Theory Of Polymer Dynamics".out' has not ch
+anged.
+(rerunfilecheck)             Checksum: 032B5B8FA55E393DD91312FDFA8F2396;2553.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 922.
  ) 
 Here is how much of TeX's memory you used:
- 6046 strings out of 493921
- 88546 string characters out of 3144879
- 175624 words of memory out of 3000000
- 9210 multiletter control sequences out of 15000+200000
- 12455 words of font info for 48 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 29i,8n,31p,766b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
-<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><d:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb><d:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "Theory Of Polymer Dynamics.pdf" (25 pages, 557677 bytes).
+ 6157 strings out of 495028
+ 89533 string characters out of 6181498
+ 177667 words of memory out of 5000000
+ 9228 multiletter control sequences out of 15000+600000
+ 12455 words of font info for 48 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 29i,8n,31p,768b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on "Theory Of Polymer Dynamics.pdf" (25 pages, 520573 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
  76 named destinations out of 1000 (max. 500000)
  288 words of extra memory for PDF output out of 10000 (max. 10000000)
 
