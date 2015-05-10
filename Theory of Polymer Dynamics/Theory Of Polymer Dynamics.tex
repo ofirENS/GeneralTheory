@@ -83,7 +83,8 @@ since
 \left<R^2\right> = \left<\left(\sum_{n=1}^N(r_n)\right)^2\right>=\sum_{n=1}^N\sum_{m=1}^N\left<r_nr_m\right>+\sum_{n=1}^N\left<r_n^2\right>+2\sum_{m>n}^N\left< r_nr_m\right>=\sum_{n=1}^N\left<r_n^2\right>=Nb_0^2
 \end{equation*}
 
-therefore, $\left<R^2\right>^{0.5}=\sqrt{N}b_0$. Here we used  $\left<r_nr_m\right>=\left<r_n\right>\left<r_m\right>=0$. Note that this is just the sum of variances of the bond vectors (each of which has variance of $b_0$)
+therefore, $\left<R^2\right>^{0.5}=\sqrt{N}b_0$. Here we used  $\left<r_nr_m\right>=\left<r_n\right>\left<r_m\right>=0$. Note that this is just the sum of variances of the bond vectors (each of which has variance of $b_0$).
+
 
 \subsection{Distribution of the end-to-end vector}\label{subsection_distributionOfTheEndToEndVector}
 We denote $\Phi(R,N)$ as the probability distribution function that the end-to-end vector of a chain of N beads is $R$.
@@ -132,6 +133,13 @@ We can thus immediately see that when setting $R_n=R_m$ we get
 \end{equation*}
 which is the steady state probability of encounter, which drops with the distance
 
+
+\subsection{Extensibility of the chain}\label{subsection_extensibilitiOfTheChain}
+A Gaussian chain can be extended to any length provided that enough force was invested. In reality, the chain must oppose the stretching force. To take this into account modified force laws have been proposed. One useful law is the Warner law
+\begin{equation*}
+F(r_i -r_j)=\frac{3KT(r_i-r_j)/((N-1)b_0^2}{(1-((r_i-r_j)/((N-1)b_0^2)^2)}
+\end{equation*}
+Chains obeying a stretching law as shown above are called FENE chains (Finite extensible nonlinear elastic)
 
 
 
