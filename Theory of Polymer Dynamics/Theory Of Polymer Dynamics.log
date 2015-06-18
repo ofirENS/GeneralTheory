@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.6.12)  13 JUN 2015 13:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.6.12)  18 JUN 2015 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,20 +350,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 397--399
  []
 
 [9] [10] [11] [12]
-<encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg, id=236, 1686.3pt x 890.32625
+<encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg, id=241, 1686.3pt x 890.32625
 pt>
 File: encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg Graphic file (type jpg)
  <use encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg>
 Package pdftex.def Info: encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg used 
-on input line 529.
+on input line 536.
 (pdftex.def)             Requested size: 337.25403pt x 178.06209pt.
 
-Overfull \hbox (6.41331pt too wide) detected at line 539
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (6.41331pt too wide) detected at line 546
 [][] \OT1/cmr/m/n/10 + [][] = [][] []
  []
 
-[13 <./encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg>] [14] [15]
-Overfull \hbox (2.65184pt too wide) in paragraph at lines 662--663
+[13] [14 <./encounterProbBead1InLoopOf64BeadsSimpleRouse.jpg>] [15]
+Overfull \hbox (2.65184pt too wide) in paragraph at lines 669--670
 []\OT1/cmr/m/n/10 From $\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ([])$ we see that w
 hen-ever $[] \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = 0$ we get $\OML/cmm/m/it/10
  ^^NS\OT1/cmr/m/n/10 ([]; \OML/cmm/m/it/10 \OT1/cmr/m/n/10 ) = [\OML/cmm/m/it/
@@ -371,7 +375,7 @@ hen-ever $[] \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = 0$ we get $\OML/cmm/m/it/10
  []
 
 [16]
-Overfull \hbox (45.21445pt too wide) detected at line 699
+Overfull \hbox (45.21445pt too wide) detected at line 706
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OMS/
 cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 + (\OMS
 /cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML
@@ -382,13 +386,13 @@ S/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[]\OML/cmm/m/it/10 D[]
  []
 
 
-Overfull \hbox (83.74496pt too wide) detected at line 721
+Overfull \hbox (83.74496pt too wide) detected at line 728
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/1
 0 = [][]
  []
 
 
-Overfull \hbox (17.65344pt too wide) detected at line 729
+Overfull \hbox (17.65344pt too wide) detected at line 736
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)(
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)
 [] + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)(\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/1
@@ -397,48 +401,44 @@ Overfull \hbox (17.65344pt too wide) detected at line 729
  []
 
 
-Overfull \hbox (8.91283pt too wide) in alignment at lines 731--736
+Overfull \hbox (8.91283pt too wide) in alignment at lines 738--743
  [][][] []
  []
 
-
-Overfull \hbox (27.80553pt too wide) in alignment at lines 743--748
+[17]
+Overfull \hbox (27.80553pt too wide) in alignment at lines 750--755
  [][][] []
  []
 
-[17] [18] <chainAndRing.jpg, id=268, 963.6pt x 542.025pt>
+[18] <chainAndRing.jpg, id=273, 963.6pt x 542.025pt>
 File: chainAndRing.jpg Graphic file (type jpg)
-
-<use chainAndRing.jpg>
-Package pdftex.def Info: chainAndRing.jpg used on input line 780.
+ <use chainAndRing.jpg>
+Package pdftex.def Info: chainAndRing.jpg used on input line 787.
 (pdftex.def)             Requested size: 192.71658pt x 108.40308pt.
- [19 <./chainAndRing.jpg>]
-<encounterProbChainRingBead1.jpg, id=274, 1686.3pt x 890.32625pt>
+
+[19 <./chainAndRing.jpg>] [20]
+<encounterProbChainRingBead1.jpg, id=283, 1686.3pt x 890.32625pt>
 File: encounterProbChainRingBead1.jpg Graphic file (type jpg)
 
 <use encounterProbChainRingBead1.jpg>
-Package pdftex.def Info: encounterProbChainRingBead1.jpg used on input line 844
+Package pdftex.def Info: encounterProbChainRingBead1.jpg used on input line 851
 .
 (pdftex.def)             Requested size: 337.25403pt x 178.06209pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[20]
+ [21 <./encounterProbChainRingBead1.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 863.
+(hyperref)                removing `math shift' on input line 870.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 863.
+(hyperref)                removing `\Delta' on input line 870.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 863.
+(hyperref)                removing `math shift' on input line 870.
 
-[21 <./encounterProbChainRingBead1.jpg>]
-Overfull \hbox (3.00285pt too wide) detected at line 900
+[22]
+Overfull \hbox (3.00285pt too wide) detected at line 907
 [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\
 OT1/cmr/m/n/10 ^^C)\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\O
 MS/cmsy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy
@@ -448,26 +448,25 @@ y/m/n/10 k \OT1/cmr/m/n/10 + []\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 Qf\OMS/cmsy/m
 
  []
 
-[22] (./Theory Of Polymer Dynamics.bbl [23])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 930.
+(./Theory Of Polymer Dynamics.bbl [23])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 937.
  [24
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 930.
-
-(./Theory Of Polymer Dynamics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 930.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 930.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 937.
+ (./Theory Of Polymer Dynamics.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 937.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 937.
 Package rerunfilecheck Info: File `"Theory Of Polymer Dynamics".out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 1A14F60677A8F1BF0C0988C13F2BB202;2633.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 930.
+(rerunfilecheck)             Checksum: 2E7F5F73F5EE20CD8EEF3352954D418C;2714.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 937.
  ) 
 Here is how much of TeX's memory you used:
- 6161 strings out of 493315
- 88515 string characters out of 6145893
- 181719 words of memory out of 5000000
- 9473 multiletter control sequences out of 15000+600000
+ 6163 strings out of 493315
+ 88541 string characters out of 6145893
+ 182721 words of memory out of 5000000
+ 9474 multiletter control sequences out of 15000+600000
  12455 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  29i,8n,31p,768b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -484,10 +483,10 @@ b></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
 /fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/
 amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "Theory Of Polymer Dynamics.pdf" (25 pages, 521035 bytes).
+Output written on "Theory Of Polymer Dynamics.pdf" (25 pages, 521825 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
