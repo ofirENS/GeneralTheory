@@ -105,6 +105,17 @@ Continuing with a series of approximations to the integral above, we get
 \Phi(R,N)=(3/2\pi N b^2)^{1.5} \exp(-\frac{3R^2}{2Nb^2})
 \end{equation*}
 
+\section{The freely rotating chain}
+In this model the $n$-th bond is connected to the $(n-1)$-th bond with a fixed angle $\theta_0$ and can rotate freely around the $(n-1)$-th bond. We calculate $\left<r_m\cdot r_n \right>$. If the average of $r_n$ is taken with the rest of the chain $r_m,r_{m+1},r_{m+2},...,r_{n-1}$ with $n>m$, we get 
+\begin{equation*}
+\left<r_n \right>_{r_m,r_{m+1},r_{m+2},...,r_{n-1}}= \cos(\theta_0)r_{n-1}
+\end{equation*}
+We multiply both sides by by $r_m$ and take the average over $r_m,r_{m+1},r_{m+2},...,r_{n-1}$ we get 
+\begin{equation*}
+\left<r_n \cdot r_m \right>= \cos(\theta_0)\left<r_{n-1}\cdot r_m \right>
+\end{equation*}
+We get a recursion relation with the initial condition $\left<r_m^2 \right>=b^2$, which can be solved by 
+$\left<r_n,r_m\right>=b^2\cos(\theta_0)^{n-m}$
 
 \section{The Gaussian Chain}\label{section_theGaussianChain}
 From \cite{doi1986theory}. We consider a chain whose bond length has a Gaussian distribution 
