@@ -85,6 +85,17 @@ For a cylinder set $C(t;I)$, where $t>0$ and $I=(a,b)$, the Weiner measure is
 Pr\{C(t;I)\}=\frac{1}{\sqrt{2\pi t}}\int_a^b\exp^{-x^2/2t}dx
 \end{equation*}
 
+The d-dimensional Weiner measure of a cylinder is defined as 
+\begin{equation*}
+Pr\{C(t_1,t_2,...,t_k;I_1,I_2,...,I_k)\} = \int_{I_1,..,I_k}\prod_{j=1}^k\frac{\exp\left(-\frac{|x_j-x_{j-1}|^2} {2(t_j-t_{j-1}))}\right)}{[2\pi(t_j-t_{j-1})]^{n/2}}dx_j
+\end{equation*}
+
+The PDF of the d-dimensional mathematical Brownian motion is defined in terms of the probability density of the cylinder sets
+
+\begin{equation*}
+F_w(x,t)=Pr\{w\in \Omega |w(t,w)\leq x\}=\frac{1}{(2\pi t)^{n/2}}\int_{-\infty}^{x_1,x_2,..,x_d}e^{-|y|^2 /2t}dy_1dy_2,..dy_d
+\end{equation*}
+
 \section{Martingale}\label{section:martingale}
 A martingale is a stochastic process $ x(t)$ with $\mathbb{E}|x(t)|<\infty$ ,$\forall t$, and for $t_1<t_2<...<t_n$
 \begin{equation*}
