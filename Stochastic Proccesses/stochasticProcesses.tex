@@ -9,6 +9,7 @@
 
 \begin{document}
 \tableofcontents
+\chapter{}
 \section{sigma-algebra, Probability space, and Random Variables}
 From \cite{Oksendal14}. If $\Omega$ is a given set, a \textbf{$\sigma$-algebra} $\mathcal{F}$ on $\Omega$ is a family $\mathcal{F}$ of subsets of $\Omega$ with the following properties
 \begin{enumerate}
@@ -41,10 +42,37 @@ The function
 \end{equation*}
 represent a two-dimensional process, where fixing $t$ gives us all the values of the random process $X$ at a particular point in time (assuming $t$ represents time), whereas fixing $\omega$ gives us one trajectory over time (one realization of the process).The process $X$ is referred to as a \textbf{stochastic process}.
 
+\section{Time Correlation Function and Response Function}\label{section:timeCorrelationAndResponseFunction}
+Taken from Doi \& Edwards. One characterization of a Brownian path is the time correlation function. This function is defined as follows, for a quantity $A$ of a system of Brownian particles for many samples in the \textit{equilibrium} state. Let $A(t)$ be the measured values of $A$ at time $t$. The time correlation function $C_{AA}(t)$ is the average of $A(t)A(0)$
+\begin{equation*}
+C_{AA}(t)=\left<A(t)A(0) \right>
+\end{equation*}
+Averaging is performed over samples (not time). $C_{AA}(t)$ usually decreases with time since $A(t)$ and $A(0)$ become uncorrelated with time, and becomes $\left< A(t)\right> \left< A(0)\right>$. the time in which these quantities become uncorrelated is called the \textit{correlation time}. 
+
+The time correlation is also defined for different quantities 
+\begin{equation*}
+C_{AB}(t)= \left< A(t)B(0) \right>
+\end{equation*}
+which is the cross correlation function. 
+
 \section{Noise}\label{section:noise}
+From \cite{Oksendal14}. While trying to incorporate noise into a differential equation representing a dynamical system, one needs to define the characteristics of the noise in the system. For an equation of the form 
+\begin{equation*}
+dX=a(t)dt +b(t)\cdot noise
+\end{equation*}
+It is reasonable to look for some stochastic process $W_t$ to represent the noise term. The noise term $W_t$ has to have the following characteristics
+\begin{enumerate}
+	\item $t_1\neq t_2 \Rightarrow$ $W_{t_1}\neq W_{t_2}$
+	\item ${W_t}$ is stationary, i.e. the joint distribution of $W_{t1+t},...W_{t_k+t}$ does not depend on $t$. 
+	\item the expectation $E[W_t]=0$ for all $t$
+\end{enumerate}
+One other requirement might be $E[W_t^2]=t$. It turns out that there is no "reasonable" process satisfying the first two requirements. However, it is possible to describe $W_t$ as a generalized stochastic process called white noise process. This means that it can be constructed as a measure on the space of distribution in $[0, \infty)$.
+
+From the requirement that $E[W_t]=0,\quad E[W_t^2]=t$, we get the first and second moment of the generating distribution function for the process. This means that the process must be normally distributed. 
+
 White noise is a process for which there is no correlation between any values at different times. As an idealization of such a process there exist the \textbf{Orenstein-Uhlenbeck process} (to be defined) for which produces an almost uncorrelated noise. For this model, the second order correlation function can, up to a constant factor, be described as 
 \begin{equation*}
-<x(t),x(t')>= \frac{\gamma}{2}\exp(-\gamma|t-t'|)
+\left<x(t),x(t')\right>= \frac{\gamma}{2}\exp(-\gamma|t-t'|)
 \end{equation*}
 
 \section{The Space of Elementary Events}\label{section:theSpaceOfElementaryEvents}
@@ -129,12 +157,12 @@ for the \textbf{It\^{o} integral}, we choose $\tau_i=t_{i-1}$, which is the left
 \begin{equation*}
 \int_{t_0}^{t}G(t')\mathrm{d}W(t')=ms-lim_{n\rightarrow\infty}\left\{\sum_{i=1}^nG(t_{i-1})[W(t_{i})-W(t_{i-1})] \right\}
 \end{equation*}
-by ms-lim, we mean the mean-square limit, which is defined by 
+by $ms-lim$, we mean the mean-square limit, which is defined by 
 \begin{equation*}
 ms-lim_{n\rightarrow\infty}\int p(\omega)[X_n(\omega)-X(\omega)]^2dw= lim_{n\rightarrow \infty}<(X_n-X)^2>
 \end{equation*}
 
-if indeed $lim_{n\rightarrow \infty}<(X_n-X)^2>$ we say that $ms-lim_{n\rightarrow \infty} X_n=X$.
+If indeed $lim_{n\rightarrow \infty}<(X_n-X)^2>$ we say that $ms-lim_{n\rightarrow \infty} X_n=X$.
 
 One major consequence of the choice $\tau_i=t_{i-1}$ is that 
 \begin{equation*}
@@ -221,7 +249,7 @@ dx(t) = f'(t)d\omega(t)dt+f(t)d\omega(t)=\omega(t)df(t)+f(t)d\omega(t)
 \end{equation*}
 as in the classical calculus. 
 
-\textbf{Example 3:} the differential of the product of functions. If $x_1(t)$ and $x_2(t)$ have the Ito differentials
+\textbf{Example 3:} the differential of the product of functions. If $x_1(t)$ and $x_2(t)$ have the It\^{o} differentials
 \begin{equation*}
 dx_1dt = a_1(t)dt +b_1(t)d\omega(t)\\
 \end{equation*}
@@ -240,7 +268,7 @@ From \cite{schuss2009theory}. To see the relationship between the Ito integral a
 \end{equation}
 where $\omega_S(t)$ represents the Stratonovich integral.
 
-\textbf{Example 1:} We now use the Wong-Zakai correction to show that the Stratnovich differential satisfies the classical rule
+\textbf{Example 1:} We now use the Wong-Zakai correction to show that the Stratonovich differential satisfies the classical rule
 \begin{equation*}
 d_Sx_1(t)x_2(t)= x_1(t)dx_2(t) +x_2(t)dx_1(t)
 \end{equation*}
@@ -250,14 +278,9 @@ The Statonovich differential is defined as
 d_Sx(t) = a(t)dt+b(t)d_S\omega(t)
 \end{equation*}
 
-\section{The Langevin Equation}\label{section:theLangevinEquation}
 [Unfinished]
-An equation of the type 
-\begin{equation*}
-\frac{dx}{dt}=a(x,t)+b(x,t)\xi(t)
-\end{equation*}
 
-\section{The It\^{o} Equation}\label{section:theItoEquation}
+\subsection{The It\^{o} Equation}\label{subsection:theItoEquation}
 Equation of the form 
 \begin{equation*}
  \mathrm{d} X_t = \mu(X_t,t)\, \mathrm{d} t +  \sigma(X_t,t)\, \mathrm{d} B_t
@@ -266,9 +289,42 @@ is an informal way of expressing the more appropriate integral equation
 \begin{equation*}
 X_{t+s} - X_{t} = \int_t^{t+s} \mu(X_u,u) \mathrm{d} u + \int_t^{t+s} \sigma(X_u,u)\, \mathrm{d} B_u
 \end{equation*}
-where the dynamic of the particle $X$ is given as a sum of two integrals, the first one is a standard Lebesgue integral, and the second is an It\^{o} integral (to be defined).  
+where the dynamic of the particle $X$ is given as a sum of two integrals, the first one is a standard Lebesgue integral (see \ref{appendix:theLebesgueIntegral}), and the second is an It\^{o} integral (\ref{section:stochasticIntegration}).  
 The functions $\mu(X_t,t)$ and $\sigma(X_t,t)$ are well defined continuous functions, and $B_t$ is a Brownian motion (a Weiner process, or white noise). An informal way of interpreting the equation above is to say that at each small time interval of size $\delta$ the process $X_t$ is changed by a normally distributed value with expectation $\mu(X_t,t)\delta$ and variance $\sigma(X_t,t)^2\delta$. 
-the function $\mu(X_t,t)$ is referred to a s the drift coefficient, and the function $\sigma(X_t,t)$ as the diffusion coefficient. 
+The function $\mu(X_t,t)$ is referred to a s the drift coefficient, and the function $\sigma(X_t,t)$ as the diffusion coefficient. 
+
+\subsection{It\^{o}'s formula}\label{subsection:itosFormula}
+The chain rule of differentiation of composite function does not apply for stochastic processes in the regular sense. Consider $n$  It\^{o}-differentiable processes 
+\begin{equation*}
+dx^i = a^idt+\sum_{j=1}^m b^{ij}dw^j, \quad i=1,2,..,n.
+\end{equation*} 
+and define the function $f(x1,x2,...,x_n)$, with $x=(x_1(t),x_2(t),...,x_n(t)$,
+if $a^i(t)$ and $b^{ij}(t)$ are continuous functions, such that $f(x,t)$ is twice continuously differentiable and $|f_{xx}(x,t)|\leq A(t)\exp(-\alpha(t)|x|)$ for $A(t),\alpha(t)>0$ then
+\begin{equation*}\label{eq:itoFormula}
+df(x,t) = \left[\frac{\partial f(x,t)}{\partial t}+L^*_xf(x,t) \right]dt+\sum_{i}^n \sum_j^m b^{ij}(t)\frac{\partial f(x,t)}{\partial x^i}dw^j
+\end{equation*}
+where 
+\begin{equation*}
+L*_xf(x,t)=\sum_{i=1}^n\sum_{j=1}^m\sigma^{ij}(t)\frac{\partial^2f(x,t)}{\partial x^i \partial x^j}+\sum_{i=1}^n a^i(t)\frac{\partial f(x,t)}{\partial x^i}
+\end{equation*}
+with 
+\begin{equation*}
+\sigma^{ij}(t)=\frac{1}{2}\sum_{k=1}^m b^{ik}(t)b^{jk}(t)
+\end{equation*}
+The function $n\times n$ matrix $\{\sigma^{ij}(t) \}$ is the diffusion matrix. 
+The operator $L*_x(f(x(t),t))$ is called the \textit{backward Kolmogorov operator} and comes out naturally in the derivation of the It\^{o}'s formula. This operator will be discussed next. 
+
+\section{The backward Kolmogorov equation}\label{section:backwardKolmogorovEquation}
+The backward Kolmogorov equation is a partial differential operator derived from continuous-time continuous-state Markov processes. If we have information about the state of a system $x$ at a terminal time $s$, which is the probability distribution $p_s(x)$, we would like to know the probability distribution of the system at previous time $t<s$.
+If the system state $x(t)$ evolves according to the It\^o equation 
+\begin{equation*}
+dx=a(x,t)dt+B(x,t)dw
+\end{equation*}
+then the Kolmogorov backward equation is given by 
+\begin{equation}\label{eq:kolmogorovBackwardEquation}
+-\frac{\partial}{\partial t}p(x,t) = a(x,t)\frac{\partial}{\partial t}p(x,t)+\frac{1}{2}B^2(x,t)\frac{\partial^2}{\partial x^2}p(x,t)
+\end{equation}
+for $t<s$, and subject to the final condition $p(x,s)=u_s(x)$, with $u_s(x)$ being the indicator function on the set of states $x$ at time $s$ (being 1 if the path belongs to $x$ at time $s$ and 0 otherwise).
 
 \section{Existence and Uniqueness of It\^{o} SDE solutions}\label{section:existenceAndUniqueness}
 For an Ito SDE taking values in n-dimensional Euclidean space, if for $T>0$\\
@@ -285,32 +341,17 @@ are measurable functions, for which there exist constants $C$ and $D$ such that
 for all $t\in [0,T]$ and all $x,y\in \mathbb{R}^n$, and $|\sigma|^2=\sum_{i,j=1}|\sigma_{i,j}|^2$. 
 If $Z$ is a random variable, independent of the $\sigma$-algebra generated by $B_s$, $s\geq 0$, and with finite second moment, then the SDE, with initial condition $X_0=Z$ has an almost surely unique solution in $t\in[0,T]$, $X_t(\omega)$, such that $X$ is adapted to the filtration $\mathcal{F}_t$ generated by $Z$ and $B_s$, $s\leq t$.
 
-\section{Time Correlation Function and Response Function}\label{section:timeCorrelationAndResponseFunction}
-Taken from Doi \& Edwards. One characterization of a Brownian path is the time correlation function. This function is defined as follows, for a quantity $A$ of a system of Brownian particles for many samples in the \textit{equilibrium} state. Let $A(t)$ be the measured values of $A$ at time $t$. The time correlation function $C_{AA}(t)$ is the average of $A(t)A(0)$
+\section{The Langevin Equation}\label{section:theLangevinEquation}
+[Unfinished]
+An equation of the type 
 \begin{equation*}
-C_{AA}(t)=\left<A(t)A(0) \right>
+\frac{dx}{dt}=a(x,t)+b(x,t)\xi(t)
 \end{equation*}
-Averaging is performed over samples (not time). $C_{AA}(t)$ usually decreases with time since $A(t)$ and $A(0)$ become uncorrelated with time, and becomes $\left< A(t)\right> \left< A(0)\right>$. the time in which these quantities become uncorrelated is called the \textit{correlation time}. 
 
-The time correlation is also defined for different quantities 
-\begin{equation*}
-C_{AB}(t)= \left< A(t)B(0) \right>
-\end{equation*}
-which is the cross correlation function. 
+
  
 \section{Non-anticipating Functions}
 {[Unfinished]}
-\section{The backward Kolmogorov equation}\label{section:backwardKolmogorovEquation}
-The backward Kolmogorov equation is a partial differential operator derived from continuous-time continuous-state Markov processes. If we have information about the state of a system $x$ at a terminal time $s$, which is the probability distribution $p_s(x)$, we would like to know the probability distribution of the system at previous time $t<s$.
-If the system state $x(t)$ evolves according to the It\^o equation 
-\begin{equation*}
-dx=a(x,t)dt+B(x,t)dw
-\end{equation*}
-then the Kolmogorov backward equation is given by 
-\begin{equation}\label{eq:kolmogorovBackwardEquation}
--\frac{\partial}{\partial t}p(x,t) = a(x,t)\frac{\partial}{\partial t}p(x,t)+\frac{1}{2}B^2(x,t)\frac{\partial^2}{\partial x^2}p(x,t)
-\end{equation}
-for $t<s$, and subject to the final condition $p(x,s)=u_s(x)$, with $u_s(x)$ being the indicator function on the set of states $x$ at time $s$ (being 1 if the path belongs to $x$ at time $s$ and 0 otherwise).
 
 \section{Stochastic Differential Equations}\label{section:stochasticDifferentialEquations}
 Taken from \cite{schuss2009theory}. Throughout this section $x_{x,s}(t)$ with $t>s$ will denote the solution of the It\^{o} system 
@@ -428,7 +469,9 @@ which is a second order, homogeneous, ordinary differential equation with variab
 
 \section{Diffusion on a sphere}
 
-
+\chapter{Appendix}
+\subsection{The Lebesgue Integral}\label{appendix:theLebesgueIntegral}
+When integration on a space more general than the real line and when irregular function such that arouse from limiting processes were analyzed, more delicate integration methods needed to be introduced (e.g taking the limit of  a sequence of functions). The Lebesgue integral generalizes the Reimannian integration to those spaces and enables dealing with irregularity of limiting processes functions. 
 % The bibliography
 \bibliographystyle{plain}
 \bibliography{stochasticProcessesBibliography} % the bibliography.bib file 
