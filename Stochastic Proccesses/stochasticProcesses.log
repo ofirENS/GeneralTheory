@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.7.20)  21 AUG 2015 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.7.20)  23 AUG 2015 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -349,71 +349,74 @@ Overfull \hbox (12.94983pt too wide) in paragraph at lines 13--13
 []\OT1/cmr/bx/n/17.28 sigma-algebra, Prob-a-bil-ity space, and Ran-
  []
 
+[3
 
+]
 Overfull \hbox (6.16672pt too wide) in paragraph at lines 30--32
 \OT1/cmr/m/n/12 tin-u-ous tra-jec-tory in the space of con-tin-u-ous func-tions
  (but non-differentiable). 
  []
 
-[3
-
-] [4] [5]
+[4] [5]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [6]
+ [6] [7] [8
+
+]
+Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 131.
+(hyperref)                removing `math shift' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 131.
+(hyperref)                removing `superscript' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 131.
+(hyperref)                removing `math shift' on input line 139.
 
-[7] [8] [9] [10]
-Overfull \hbox (2.49408pt too wide) in paragraph at lines 263--264
+[9] [10] [11] [12]
+Overfull \hbox (2.49408pt too wide) in paragraph at lines 271--272
 \OT1/cmr/m/n/12 From [[]]. To see the re-la-tion-ship be-tween the Ito in-te-gr
 al and the Stratonovich
  []
 
-[11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
-[13] [14] [15] [16] [17] [18]
-Chapter 2.
+[15] [16] [17] [18] [19] [20]
+Chapter 3.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 471.
+(hyperref)                than one, level fixed on input line 479.
 
-(./stochasticProcesses.bbl [19
+(./stochasticProcesses.bbl [21
 
-] [20
+] [22
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
- [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
  (./stochasticProcesses.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
 Package rerunfilecheck Info: File `stochasticProcesses.out' has not changed.
-(rerunfilecheck)             Checksum: E3D5D78900C4D22E085D0E24133E87EA;2112.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
+(rerunfilecheck)             Checksum: 59DBD750360448FA5403BC24AA8333FB;2235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
  ) 
 Here is how much of TeX's memory you used:
- 6187 strings out of 493109
- 88236 string characters out of 6140856
- 177003 words of memory out of 5000000
- 9516 multiletter control sequences out of 15000+600000
+ 6193 strings out of 493109
+ 88270 string characters out of 6140856
+ 176984 words of memory out of 5000000
+ 9518 multiletter control sequences out of 15000+600000
  12763 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,9n,31p,623b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,9n,31p,623b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -427,10 +430,10 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on stochasticProcesses.pdf (21 pages, 226248 bytes).
+Output written on stochasticProcesses.pdf (23 pages, 228065 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 380 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

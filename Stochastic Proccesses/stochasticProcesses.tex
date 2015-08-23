@@ -9,7 +9,7 @@
 
 \begin{document}
 \tableofcontents
-\chapter{}
+\chapter{Preliminaries}
 \section{sigma-algebra, Probability space, and Random Variables}
 From \cite{Oksendal14}. If $\Omega$ is a given set, a \textbf{$\sigma$-algebra} $\mathcal{F}$ on $\Omega$ is a family $\mathcal{F}$ of subsets of $\Omega$ with the following properties
 \begin{enumerate}
@@ -129,6 +129,13 @@ A martingale is a stochastic process $ x(t)$ with $\mathbb{E}|x(t)|<\infty$ ,$\f
 \begin{equation*}
 \mathbb{E}[x(t)|x(t_1)=x1,x(t_2)=x_2,...x(t_n)=x_n]=x_n
 \end{equation*}
+\chapter{Brownian Motion}
+\section{Equivalence transformation}
+Several transformations allows us to calculate the statistical properties of one path in terms of the other. For every $c>0$ 
+\begin{enumerate}
+\item $w(t) = \sqrt{c}w(t/c)$
+\item $w(t) = tw(1/t)$
+\end{enumerate}
 
 \section{Approximation to the stochastic path as $L^2[0,T]$ expansion}
 From \cite{iacus2009simulation}. It $X(t)$ is a random trajectory of the process $X(\omega, t)$ for a given $\omega$, the Weiner process $W(t)$ has trajectories belonging to $L^2[0,T]$ for almost all $\omega$'s, and the \textbf{\href{http://en.wikipedia.org/wiki/Karhunen-Loeve_theorem}{Karhunen-Loeve}} expansion for it takes the form 
@@ -296,7 +303,7 @@ The function $\mu(X_t,t)$ is referred to a s the drift coefficient, and the func
 \subsection{It\^{o}'s formula}\label{subsection:itosFormula}
 The chain rule of differentiation of composite function does not apply for stochastic processes in the regular sense. Consider $n$  It\^{o}-differentiable processes 
 \begin{equation*}
-dx^i = a^idt+\sum_{j=1}^m b^{ij}dw^j, \quad i=1,2,..,n.
+dx^i = a^i dt+\sum_{j=1}^m b^{ij}dw^j, \quad i=1,2,..,n.
 \end{equation*} 
 and define the function $f(x1,x2,...,x_n)$, with $x=(x_1(t),x_2(t),...,x_n(t)$,
 if $a^i(t)$ and $b^{ij}(t)$ are continuous functions, such that $f(x,t)$ is twice continuously differentiable and $|f_{xx}(x,t)|\leq A(t)\exp(-\alpha(t)|x|)$ for $A(t),\alpha(t)>0$ then
