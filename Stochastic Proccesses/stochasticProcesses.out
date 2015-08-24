@@ -10,7 +10,7 @@
 \BOOKMARK [1][-]{section.1.9}{Martingale}{chapter.1}% 10
 \BOOKMARK [0][-]{chapter.2}{Brownian Motion}{}% 11
 \BOOKMARK [1][-]{section.2.1}{Equivalence transformation}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.2}{Approximation to the stochastic path as L2[0,T] expansion}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Recurrence of Brownian motion}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.3}{Stochastic Integration}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.4}{Properties of It\364 integral}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.5}{Integration with Respect to a Measure}{chapter.2}% 16
@@ -18,14 +18,17 @@
 \BOOKMARK [2][-]{subsection.2.6.1}{The Wong-Zakai Correction}{section.2.6}% 18
 \BOOKMARK [2][-]{subsection.2.6.2}{The It\364 Equation}{section.2.6}% 19
 \BOOKMARK [2][-]{subsection.2.6.3}{It\364's formula}{section.2.6}% 20
-\BOOKMARK [1][-]{section.2.7}{The backward Kolmogorov equation}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.8}{Existence and Uniqueness of It\364 SDE solutions}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.9}{The Langevin Equation}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.10}{Non-anticipating Functions}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.11}{Stochastic Differential Equations}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.12}{First passage problems}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.7}{Stochastic Differential Equations}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.8}{The backward Kolmogorov equation}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.9}{Andronov-Vitt-Pontryagin equation}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.10}{Existence and Uniqueness of It\364 SDE solutions}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.11}{The Langevin Equation}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.12}{Non-anticipating Functions}{chapter.2}% 26
 \BOOKMARK [1][-]{section.2.13}{The Fokker-Planck equation}{chapter.2}% 27
 \BOOKMARK [2][-]{subsection.2.13.1}{Eigenvalues of the Fokker-Planck operator }{section.2.13}% 28
-\BOOKMARK [1][-]{section.2.14}{Diffusion on a sphere}{chapter.2}% 29
-\BOOKMARK [0][-]{chapter.3}{Appendix}{}% 30
-\BOOKMARK [1][-]{subsection.3.0.1}{The Lebesgue Integral}{chapter.3}% 31
+\BOOKMARK [1][-]{section.2.14}{First passage problems}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.15}{Diffusion on a sphere}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.16}{Approximation to the stochastic path as L2[0,T] expansion}{chapter.2}% 31
+\BOOKMARK [0][-]{chapter.3}{Appendix}{}% 32
+\BOOKMARK [1][-]{subsection.3.0.1}{The Lebesgue Integral}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.1}{From characteristic function to distribution}{chapter.3}% 34

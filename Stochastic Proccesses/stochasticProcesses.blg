@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: stochasticProcesses.aux
 The style file: plain.bst
 Database file #1: stochasticProcessesBibliography.bib
-You've used 3 entries,
+Warning--there's a number but no series in knight1981essentials
+You've used 4 entries,
             2118 wiz_defined-function locations,
-            514 strings with 4455 characters,
-and the built_in function-call counts, 699 in all, are:
-= -- 67
-> -- 21
-< -- 0
-+ -- 9
-- -- 6
-* -- 32
-:= -- 130
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 10
+            520 strings with 4565 characters,
+and the built_in function-call counts, 936 in all, are:
+= -- 91
+> -- 28
+< -- 1
++ -- 12
+- -- 8
+* -- 44
+:= -- 171
+add.period$ -- 15
+call.type$ -- 4
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 36
-empty$ -- 67
-format.name$ -- 6
-if$ -- 149
+cite$ -- 5
+duplicate$ -- 48
+empty$ -- 89
+format.name$ -- 8
+if$ -- 201
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 6
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 19
+int.to.str$ -- 4
+missing$ -- 8
+newline$ -- 23
+num.names$ -- 8
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 9
+purify$ -- 12
 quote$ -- 0
-skip$ -- 18
+skip$ -- 23
 stack$ -- 0
-substring$ -- 15
-swap$ -- 3
-text.length$ -- 0
+substring$ -- 20
+swap$ -- 5
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 6
-width$ -- 4
-write$ -- 35
+type$ -- 8
+warning$ -- 1
+while$ -- 8
+width$ -- 5
+write$ -- 46
+(There was 1 warning)

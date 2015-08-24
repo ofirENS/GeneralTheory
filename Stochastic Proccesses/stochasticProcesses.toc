@@ -10,22 +10,25 @@
 \contentsline {section}{\numberline {1.9}Martingale}{7}{section.1.9}
 \contentsline {chapter}{\numberline {2}Brownian Motion}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Equivalence transformation}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Approximation to the stochastic path as $L^2[0,T]$ expansion}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}Stochastic Integration}{10}{section.2.3}
-\contentsline {section}{\numberline {2.4}Properties of It\^{o} integral}{11}{section.2.4}
-\contentsline {section}{\numberline {2.5}Integration with Respect to a Measure}{12}{section.2.5}
+\contentsline {section}{\numberline {2.2}Recurrence of Brownian motion}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}Stochastic Integration}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}Properties of It\^{o} integral}{10}{section.2.4}
+\contentsline {section}{\numberline {2.5}Integration with Respect to a Measure}{11}{section.2.5}
 \contentsline {section}{\numberline {2.6}The It\^{o} Calculus}{12}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}The Wong-Zakai Correction}{13}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}The It\^{o} Equation}{14}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.2}The It\^{o} Equation}{13}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}It\^{o}'s formula}{14}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}The backward Kolmogorov equation}{15}{section.2.7}
-\contentsline {section}{\numberline {2.8}Existence and Uniqueness of It\^{o} SDE solutions}{15}{section.2.8}
-\contentsline {section}{\numberline {2.9}The Langevin Equation}{16}{section.2.9}
-\contentsline {section}{\numberline {2.10}Non-anticipating Functions}{16}{section.2.10}
-\contentsline {section}{\numberline {2.11}Stochastic Differential Equations}{16}{section.2.11}
-\contentsline {section}{\numberline {2.12}First passage problems}{17}{section.2.12}
-\contentsline {section}{\numberline {2.13}The Fokker-Planck equation}{19}{section.2.13}
-\contentsline {subsection}{\numberline {2.13.1}Eigenvalues of the Fokker-Planck operator }{19}{subsection.2.13.1}
-\contentsline {section}{\numberline {2.14}Diffusion on a sphere}{20}{section.2.14}
+\contentsline {section}{\numberline {2.7}Stochastic Differential Equations}{15}{section.2.7}
+\contentsline {section}{\numberline {2.8}The backward Kolmogorov equation}{16}{section.2.8}
+\contentsline {section}{\numberline {2.9}Andronov-Vitt-Pontryagin equation}{16}{section.2.9}
+\contentsline {section}{\numberline {2.10}Existence and Uniqueness of It\^{o} SDE solutions}{17}{section.2.10}
+\contentsline {section}{\numberline {2.11}The Langevin Equation}{17}{section.2.11}
+\contentsline {section}{\numberline {2.12}Non-anticipating Functions}{17}{section.2.12}
+\contentsline {section}{\numberline {2.13}The Fokker-Planck equation}{17}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Eigenvalues of the Fokker-Planck operator }{18}{subsection.2.13.1}
+\contentsline {section}{\numberline {2.14}First passage problems}{18}{section.2.14}
+\contentsline {section}{\numberline {2.15}Diffusion on a sphere}{20}{section.2.15}
+\contentsline {section}{\numberline {2.16}Approximation to the stochastic path as $L^2[0,T]$ expansion}{20}{section.2.16}
 \contentsline {chapter}{\numberline {3}Appendix}{21}{chapter.3}
 \contentsline {subsection}{\numberline {3.0.1}The Lebesgue Integral}{21}{subsection.3.0.1}
+\contentsline {section}{\numberline {3.1}From characteristic function to distribution}{21}{section.3.1}

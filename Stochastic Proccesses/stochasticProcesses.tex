@@ -136,17 +136,9 @@ Several transformations allows us to calculate the statistical properties of one
 \item $w(t) = \sqrt{c}w(t/c)$
 \item $w(t) = tw(1/t)$
 \end{enumerate}
+\section{Recurrence of Brownian motion}\label{section:recurrenceOfBrownianMotion}
+In 1D, the law of iterated logarithms shows that every point is visited infinitely many times as $t\rightarrow \infty$. For any dimension bigger than 1 there is no point recurrence at all, and only neighborhood recurrence is seen. 
 
-\section{Approximation to the stochastic path as $L^2[0,T]$ expansion}
-From \cite{iacus2009simulation}. It $X(t)$ is a random trajectory of the process $X(\omega, t)$ for a given $\omega$, the Weiner process $W(t)$ has trajectories belonging to $L^2[0,T]$ for almost all $\omega$'s, and the \textbf{\href{http://en.wikipedia.org/wiki/Karhunen-Loeve_theorem}{Karhunen-Loeve}} expansion for it takes the form 
-
-\begin{equation*}
-W(t)=W(\omega,t)= \sum_{i=1}^\infty Z_i(\omega)\phi_i(t), 
-\end{equation*}
-with $0\leq t \leq T$, and 
-\begin{equation*}
-\phi_i(t) = \frac{2\sqrt{2T}}{(2i+1)\pi} \sin \left(\frac{(2i+1)\pi t}{2T} \right)
-\end{equation*}
 
 \section{Stochastic Integration}\label{section:stochasticIntegration}
 For an arbitrary function of time $G(t')$ and a Weiner process $W(t)$, the stochastic integral 
@@ -321,6 +313,45 @@ with
 The function $n\times n$ matrix $\{\sigma^{ij}(t) \}$ is the diffusion matrix. 
 The operator $L*_x(f(x(t),t))$ is called the \textit{backward Kolmogorov operator} and comes out naturally in the derivation of the It\^{o}'s formula. This operator will be discussed next. 
 
+\section{Stochastic Differential Equations}\label{section:stochasticDifferentialEquations}
+Taken from \cite{schuss2009theory}. Throughout this section $x_{x,s}(t)$ with $t>s$ will denote the solution of the It\^{o} system 
+\begin{equation}\label{Eq:ItoSystem}
+	dx(t)= a(x(t),t)dt+B(X(t),t)dwt,\quad x(s)=x
+\end{equation}
+where $a(x(t),t):\mathbb{R}^d\times [0,T] \rightarrow \mathbb{R}^d, B(x,t):\mathbb{R}^d\times[0,T]\rightarrow\mathbb{M}_{n,m}$, and $w(t)$ is m-dimensional Brownian motion. 
+We assume that $a(x(t),t), B(x,t)$ satisfy the conditions of existence and uniqueness theorem \ref{section:existenceAndUniqueness}. To repeat these conditions using the current symbol system:
+$a(x(t),t), B(x,t)$ are measurable functions, for which there exist constants $C$ and $D$ such that 
+\begin{eqnarray*}
+	& &|a(x,t)|+|B(x,t)|\leq C(1+|x|)\\
+	& &|a(x,t)-a(y,t)|+|B(x,t)-B(y,t)|\leq D|x-y|
+\end{eqnarray*}
+We further use the notion
+\begin{equation*}
+	B(t) = \{b^{ij}(t)\}_{n\times m}
+\end{equation*}
+for the diffusion matrix.
+
+Consider the It\^o system and the corresponding \textit{backward Kolmogorov operator}
+\begin{equation}\label{eq:backwardKolmogorovOperator}
+	L^*_xu(x,s)=a(x,s)\cdot \nabla u(x,s)+\sum_{i=1}^d\sum_{j=1}^d \sigma^{ij}(x,s)\frac{\partial^2u(x,s)}{\partial x^ix^j}
+\end{equation} 
+We further assume that the function $u(x,s,t)$ satisfies the backward parabolic equation 
+\begin{equation}\label{eq:terminalValueProblem}
+	\frac{\partial u(x,s,t)}{\partial s}+L^*_x u(x,s,t)=0,\quad t>0
+\end{equation}
+with the terminal value 
+\begin{equation*}
+	\lim_{s\rightarrow t} u(x,s,t)=f(x)
+\end{equation*}
+for sufficiently regular function $f(x)$. 
+
+According to the \textbf{Kolmogorov's representation formula} the solution of the terminal value problem \ref{eq:terminalValueProblem}, has the representation 
+\begin{equation*}
+	u(x,s,t)=\mathbb{E}[f(x(t))|x(s)=x]
+\end{equation*}
+Note again that $u(x,s,t)$ is a solution to equation \ref{eq:terminalValueProblem} and not the It\^{o} system. It will be shown that according to the representation formula, we can associate this solution with modes of the distributions of the It\^{o} solution 
+
+
 \section{The backward Kolmogorov equation}\label{section:backwardKolmogorovEquation}
 The backward Kolmogorov equation is a partial differential operator derived from continuous-time continuous-state Markov processes. If we have information about the state of a system $x$ at a terminal time $s$, which is the probability distribution $p_s(x)$, we would like to know the probability distribution of the system at previous time $t<s$.
 If the system state $x(t)$ evolves according to the It\^o equation 
@@ -333,17 +364,32 @@ then the Kolmogorov backward equation is given by
 \end{equation}
 for $t<s$, and subject to the final condition $p(x,s)=u_s(x)$, with $u_s(x)$ being the indicator function on the set of states $x$ at time $s$ (being 1 if the path belongs to $x$ at time $s$ and 0 otherwise).
 
+\section{Andronov-Vitt-Pontryagin equation}\label{section:AndronovVittPontryaginEquation}
+The transition probability density function $p(y,t|x,s)$ of being at position $y$ at time $t$ given that the process where at $x$ at time $s$ is the solution of the backward Kolmogorov differential equation in a bounded domain $D\subset\mathbb{R}^d$ with regular boundary $\partial D$ 
+\begin{equation*}
+\frac{\partial p(y,t|x,s)}{\partial t}+L^*_xp(y,t|x,s) = 0
+\end{equation*}
+for $x,y\in D$, $s<t$ and boundary condition
+\begin{equation*}
+p(y,t|x,s)=0
+\end{equation*}
+for $x\in \partial D$, $y\in D$, $s,t$, and terminal condition
+\begin{equation*}
+p(y,t|x,s)=\delta(y-x)
+\end{equation*}
+for $x,y\in D$, $t\in \mathbb{R}$. the value $p(y,t|x,s)dy=P\{x(s)\in y+dy|x(t)=x\}$ is the transition probability of the It\^{o} process in $D$ with trajectories terminated at $\partial D$ given that they have started at a point inside $D$
+
 \section{Existence and Uniqueness of It\^{o} SDE solutions}\label{section:existenceAndUniqueness}
 For an Ito SDE taking values in n-dimensional Euclidean space, if for $T>0$\\
 \begin{eqnarray*}
-&\mu:   &\mathbb{R}^2\times[0,T]\rightarrow \mathbb{R}^n\\
-&\sigma:&\mathbb{R}^n \times[0,T] \rightarrow \mathbb{R}^{n\times m}
+	&\mu:   &\mathbb{R}^2\times[0,T]\rightarrow \mathbb{R}^n\\
+	&\sigma:&\mathbb{R}^n \times[0,T] \rightarrow \mathbb{R}^{n\times m}
 \end{eqnarray*}
 
 are measurable functions, for which there exist constants $C$ and $D$ such that 
 \begin{eqnarray*}
-& &|\mu(x,t)|+|\sigma(x,t)|\leq C(1+|x|)\\
-& &|\mu(x,t)-\mu(y,t)|+|\sigma(x,t)-\sigma(y,t)|\leq D|x-y|
+	& &|\mu(x,t)|+|\sigma(x,t)|\leq C(1+|x|)\\
+	& &|\mu(x,t)-\mu(y,t)|+|\sigma(x,t)-\sigma(y,t)|\leq D|x-y|
 \end{eqnarray*}
 for all $t\in [0,T]$ and all $x,y\in \mathbb{R}^n$, and $|\sigma|^2=\sum_{i,j=1}|\sigma_{i,j}|^2$. 
 If $Z$ is a random variable, independent of the $\sigma$-algebra generated by $B_s$, $s\geq 0$, and with finite second moment, then the SDE, with initial condition $X_0=Z$ has an almost surely unique solution in $t\in[0,T]$, $X_t(\omega)$, such that $X$ is adapted to the filtration $\mathcal{F}_t$ generated by $Z$ and $B_s$, $s\leq t$.
@@ -352,51 +398,37 @@ If $Z$ is a random variable, independent of the $\sigma$-algebra generated by $B
 [Unfinished]
 An equation of the type 
 \begin{equation*}
-\frac{dx}{dt}=a(x,t)+b(x,t)\xi(t)
+	\frac{dx}{dt}=a(x,t)+b(x,t)\xi(t)
 \end{equation*}
 
 
- 
+
 \section{Non-anticipating Functions}
 {[Unfinished]}
 
-\section{Stochastic Differential Equations}\label{section:stochasticDifferentialEquations}
-Taken from \cite{schuss2009theory}. Throughout this section $x_{x,s}(t)$ with $t>s$ will denote the solution of the It\^{o} system 
-\begin{equation}\label{Eq:ItoSystem}
-dx(t)= a(x(t),t)dt+B(X(t),t)dwt,\quad x(s)=x
-\end{equation}
-where $a(x(t),t):\mathbb{R}^d\times [0,T] \rightarrow \mathbb{R}^d, B(x,t):\mathbb{R}^d\times[0,T]\rightarrow\mathbb{M}_{n,m}$, and $w(t)$ is m-dimensional Brownian motion. 
-We assume that $a(x(t),t), B(x,t)$ satisfy the conditions of existence and uniqueness theorem \ref{section:existenceAndUniqueness}. To repeat these conditions using the current symbol system:
-$a(x(t),t), B(x,t)$ are measurable functions, for which there exist constants $C$ and $D$ such that 
-\begin{eqnarray*}
-	& &|a(x,t)|+|B(x,t)|\leq C(1+|x|)\\
-	& &|a(x,t)-a(y,t)|+|B(x,t)-B(y,t)|\leq D|x-y|
-\end{eqnarray*}
-We further use the notion
+\section{The Fokker-Planck equation}\label{section:theFokkerPlanckEquation}
+For an \^{I}to process given by the stochastic equation, 
 \begin{equation*}
-B(t) = \{b^{ij}(t)\}_{n\times m}
+dX_t=\mu(X_t,t)dt+\sqrt{2D(X_t,t)}dW_t
 \end{equation*}
-for the diffusion matrix.
-
-Consider the It\^o system and the corresponding \textit{backward Kolmogorov operator}
-\begin{equation}\label{eq:backwardKolmogorovOperator}
-L^*_xu(x,s)=a(x,s)\cdot \nabla u(x,s)+\sum_{i=1}^d\sum_{j=1}^d \sigma^{ij}(x,s)\frac{\partial^2u(x,s)}{\partial x^ix^j}
-\end{equation} 
-We further assume that the function $u(x,s,t)$ satisfies the backward parabolic equation 
-\begin{equation}\label{eq:terminalValueProblem}
-\frac{\partial u(x,s,t)}{\partial s}+L^*_x u(x,s,t)=0,\quad t>0
-\end{equation}
-with the terminal value 
+with drift $\mu(X_t,t)$ and diffusion $D(X_t,t)$, and a Weiner process $W_t$, the Fokker Planck-equation for the probability density $f(x,t)$ of $X_t$ is 
 \begin{equation*}
-\lim_{s\rightarrow t} u(x,s,t)=f(x)
+\frac{\partial}{\partial t}f(x,t)=-\frac{\partial}{\partial x}[\mu(x,t)f(x,t)]+\frac{\partial^2}{\partial x^2}[D(x,t)f(x,t)]=\mathcal{L}f(x,t)
 \end{equation*}
-for sufficiently regular function $f(x)$. 
-
-According to the \textbf{Kolmogorov's representation formula} the solution of the terminal value problem \ref{eq:terminalValueProblem}, has the representation 
+\subsection{Eigenvalues of the Fokker-Planck operator }\label{subsection:eigenvaluesOfTheFokkerPlanckOperator}
+To find the eigenvalues of the Fokker Planck operator, we solve $\mathcal{L}f = \lambda f$.
+rearranging the terms in this equation we arrive at 
 \begin{equation*}
-u(x,s,t)=\mathbb{E}[f(x(t))|x(s)=x]
+\frac{\partial^2}{\partial x^2}f(x,t) +p(x,t)\frac{\partial}{\partial x}f(x,t) +q(x,t)f(x,t) = 0
 \end{equation*}
-
+where 
+\begin{equation*}
+p(x,t) = \frac{2\frac{\partial}{\partial x}D(x,t)-\mu(x,t)}{D(x,t)}
+\end{equation*}
+\begin{equation*}
+q(x,t)=\frac{\frac{\partial^2}{\partial x^2}D(x,t)-\lambda-\frac{\partial}{\partial x}\mu(x,t)}{D(x,t)}
+\end{equation*}
+which is a second order, homogeneous, ordinary differential equation with variable coefficients. 
 
 \section{First passage problems}\label{section:firstPassageProblems}
 We first consider the discrete Markov process, described by the "forward" equation
@@ -450,35 +482,44 @@ with the boundary conditions $S(x_j;t)=0,\forall x_j\in\partial\Omega_\mathcal{A
 \mathcal{L^\dagger}\left<T^n(x_j)\right> = -n\left<T^{n-1}(x_j)\right>
 \end{equation*}
 
-\section{The Fokker-Planck equation}\label{section:theFokkerPlanckEquation}
-For an \^{I}to process given by the stochastic equation, 
-\begin{equation*}
-dX_t=\mu(X_t,t)dt+\sqrt{2D(X_t,t)}dW_t
-\end{equation*}
-with drift $\mu(X_t,t)$ and diffusion $D(X_t,t)$, and a Weiner process $W_t$, the Fokker Planck-equation for the probability density $f(x,t)$ of $X_t$ is 
-\begin{equation*}
-\frac{\partial}{\partial t}f(x,t)=-\frac{\partial}{\partial x}[\mu(x,t)f(x,t)]+\frac{\partial^2}{\partial x^2}[D(x,t)f(x,t)]=\mathcal{L}f(x,t)
-\end{equation*}
-\subsection{Eigenvalues of the Fokker-Planck operator }\label{subsection:eigenvaluesOfTheFokkerPlanckOperator}
-To find the eigenvalues of the Fokker Planck operator, we solve $\mathcal{L}f = \lambda f$.
-rearranging the terms in this equation we arrive at 
-\begin{equation*}
-\frac{\partial^2}{\partial x^2}f(x,t) +p(x,t)\frac{\partial}{\partial x}f(x,t) +q(x,t)f(x,t) = 0
-\end{equation*}
-where 
-\begin{equation*}
-p(x,t) = \frac{2\frac{\partial}{\partial x}D(x,t)-\mu(x,t)}{D(x,t)}
-\end{equation*}
-\begin{equation*}
-q(x,t)=\frac{\frac{\partial^2}{\partial x^2}D(x,t)-\lambda-\frac{\partial}{\partial x}\mu(x,t)}{D(x,t)}
-\end{equation*}
-which is a second order, homogeneous, ordinary differential equation with variable coefficients. 
-
 \section{Diffusion on a sphere}
+
+\section{Approximation to the stochastic path as $L^2[0,T]$ expansion}
+From \cite{iacus2009simulation}. It $X(t)$ is a random trajectory of the process $X(\omega, t)$ for a given $\omega$, the Weiner process $W(t)$ has trajectories belonging to $L^2[0,T]$ for almost all $\omega$'s, and the \textbf{\href{http://en.wikipedia.org/wiki/Karhunen-Loeve_theorem}{Karhunen-Loeve}} expansion for it takes the form 
+
+\begin{equation*}
+W(t)=W(\omega,t)= \sum_{i=1}^\infty Z_i(\omega)\phi_i(t), 
+\end{equation*}
+with $0\leq t \leq T$, and 
+\begin{equation*}
+\phi_i(t) = \frac{2\sqrt{2T}}{(2i+1)\pi} \sin \left(\frac{(2i+1)\pi t}{2T} \right)
+\end{equation*}
 
 \chapter{Appendix}
 \subsection{The Lebesgue Integral}\label{appendix:theLebesgueIntegral}
 When integration on a space more general than the real line and when irregular function such that arouse from limiting processes were analyzed, more delicate integration methods needed to be introduced (e.g taking the limit of  a sequence of functions). The Lebesgue integral generalizes the Reimannian integration to those spaces and enables dealing with irregularity of limiting processes functions. 
+
+\section{From characteristic function to distribution}\label{appecndix:fromCharacteristicfunctionToDistribution}
+The characteristic function of a random variable completely defines its probability distribution function. 
+The characteristic function is the inverse Fourier transform of the probability density function. the function is defined as 
+
+\begin{equation*}
+\varphi _X(t)=E[e^{itX}]
+\end{equation*}
+with $X$ the random variable. 
+
+Taking the Laplace transform of a random variable (e.g. the first passage time) allows us to calculate the characteristic function of this variable and hence obtain its distribution. 
+For example, (see \cite{knight1981essentials}, Lemma 2.11) if $T(x)=inf\{t>0;w(t)=x\}$ is the first passage time of a Brownian motion $w(t)$ to a level set $x$, then the Laplace transform of $T(x)$ is given by 
+\begin{equation*}
+E\exp(-\lambda T(x))=\exp(-\sqrt{2\lambda}x)
+\end{equation*}
+and the characteristic function is 
+\begin{equation*}
+\varphi(s)=\exp(-(1\mp i)\sqrt{\pm s}x)
+\end{equation*}
+This characteristic function is the one corresponding to the Cauchy distribution. 
+
+
 % The bibliography
 \bibliographystyle{plain}
 \bibliography{stochasticProcessesBibliography} % the bibliography.bib file 
