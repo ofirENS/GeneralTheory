@@ -281,7 +281,7 @@ d_Sx(t) = a(t)dt+b(t)d_S\omega(t)
 
 \subsection{The It\^{o} Equation}\label{subsection:theItoEquation}
 Equation of the form 
-\begin{equation*}
+\begin{equation*}\label{eq:ItoEquation}
  \mathrm{d} X_t = \mu(X_t,t)\, \mathrm{d} t +  \sigma(X_t,t)\, \mathrm{d} B_t
 \end{equation*}
 is an informal way of expressing the more appropriate integral equation 
@@ -346,7 +346,7 @@ with the terminal value
 for sufficiently regular function $f(x)$. 
 
 According to the \textbf{Kolmogorov's representation formula} the solution of the terminal value problem \ref{eq:terminalValueProblem}, has the representation 
-\begin{equation*}
+\begin{equation*}\label{eq:kolmogorovRepresentationFormula}
 	u(x,s,t)=\mathbb{E}[f(x(t))|x(s)=x]
 \end{equation*}
 Note again that $u(x,s,t)$ is a solution to equation \ref{eq:terminalValueProblem} and not the It\^{o} system. It will be shown that according to the representation formula, we can associate this solution with modes of the distributions of the It\^{o} solution 
@@ -364,6 +364,9 @@ then the Kolmogorov backward equation is given by
 \end{equation}
 for $t<s$, and subject to the final condition $p(x,s)=u_s(x)$, with $u_s(x)$ being the indicator function on the set of states $x$ at time $s$ (being 1 if the path belongs to $x$ at time $s$ and 0 otherwise).
 
+According to the Kolmogorov representation formula \ref{eq:kolmogorovRepresentationFormula}, the solution of the It\^{o} equation \ref{eq:ItoEquation} can be represented by the solution to the terminal value problem \ref{eq:terminalValueProblem} (see \cite{Oksendal14} page 140). 
+If $f\in C^2_0(\mathbb{R}^n)$ and $	u(x,s,t)=\mathbb{E}[f(x(t))|x(s)=x]$
+
 \section{Andronov-Vitt-Pontryagin equation}\label{section:AndronovVittPontryaginEquation}
 The transition probability density function $p(y,t|x,s)$ of being at position $y$ at time $t$ given that the process where at $x$ at time $s$ is the solution of the backward Kolmogorov differential equation in a bounded domain $D\subset\mathbb{R}^d$ with regular boundary $\partial D$ 
 \begin{equation*}
@@ -377,7 +380,7 @@ for $x\in \partial D$, $y\in D$, $s,t$, and terminal condition
 \begin{equation*}
 p(y,t|x,s)=\delta(y-x)
 \end{equation*}
-for $x,y\in D$, $t\in \mathbb{R}$. the value $p(y,t|x,s)dy=P\{x(s)\in y+dy|x(t)=x\}$ is the transition probability of the It\^{o} process in $D$ with trajectories terminated at $\partial D$ given that they have started at a point inside $D$
+for $x,y\in D$, $t\in \mathbb{R}$. The value $p(y,t|x,s)dy=P\{x(s)\in y+dy|x(t)=x\}$ is the transition probability of the It\^{o} process in $D$ with trajectories terminated at $\partial D$ given that they have started at a point inside $D$
 
 \section{Existence and Uniqueness of It\^{o} SDE solutions}\label{section:existenceAndUniqueness}
 For an Ito SDE taking values in n-dimensional Euclidean space, if for $T>0$\\

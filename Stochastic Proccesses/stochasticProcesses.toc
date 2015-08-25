@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {2.10}Existence and Uniqueness of It\^{o} SDE solutions}{17}{section.2.10}
 \contentsline {section}{\numberline {2.11}The Langevin Equation}{17}{section.2.11}
 \contentsline {section}{\numberline {2.12}Non-anticipating Functions}{17}{section.2.12}
-\contentsline {section}{\numberline {2.13}The Fokker-Planck equation}{17}{section.2.13}
+\contentsline {section}{\numberline {2.13}The Fokker-Planck equation}{18}{section.2.13}
 \contentsline {subsection}{\numberline {2.13.1}Eigenvalues of the Fokker-Planck operator }{18}{subsection.2.13.1}
 \contentsline {section}{\numberline {2.14}First passage problems}{18}{section.2.14}
 \contentsline {section}{\numberline {2.15}Diffusion on a sphere}{20}{section.2.15}

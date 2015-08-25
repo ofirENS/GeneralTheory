@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.7.20)  24 AUG 2015 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.7.20)  25 AUG 2015 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -371,50 +371,50 @@ Overfull \hbox (2.49408pt too wide) in paragraph at lines 264--265
 al and the Stratonovich
  []
 
-[13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+[13] [14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
-[16] [17] [18] [19]
+[17] [18] [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 487.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 487.
+(hyperref)                removing `math shift' on input line 490.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 487.
+(hyperref)                removing `superscript' on input line 490.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 490.
 
 [20]
 Chapter 3.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 499.
+(hyperref)                than one, level fixed on input line 502.
 
 [21
 
 ] (./stochasticProcesses.bbl [22])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 526.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 529.
  [23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 526.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 529.
  (./stochasticProcesses.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 526.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 526.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 529.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 529.
 Package rerunfilecheck Info: File `stochasticProcesses.out' has not changed.
 (rerunfilecheck)             Checksum: 793554076B7120707D468B614DB9C5B6;2484.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 526.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 529.
  ) 
 Here is how much of TeX's memory you used:
- 6206 strings out of 493109
- 88532 string characters out of 6140856
- 177213 words of memory out of 5000000
- 9525 multiletter control sequences out of 15000+600000
+ 6208 strings out of 493109
+ 88584 string characters out of 6140856
+ 177331 words of memory out of 5000000
+ 9527 multiletter control sequences out of 15000+600000
  12763 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,9n,31p,623b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -431,10 +431,10 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on stochasticProcesses.pdf (23 pages, 232315 bytes).
+Output written on stochasticProcesses.pdf (23 pages, 233041 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
+ 405 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
  83 named destinations out of 1000 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
