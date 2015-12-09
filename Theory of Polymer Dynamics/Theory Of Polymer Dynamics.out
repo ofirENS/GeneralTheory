@@ -1,37 +1,42 @@
-\BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.0.2}{The elastic dumbbell model}{}% 2
-\BOOKMARK [1][-]{section.0.3}{The freely jointed chain}{}% 3
-\BOOKMARK [2][-]{subsection.0.3.1}{The end-to-end vector}{section.0.3}% 4
-\BOOKMARK [2][-]{subsection.0.3.2}{Distribution of the end-to-end vector}{section.0.3}% 5
-\BOOKMARK [1][-]{section.0.4}{The freely rotating chain}{}% 6
-\BOOKMARK [1][-]{section.0.5}{The Gaussian Chain}{}% 7
-\BOOKMARK [2][-]{subsection.0.5.1}{Extensibility of the chain}{section.0.5}% 8
-\BOOKMARK [1][-]{section.0.6}{The Rouse Chain}{}% 9
-\BOOKMARK [2][-]{subsection.0.6.1}{The source of the Hookian behavior}{section.0.6}% 10
-\BOOKMARK [2][-]{subsection.0.6.2}{The center of mass}{section.0.6}% 11
-\BOOKMARK [2][-]{subsection.0.6.3}{Central bead is closest to the center-of-mass}{section.0.6}% 12
-\BOOKMARK [2][-]{subsection.0.6.4}{The distribution of the bond lengths}{section.0.6}% 13
-\BOOKMARK [2][-]{subsection.0.6.5}{Eigenvalues of the Rouse Matrix}{section.0.6}% 14
-\BOOKMARK [2][-]{subsection.0.6.6}{Eigenvectors of the Rouse Matrix}{section.0.6}% 15
-\BOOKMARK [2][-]{subsection.0.6.7}{Centralizing the chain}{section.0.6}% 16
-\BOOKMARK [2][-]{subsection.0.6.8}{Mean First End To end Encounter Time Of the Rouse Chain}{section.0.6}% 17
-\BOOKMARK [2][-]{subsection.0.6.9}{The Pair Correlation function}{section.0.6}% 18
-\BOOKMARK [2][-]{subsection.0.6.10}{Radius of Gyration}{section.0.6}% 19
-\BOOKMARK [1][-]{section.0.7}{Chain conformation under an external field}{}% 20
-\BOOKMARK [1][-]{section.0.8}{The Rouse ring}{}% 21
-\BOOKMARK [2][-]{subsection.0.8.1}{Encounter probability in the Rouse ring}{section.0.8}% 22
-\BOOKMARK [2][-]{subsection.0.8.2}{The relation between a ring and a chain}{section.0.8}% 23
-\BOOKMARK [2][-]{subsection.0.8.3}{Configuration distribution of the Rouse ring}{section.0.8}% 24
-\BOOKMARK [2][-]{subsection.0.8.4}{Eigenvalues of the Rouse Ring}{section.0.8}% 25
-\BOOKMARK [2][-]{subsection.0.8.5}{Mean First Encounter Time in the Rouse ring}{section.0.8}% 26
-\BOOKMARK [1][-]{section.0.9}{A ring and a chain}{}% 27
-\BOOKMARK [2][-]{subsection.0.9.1}{Construction}{section.0.9}% 28
-\BOOKMARK [2][-]{subsection.0.9.2}{The encounter probability}{section.0.9}% 29
-\BOOKMARK [1][-]{section.0.10}{Two Rings}{}% 30
-\BOOKMARK [2][-]{subsection.0.10.1}{Construction}{section.0.10}% 31
-\BOOKMARK [1][-]{section.0.11}{Generalized Rouse Chain}{}% 32
-\BOOKMARK [1][-]{section.0.12}{Simulations}{}% 33
-\BOOKMARK [2][-]{subsection.0.12.1}{Choosing t}{section.0.12}% 34
-\BOOKMARK [2][-]{subsection.0.12.2}{Relaxation time}{section.0.12}% 35
-\BOOKMARK [2][-]{subsection.0.12.3}{The dynamics of bond length}{section.0.12}% 36
-\BOOKMARK [2][-]{subsection.0.12.4}{Encounter signal noise estimation}{section.0.12}% 37
+\BOOKMARK [0][-]{chapter.1}{}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{The elastic dumbbell model}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{The freely jointed chain}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{The end-to-end vector}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Distribution of the end-to-end vector}{section.1.3}% 6
+\BOOKMARK [1][-]{section.1.4}{The freely rotating chain}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{The Gaussian Chain}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.5.1}{Extensibility of the chain}{section.1.5}% 9
+\BOOKMARK [1][-]{section.1.6}{The Rouse Chain}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.6.1}{The source of the Hookian behavior}{section.1.6}% 11
+\BOOKMARK [2][-]{subsection.1.6.2}{The center of mass}{section.1.6}% 12
+\BOOKMARK [2][-]{subsection.1.6.3}{Central bead is closest to the center-of-mass}{section.1.6}% 13
+\BOOKMARK [2][-]{subsection.1.6.4}{The distribution of the bond lengths}{section.1.6}% 14
+\BOOKMARK [2][-]{subsection.1.6.5}{Eigenvalues of the Rouse Matrix}{section.1.6}% 15
+\BOOKMARK [2][-]{subsection.1.6.6}{Eigenvectors of the Rouse Matrix}{section.1.6}% 16
+\BOOKMARK [2][-]{subsection.1.6.7}{Centralizing the chain}{section.1.6}% 17
+\BOOKMARK [2][-]{subsection.1.6.8}{Mean First End To end Encounter Time Of the Rouse Chain}{section.1.6}% 18
+\BOOKMARK [2][-]{subsection.1.6.9}{The Pair Correlation function}{section.1.6}% 19
+\BOOKMARK [2][-]{subsection.1.6.10}{Radius of Gyration}{section.1.6}% 20
+\BOOKMARK [1][-]{section.1.7}{Equilibrium properties of generalized chain}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.8}{Chain conformation under an external field}{chapter.1}% 22
+\BOOKMARK [1][-]{section.1.9}{The Rouse ring}{chapter.1}% 23
+\BOOKMARK [2][-]{subsection.1.9.1}{Encounter probability in the Rouse ring}{section.1.9}% 24
+\BOOKMARK [2][-]{subsection.1.9.2}{The relation between a ring and a chain}{section.1.9}% 25
+\BOOKMARK [2][-]{subsection.1.9.3}{Configuration distribution of the Rouse ring}{section.1.9}% 26
+\BOOKMARK [2][-]{subsection.1.9.4}{Eigenvalues of the Rouse Ring}{section.1.9}% 27
+\BOOKMARK [2][-]{subsection.1.9.5}{Mean First Encounter Time in the Rouse ring}{section.1.9}% 28
+\BOOKMARK [1][-]{section.1.10}{A ring and a chain}{chapter.1}% 29
+\BOOKMARK [2][-]{subsection.1.10.1}{Construction}{section.1.10}% 30
+\BOOKMARK [2][-]{subsection.1.10.2}{The encounter probability}{section.1.10}% 31
+\BOOKMARK [1][-]{section.1.11}{Two Rings}{chapter.1}% 32
+\BOOKMARK [2][-]{subsection.1.11.1}{Construction}{section.1.11}% 33
+\BOOKMARK [1][-]{section.1.12}{Generalized Rouse Chain}{chapter.1}% 34
+\BOOKMARK [1][-]{section.1.13}{Simulations}{chapter.1}% 35
+\BOOKMARK [2][-]{subsection.1.13.1}{Choosing t}{section.1.13}% 36
+\BOOKMARK [2][-]{subsection.1.13.2}{Relaxation time}{section.1.13}% 37
+\BOOKMARK [2][-]{subsection.1.13.3}{The dynamics of bond length}{section.1.13}% 38
+\BOOKMARK [2][-]{subsection.1.13.4}{Encounter signal noise estimation}{section.1.13}% 39
+\BOOKMARK [0][-]{chapter.2}{}{}% 40
+\BOOKMARK [1][-]{section.2.1}{Rubber elasticity}{chapter.2}% 41
+\BOOKMARK [2][-]{subsection.2.1.1}{Entropy and rubber elasticity}{section.2.1}% 42

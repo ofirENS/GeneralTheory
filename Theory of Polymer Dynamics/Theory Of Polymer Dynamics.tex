@@ -7,6 +7,7 @@
 \begin{document}
 \title{Theory of Polymer Dynamics}
 \maketitle
+\chapter{}
 \section{Introduction}
 This document summarizes information related to the construction of theoretical models representing polymers. 
 It is mainly drawn from the books by Doi \cite{doi1986theory}\cite{doi1996introduction}, and Bird \cite{bird1987dynamics}. 
@@ -797,6 +798,7 @@ We start by attaching the a chain of $N_c-1$ beads to a ring of $N_r$ beads by c
 In equilibrium, the link vectors are independent and we can treat the two structure, the ring and the chain, separately. The first bead in the loop will be our reference point for the calculation of the encounter probability at equilibrium, by calculating the probability that both the vector $R_m-R_{N_c}$ and $R_n-R_{N_c}$ is equal to some $s$, over all possible vectors $s$.
 
 \begin{figure}[h!]
+	\centering
 \includegraphics[scale=0.2]{chainAndRing}
 \caption{A sketch of the composite structure of a chain and a ring connected}\label{figure_sketchRingChainPolymer}
 \end{figure}
@@ -943,6 +945,33 @@ The result show that
 [UNFINISHED]
 
 We now ask what is the expected probability to find bead $n$ close to bead $m$ given that bead 1 and $N$ have met. This is given by the calculation in \ref{section_aRingAndAChain}. 
+
+
+\chapter{}
+\section{Rubber elasticity}
+Polymer melt are different than rubber material in the sense that rubber is crossed-linked by chemical means. Therefore, the rubber can be regarded as a huge 3D network of cross-linked polymeric melt. Such a material, up to a maximal temperature, will recover its original shape after being released from deformation. In essence, the phenomena responsible for the restoring force of a rubber is the entropy change caused by applying deformation. 
+
+\subsection{Entropy and rubber elasticity}
+
+The free energy of a strip of rubber is written as 
+\begin{equation*}
+A=U-TS
+\end{equation*}
+with $U$ the internal energy and $S$ is the entropy. This relation is the formulation of the first law of thermodynamics, which states that the internal energy is due to the work and heat transfer, $U = W+Q$. The work is force applied on the body times the distance it operates, whereas the heat transfer, $Q$, is the entropy times the temperature, namely $Q=ST$.
+
+If we apply a stretching force $f$ on the rubber strip, and as a result it elongate by a length of $dl$ then the free energy is 
+\begin{equation*}
+dA = dU-d(TS) =dW+dQ -d(TS) = dW+dQ-dQ = dW = fdl
+\end{equation*}
+We can therefore write the force as 
+\begin{equation*}
+f= \left(\frac{dA}{dl}\right)=\left(\frac{d(U-TS)}{dl}\right)=\left(\frac{dU}{dl}\right)-T\left(\frac{dS}{dl}\right)=\left(\frac{dU}{dl}\right)+T \left(\frac{df}{dT}\right)
+\end{equation*}
+
+an ideal rubber is defined to have $dU/dl = 0$. 
+
+
+
 
 % The bibliography
 \bibliographystyle{plain}
