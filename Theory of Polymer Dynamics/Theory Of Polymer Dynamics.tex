@@ -970,8 +970,41 @@ f= \left(\frac{dA}{dl}\right)=\left(\frac{d(U-TS)}{dl}\right)=\left(\frac{dU}{dl
 
 an ideal rubber is defined to have $dU/dl = 0$. 
 
+If a strand of polymer is fixed at the origin on one end, and on the other it is cross-linked to some moving boundary, then the end-to-end vector can be used to derive the free energy change of the polymer due to deformation. As a result, the force can also be characterized according to the relationship above. 
 
+The probability distribution function of the end-to-end vector, $R$, of this polymer is given by 
+\begin{equation}
+\Phi(R,N)=\left(\frac{3}{2\pi b^2}\right)^{3/2}e^{-\frac{3R^2}{(2Nb^2)})}=\left(\frac{3}{2\pi b^2}\right)^{3/2}e^{-\frac{3(X^2+Y^2+Z^2)}{(2Nb^2)}}=W(X,Y,Z)
+\end{equation}
 
+There is a large number of configurations, $\Omega$, for a chain with a large $N$ that lead to the same end to end vector. All of these configurations, in freely jointed chain, have the same energy. Therefore, the number of configurations $\Omega$ for a certain $R$ is proportional to the probability density function. Thus $\Omega \propto W(X,Y,Z)$.
+
+The entropy of the chain, according to Boltzmann, is given by 
+\begin{equation*}
+s=k\ln(\Omega)= -\frac{3k}{2Nb^2}(X^2+Y^2+Z^2)+C
+\end{equation*}
+with $C$ a constant from the proportionality.  
+If the polymer is extended in one axes (say the x axis) and the polymer is contained within a rectangular rubber block with sides of length $L^0_x,L^0_y, L^0_z$ before deformation and $L_x,L_y,L_z$ after deformation. The end-to-end vector $R_0=(x_0,y_0,z_0)$ before deformation and $R=(x,y,z)$ after deformation. 
+
+If the deformation from $R_0$ to $R$ is linearly proportional to the deformation of the whole piece of rubber (affine deformation) then $X/X_0 = L_x/L_x^0 = \lambda_x$, and similarly for $\lambda_y, \lambda_z$ in the other dimensions. If the density of the rubber does'nt change, $\lambda_x\lambda_y\lambda_z =1$. Due to the symmetry of deformation $\lambda_y=\lambda_z = 1/\sqrt{\lambda_x}$
+
+The difference between the entropy at rest and after deformation can be written in terms of  $\lambda_x$
+\begin{equation*}
+\Delta s = s-s_0 = -\frac{3k}{2Nb^2}[(\lambda_x^2-1)X_0^2 +(1/\lambda_x-1)Y_0^2 +(1/\lambda_x -1)Z_0^2]
+\end{equation*}
+When there are $n$ chains we multiply the above quantity by $n$ and the $X_0^2, Y_0^2, Z_0^2$ are replaced by their average equilibrium values 
+\begin{equation*}
+\left<X_0^2 \right>=\left<Y_0^2 \right>=\left<Z_0^2 \right>=Nb^2/3
+\end{equation*}
+
+Now, using the relation $dA = du-Tds$ we find the free energy
+\begin{equation*}
+\Delta A= -T\Delta S= nkT(\lambda_x^2+2/\lambda_x -3)/2= nkT(L_x^2/(L_x^0) +2L_x^0/L_x -3 ^2)
+\end{equation*}
+And therefore the force 
+\begin{equation*}
+f=\partial(\Delta A)/\partial L_x= nkT(L_x/(L_x^0)^2-L_x^0/L_x^2)
+\end{equation*}
 
 % The bibliography
 \bibliographystyle{plain}
