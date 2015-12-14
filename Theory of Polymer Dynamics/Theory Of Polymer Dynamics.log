@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.20)  11 DEC 2015 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.20)  14 DEC 2015 10:52
 entering extended mode
 **"Theory Of Polymer Dynamics.tex"
 ("Theory Of Polymer Dynamics.tex"
@@ -412,21 +412,21 @@ Package pdftex.def Info: encounterProbChainRingBead1.jpg used on input line 866
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21]
+[21] [22 <./encounterProbChainRingBead1.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 885.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 885.
+(hyperref)                removing `math shift' on input line 899.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 885.
+(hyperref)                removing `\Delta' on input line 899.
 
-[22 <./encounterProbChainRingBead1.jpg>]
-Overfull \hbox (3.00285pt too wide) detected at line 922
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 899.
+
+[23]
+Overfull \hbox (3.00285pt too wide) detected at line 936
 [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10  []\OT
 1/cmr/m/n/10 )\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 Qf\OMS/c
 msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
@@ -435,25 +435,25 @@ msy/m/n/10 k\OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n
 OML/cmm/m/it/10 =\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 k
  []
 
-[23] [24]
+[24]
 Chapter 2.
 [25
 
 ] ("Theory Of Polymer Dynamics.bbl" [26])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1012.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1026.
  [27
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1012.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1026.
 
 ("Theory Of Polymer Dynamics.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1012.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1012.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1026.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1026.
 
 Package rerunfilecheck Info: File `"Theory Of Polymer Dynamics".out' has not ch
 anged.
 (rerunfilecheck)             Checksum: 4B6A19D74B73315D177AF51C92D6E850;3244.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1012.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1026.
  ) 
 Here is how much of TeX's memory you used:
  6067 strings out of 493698
@@ -480,7 +480,7 @@ public/amsfonts/cm/cmsy7.pfb><d:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmti10.pfb><d:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb><d:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symb
 ols/msbm7.pfb>
-Output written on "Theory Of Polymer Dynamics.pdf" (28 pages, 582658 bytes).
+Output written on "Theory Of Polymer Dynamics.pdf" (28 pages, 584529 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  88 named destinations out of 1000 (max. 500000)

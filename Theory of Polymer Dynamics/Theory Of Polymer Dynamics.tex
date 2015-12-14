@@ -875,11 +875,26 @@ We connect two Rouse rings in a signle bead, i.e there exist a bead $k$ which is
 
  
 \section{Generalized Rouse Chain}\label{section_generalizedRouseChain}
-Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. the configuration distribution of the chain is given by 
+A generalization of the Rouse model into a chain with arbitrary connectivity (springs) between its beads is given by the Generalized Gaussian chains. Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. We assume all beads are subjected to the same friction coefficient $\zeta$. The configuration distribution of the chain is given by 
 \begin{equation*}
-\psi = \prod_{i=1}^{N-1}\prod_{j=1}^{N_i}\left(\frac{k_{ij}}{2\pi KT}\right)^{1.5}\exp\left(-\frac{k_{ij}r^2}{2KT}\right)
+\psi = \prod_{i=1}^{N-1}\prod_{j=1}^{N_i}\left(\frac{k_{ij}}{2\pi k_BT}\right)^{1.5}\exp\left(-\frac{k_{ij}r^2}{2k_BT}\right)
 \end{equation*}
 with $N_i$ the number of connections of bead $i$, with multiplication over unique pairs. 
+
+If an external force $F_m^{(ext)}(t)$ operates on the $m^{th}$ bed of the chain, then
+the Langevin equation of motion for the generalized structure is given by 
+\begin{equation*}
+\zeta \frac{dR_n(t)}{dt}=-\frac{3k_BT}{2b^2}\sum_{m=1}^N A_{nm}R_m(t) +f_m(t)+F_m^{(ext)}(t)
+\end{equation*}
+With $A$- the Kirchoff matrix and $R_m(t)$ the position vector of the $m^{th}$ bead, and $f_m(t)$ is the thermal force (noise) acting on the bead. The information regarding the chain's connectivity is stored within the Kirchoff matrix $A$. 
+
+If the force is weak, then there is a linear relationship between the velocity field and the force
+\begin{equation*}
+F_m^{(ext)}(t)= \zeta V_m(t)
+\end{equation*}
+
+with $V_m(t) $ the velocity of the solvent at the position of the $m^{th}$ beads. 
+If the chain undergoes deformation due to the force (strain) then 
 
 \section{Simulations}
 \subsection{Choosing $\Delta t$}
