@@ -880,11 +880,26 @@ We connect two Rouse rings in a signle bead, i.e there exist a bead $k$ which is
 
  
 \section{Generalized Rouse Chain}\label{section_generalizedRouseChain}
-Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. the configuration distribution of the chain is given by 
+A generalization of the Rouse model into a chain with arbitrary connectivity (springs) between its beads is given by the Generalized Gaussian chains. Assuming a chain with $N$ beads, in which each bead is connected to its nearest neighbors and at most $N-2$ beads with spring constants $k_{ij}$ between bead $i$ and $j$. We assume all beads are subjected to the same friction coefficient $\zeta$. The configuration distribution of the chain is given by 
 \begin{equation*}
-\psi = \prod_{i=1}^{N-1}\prod_{j=1}^{N_i}\left(\frac{k_{ij}}{2\pi KT}\right)^{1.5}\exp\left(-\frac{k_{ij}r^2}{2KT}\right)
+\psi = \prod_{i=1}^{N-1}\prod_{j=1}^{N_i}\left(\frac{k_{ij}}{2\pi k_BT}\right)^{1.5}\exp\left(-\frac{k_{ij}r^2}{2k_BT}\right)
 \end{equation*}
 with $N_i$ the number of connections of bead $i$, with multiplication over unique pairs. 
+
+If an external force $F_m^{(ext)}(t)$ operates on the $m^{th}$ bed of the chain, then
+the Langevin equation of motion for the generalized structure is given by 
+\begin{equation*}
+\zeta \frac{dR_n(t)}{dt}=-\frac{3k_BT}{2b^2}\sum_{m=1}^N A_{nm}R_m(t) +f_m(t)+F_m^{(ext)}(t)
+\end{equation*}
+With $A$- the Kirchoff matrix and $R_m(t)$ the position vector of the $m^{th}$ bead, and $f_m(t)$ is the thermal force (noise) acting on the bead. The information regarding the chain's connectivity is stored within the Kirchoff matrix $A$. 
+
+If the force is weak, then there is a linear relationship between the velocity field and the force
+\begin{equation*}
+F_m^{(ext)}(t)= \zeta V_m(t)
+\end{equation*}
+
+with $V_m(t) $ the velocity of the solvent at the position of the $m^{th}$ beads. 
+If the chain undergoes deformation due to the force (strain) then 
 
 \section{Simulations}
 \subsection{Choosing $\Delta t$}
@@ -1011,6 +1026,52 @@ And therefore the force
 f=\partial(\Delta A)/\partial L_x= nkT(L_x/(L_x^0)^2-L_x^0/L_x^2)
 \end{equation*}
 
+This relation allows us to retrieve the force acting on Gaussian chain, when the displacement in one axis is known. 
+
+\subsection{The Maxwell equation}
+We start with an explanation of viscosity and elasticity of liquids. I f a layer of liquid is trapped between two plates of area $A$ at a distance $h$ apart, and the upper plate is displaced in constant velocity $v$ by with a constant force $f$ relative to the lower plate in a direction parallel to the plate, then the \textit{shear deformation rate} is
+\begin{equation*}
+\dot{\lambda} = \frac{v}{h}
+\end{equation*}
+and the resulting  \textit{stress} is 
+\begin{equation*}
+\sigma = -\frac{f}{A}
+\end{equation*}
+The viscosity of the liquid is defined by 
+\begin{equation*}
+\eta = -\frac{\sigma}{\dot{\lambda}}
+\end{equation*}
+that is, the negative ratio of the stress and the shear deformation rate.
+
+If the upper plate is displaced by a distance $s$ due to the force, then
+the \textit{shear strain} is defined by 
+\begin{equation*}
+\lambda = \frac{s}{h}
+\end{equation*}
+
+In a Hookian solid, the stress is linearly proportional to the strain
+\begin{equation}
+G= -\frac{\sigma}{\lambda}
+\end{equation}
+the constant $G$ is called the \textit{modulus of the solid}. 
+
+In a simplified model, a dashpot and a spring are connected in series. The dashpot represents the viscous properties and the spring the elastic properties of the system.  If the system if of length $D$, then we divide it into two parts of the spring and dashpot of length $D_1$ and $D_2$ respectively. Therefore, the modulus of the solid can be calculated if we apply force on the system which elongates it
+\begin{equation*}
+G = -\frac{\sigma}{\lambda} = -\frac{-f/A}{s/h}=-\frac{F}{D_1-D_0}
+\end{equation*}
+the force $-F$ operates in the direction of the spring elongation, and $D_0$ is the length of $D_1$ with minimal potential energy. The spring stores energy (elasticity), while the dashpot dissipates it (viscosity). The viscosity corresponds to 
+\begin{equation*}
+\eta = -\frac{\sigma}{\dot{\lambda}}=-\frac{F}{dD_2/dt}
+\end{equation*}
+extracting $D_1$ and differentiating it in time and adding to it the derivative of $D_2$, we arrive at 
+the differential equation for the length of the system 
+\begin{equation*}
+\frac{dD}{dt}=\frac{d}{dt}(D_1+D_2)=-\left[\frac{1}{G}\frac{dF}{dt}+\frac{F}{\eta}\right]
+\end{equation*}
+For polymer systems the force $F$ needs to be replaced by the stress $\sigma$ and the rate of elongation by the shear deformation rate $\dot{\lambda}$ which gives the \textbf{Maxwell equation}
+\begin{equation}
+\frac{d\sigma}{dt}+\frac{\sigma}{\tau} = -\frac{\eta}{\tau}\dot{\lambda},\qquad \tau=\frac{\eta}{G}
+\end{equation}
 % The bibliography
 \bibliographystyle{plain}
 \bibliography{TheoryOfPolymerDynamicsBibliography} % the bibliography.bib file 
