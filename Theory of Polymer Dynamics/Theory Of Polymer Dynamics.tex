@@ -7,7 +7,7 @@
 \begin{document}
 \title{Theory of Polymer Dynamics}
 \maketitle
-\chapter{}
+
 \section{Introduction}
 This document summarizes information related to the construction of theoretical models representing polymers. 
 It is mainly drawn from the books by Doi \cite{doi1986theory}\cite{doi1996introduction}, and Bird \cite{bird1987dynamics}. 
@@ -267,8 +267,6 @@ Q'(\frac{N+1}{2})-Q'(N-\frac{N+1}{2}+1)=Q'(\frac{N+1}{2})
 \end{equation*} 
 
 
-
-
 \subsection{The distribution of the bond lengths}\label{subsection_distributionOfTheBondLength}
 [UNFINISHED] 
 
@@ -279,6 +277,7 @@ with variance $\mu=b^2/3+b^2/3+b^2/3=b^2$ which is the sum of variances.
 To calculate the cumulative distribution function (CDF) of the bond length, we use result from the analysis of quadratic forms \cite{mathai1992quadratic} (chapter 3). From the CDF we will obtain the \textit{survival probability}, which its first moment is the \textit{mean first passage time} for the two ends of the polymer.
 
 For the polymer chain, the bond length is a random variable, $b\sim \mathcal{N}(0,\sigma_b)$
+
 \subsection{Eigenvalues of the Rouse Matrix}\label{subsection_eigenvaluesOfTheRouseMatrix}
 In this subsection we derive the eigenvalues of the Rouse matrix. The Rouse matrix defines the connection between beads as a harmonic potential. The system of differential equation governing the dynamics of the chain comprised of $N$ beads is 
 \begin{equation}
@@ -477,13 +476,19 @@ The pair correlation function is thus also called the radial distribution functi
 
 From the definition of the Fourier transform of the pair correlation function for small $q$, we can define the length called radius of gyration. 
 
-\section{Equilibrium properties of generalized chain}
 
 \section{Chain conformation under an external field}
 Taken from \cite{doi1986theory}. If an external field $U_e(r)$ acts on each segment of the chain, the chain's equilibrium distribution is modified by the Boltzmann factor 
 \begin{equation*}
 \exp\left[ -\frac{1}{k_BT}\int_0^N U_e(R_n)dn\right]
 \end{equation*}
+The Boltzmann factor indicates the fraction of molecules with a certain energetic level above $\int_0^N U_e(R_n)dn$. 
+The conformation distribution then becomes 
+\begin{equation*}
+\Psi(R_n)\propto \exp\left[-\frac{3}{2b^2}\int_0^N\left(\frac{\partial R_n}{\partial n}\right)^2 dn -\frac{1}{k_BT}\int_0^NU_e(R_n)dn\right]
+\end{equation*} 
+
+To study the statistical properties of a system with external potential it is convenient to look at it \textit{Green's function}. The Green's function represents the statistical weight, or \textit{partition function}, of a chain starting in one configuration and ending in another.
 
 
 \section{The Rouse ring}\label{section_theRouseRing}
